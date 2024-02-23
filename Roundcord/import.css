@@ -1,0 +1,63 @@
+/* Rounded Borders */
+/* Spotify Status Images */
+.assetsLargeImageSpotify__06348{
+  border-radius: 8px;
+}
+/* message field */
+.channelTextArea__2e60f {
+  border-radius: 50px;
+}
+.scrollableContainer__33e06 {
+  border-radius: 26px;
+  padding: 4px 6px;
+}
+/* hover and selected */
+.selected__9800b .layout_bb8e67 {
+  box-shadow: var(--08dpShadow);
+}  
+.interactive_a868bc {
+  border-radius: 50px;
+}
+[class*="side"] > [class*="item"], [class*="side"] > [class*="item"]:hover{
+  border-radius: 50px;
+}
+/* channel/memberlist */
+.modeSelected__487d6 .link__95dc0, .modeSelected__487d6:hover,  .wrapper__7bcde, .link__95dc0, .layout_bb8e67 {
+  border-radius: 50px !important;
+}
+/* Corners Servers/Channels/Chat Box */
+.content__4bf10>.sidebar_ded4b5,.chat__52833,.container__5c7e7{
+  margin: 10px 10px 10px 0;
+  border-radius: 15px;
+}
+/* Context Menu */
+.menu_dc52c6, .item__183e8 { 
+  border-radius: 15px; 
+}
+/* Userarea buttons */
+.button__66e8c[aria-label="Start an Activity"],
+.button__66e8c[aria-label="Open Soundboard"] {
+  border-radius: 50px;
+}
+.button__66e8c[aria-label="Turn On Camera"] {
+ border-radius: 50px;
+}
+.button__66e8c[aria-label="Share Your Screen"] {
+  border-radius: 50px;
+}
+
+/* SImple channel/settings/dms/member list hover animations */
+.wrapper__7bcde .link__95dc0 /* channels */,
+.container__4f20e /* members */,
+.channel_c21703 /* dms */,
+.side_b4b3f6 .item__48dda /* settings */ {
+  transition: margin-left 0.2s ease;
+}
+.wrapper__7bcde:hover .link__95dc0,
+.side_b4b3f6 .item__48dda:hover {
+  margin-left: 10px;
+}
+.container__4f20e:hover,
+.channel_c21703:hover {
+  margin-left: 18px;
+}

@@ -1,0 +1,96 @@
+/* hide a few more common nitro upsells */
+.channel_c21703:has([data-list-item-id$="___nitro"]), .channel_c21703:has([data-list-item-id$="___shop"]), /*Shop and nitro private channels*/
+.containerWrapper-1kh54c, /*Userpopout nitro upsell*/
+.premiumTab__57bdc, /*Nitro Settings Tab*/
+.premiumFeatureBorder__9bbb3, /*Premium settings feature upsell cards.*/
+.container_d6bff4:has(.ctaButton__7d20c) /*Shop advertisement*/ {
+    display: none;
+}
+
+/* Hide profile customization upsells */
+div[id="account-style-your-profile"] { display: none; }
+button[class^="shinyButton"] { display: none; }
+svg[class^="nitro"] { display: none; }
+div[class^="bannerNitroUpsell"] { display: none; }
+div[class^="optionBox"]:nth-of-type(2) { display: none; }
+
+/* Hide avatar decorations upsell */
+.customizationSection__16fec.showBorder__9e03d, .container_d6bff4 {
+    display:none;
+}
+
+/* Per server avatar */
+div[class^="upsellOverlayContainer__08979"] {display: none}
+
+/* Hide message size upsells */
+div[class*=" upsell_"] { display: none; }
+svg[class^="premium__296ca"] { display: none; }
+
+/* Hide Go Live quality upsells */
+button[class*=" selectorButtonPremiumRequired_"] { display: none; }
+div[class^="upsellBanner_"] { display: none; }
+
+/* Hide ad in profile banners */
+div[class^="premiumIconWrapper"] { display: none; }
+
+/* Removes nitro promotion when you press on disabled emojis and stickers */
+.premiumPromo__2d678 .premiumPromoTitle__68b72{
+    font-size: 0;
+}
+.premiumPromo__2d678{
+    display: none;
+}
+.premiumUpsell_e1bfd9{
+    display:none;
+}
+/* Stickers */
+.emptyState__7b522 .header__2d943{
+    font-size: 0px;
+}
+.emptyState__7b522 .header__2d943:before{
+    content:'Hello, You need nitro to use custom stickers but its useless so dont buy nitro!';
+    font-size: 24px;
+}
+.premiumLabel_f2cd55 {
+    color: var(--color-muted);
+}
+.upsellWrapper_d04266{
+    display:none;
+}
+
+/* Hide your server is waiting to upload stickers in picker */
+.upsell__780f6, .emptyGuildUpsell__59f36{
+    display: none;
+}
+
+/* Hide billing section in user settings */
+.layer__2efaa  > .standardSidebarView__1129a .side_b4b3f6 > div:nth-of-type(n+11):nth-of-type(-n+17),
+#user-settings-cog > .scroller__750f5 > .item__183e8:nth-of-type(n+10):nth-of-type(-n+16) {
+  display: none;
+}
+
+/* Hide boosted server emojis Upsell */
+.banner__01dd2{
+    display:none;
+}
+
+/* Remove grayscale on disabled emotes and stickers */
+.emojiItem_b15dee.emojiItemDisabled__36cbf, .stickerNode__1ea9f.stickerUnsendable__47eae {
+    filter: grayscale(0);
+}
+
+/* Hide Super Reaction Upsells */
+div[class*="burstToggle__"]{
+    display: none;
+}
+.reaction_fef95b[style*="background"] {
+    pointer-events: none;
+}
+
+/* Server boosts */
+/* Display settings in Overview */
+div[id="overview-tab"] > div > div + div > div:last-child{ display: none; }
+/* Boost progress bar */
+ul[aria-label="Channels"] > div + div + div[class^="container_"] { display: none; }
+/* Boost in chat bar */
+button[aria-label="Boost this server"] { display: none; }
