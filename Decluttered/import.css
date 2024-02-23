@@ -33,3 +33,19 @@ div[aria-label="Create Invite"] { display: none !important; }
 div[aria-label="Merch"], div[aria-label="Family Center"], div[class^="socialLinks_c1fc99"] {
     display: none !important;
 }
+
+/* Help Button  */
+.toolbar__88c63 [href="https://support.discord.com"]{
+    display: none;
+}
+
+/* Hide Voice channel button */
+.voiceChannelsButton__46c37 {
+    display:none;
+}
+
+/* Chatbox buttons */
+div[aria-label="Start an Activity"] { display: none; }
+button[aria-label="Open GIF picker"] { display: none; }
+button[aria-label="Open sticker picker"] { display: none; }
+button[aria-label="Send a gift"] { display: none; }
