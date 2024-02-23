@@ -96,9 +96,6 @@ html:not(.app-focused) .newMessagesBar__8b6d7 {
 /* General annoyances */
 /* ------------------ */
 
-/* Bugfix laggy server scroll */
-div[data-dnd-name] > div[class^="wrapper"] svg { overflow: hidden; }
-
 /* disable discord's laggy settings animation */
 .layer_e552e0 {transform: none !important;opacity: 1 !important;}
 .layers_a40797>.layer_e552e0.animating__64b42 *,
