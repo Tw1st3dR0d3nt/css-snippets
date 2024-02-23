@@ -1,0 +1,147 @@
+/* Dashless channel names */
+@font-face
+ { font-family: "Twemoji Mozilla";
+   src: url("https://vendicated.github.io/random-files/Twemoji.Mozilla.ttf") format("truetype");
+   unicode-range: U+1F1E6-1F1FF; }
+@font-face
+ { font-family: "dashless";
+   size-adjust: 100%; /*adjust this to change word spacing*/
+   src: url("https://vendicated.github.io/random-files/Dashless.woff2") format("woff2");
+   unicode-range: U+002D; }
+[data-list-item-id^=channels___]:not([role=button]), /* channel list */
+[class^=titleWrapper] > h1, /* top bar with topic */
+[id^=":r"] > h1, /* topic popup */
+[class^=resultChannel], [class^=channelNameContainer_], [class^=searchAnswer_], /* search */
+.channelWithIcon, /* channel mentions in chat */
+[class^=emptyChannelIcon_] + h3, /* start of new channel */
+[class^=emptyChannelIcon_] ~ [class*=description_],
+[class^=browser_] [class*=channelText_], /* channel browser*/
+[class^=returnButton_] [class^=text-], /*return button in channel browser*/
+[class^=placeholder][class*=slateTextArea], /* chat input placeholder text */
+[class^=auditLog_] [class^=overflowEllipsis_] strong, /* audit log */
+.vc-permviewer-perms-title, /* permissionsviewer */
+[class^=headerChannelContainer_] > div /* invite to channel dialog */
+{ font-family: "Twemoji Mozilla", "dashless", var(--font-primary); }
+
+/* Channel Names Capitalized */
+.name__8d1ec {
+  text-transform: capitalize;
+}
+
+/* Devices but it looks good */
+[class*="session_"]{
+  background-color: var(--background-secondary);
+  border-radius: 8px;
+  padding: 12px 16px;
+  padding-left: 12px;
+  border-bottom: none;
+  margin-top: 16px;
+  gap: 12px;
+}
+[class*="sessionIcon__"]{
+  color: var(--interactive-normal);
+  background: transparent;
+}
+
+/* Adds @ infront of usernames and dims it down */
+[class*="userTag"]:not([class*="nameTag"]) [class*="userTagUsernameBase"]:before,
+[class*="info"][class*="nameTagSmall"] [class*="discriminator"]:before {
+    content: "@";
+}
+[class*="userTag"]:not([class*="nameTag"]) [class*="userTagUsernameBase"],
+[class*="info"][class*="nameTagSmall"] [class*="discriminator"] {
+    color: var(--interactive-normal);
+}
+
+/* Better Jump To Present Button */
+[class*="jumpToPresentBar"] {
+  display: contents;
+}
+[class*="jumpToPresentBar"] > button:first-child {
+  display: none;
+}
+[class*="jumpToPresentBar"] > button:last-child {
+  position: absolute;
+  z-index: 1;
+  bottom: 24px;
+  right: 22px;
+  padding: 8px !important;
+  height: auto;
+  background-color: #5865F2;
+  box-shadow: var(--elevation-high);
+  border-radius: 100px;
+  display: flex;
+  font-size: 0px;
+  color: transparent;
+  transition: font-size .2s .1s, color .2s, padding .4s .1s;
+}
+[class*="jumpToPresentBar"] > button svg {
+  order: -1;
+  margin: 0px;
+  height: 24px;
+  width: 24px;
+  top: auto;
+  margin-right: 0px;
+  margin-left: 0px;
+  color: #FFFFFF;
+  transition: margin .6s;
+}
+[class*="jumpToPresentBar"]:hover > button {
+  padding: 8px 18px !important;
+  font-size: 14px;
+  color: #FFFFFF;
+  transition: font-size .2s, color .2s .1s, padding .4s;
+}
+[class*="jumpToPresentBar"]:hover > button svg {
+  margin-right: 2px;
+  margin-left: -6px;
+}
+
+/* More space-efficient settings layout */
+.sidebarRegion__60457,
+.sidebarRegionScroller__1fa7e {flex: 0 0 auto;}
+
+/* edited text */
+.timestamp_cdbd93:not(.timestampInline__470e0, .timestampVisibleOnHover_e8cc6d) time::after {
+  content: " (" attr(aria-label) ")";
+  color: var(--text-muted);
+  font-size: 0.625rem;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: lowercase;
+}
+.edited_b20dd9:not(.message-translate-indicator) {
+  display: none;
+}
+
+/* Connection Issue Let Me Be */
+.container__4bde3 {
+  background: transparent;
+  pointer-events: none;
+}
+.container__4bde3 .anchor-1MIwyf { pointer-events: auto; }
+.container__4bde3 .content__0e954 .text__32559 {
+  display:none;
+}
+.container__4bde3 .ready__61f2f {
+  position: absolute;
+  bottom: 44px;
+  right: 244px;
+  z-index: 1;
+}
+.container__4bde3 img, .container__4bde3 video {
+  width: 32px;
+  height: 32px;
+}
+.container__4bde3 .problems__755eb {
+  padding: 8px 16px;
+  bottom: 18px;
+  left: unset;
+  right: 18px;
+  width:fit-content;
+  height:fit-content;
+  background-color: var(--background-floating);
+  border-radius: 8px;
+  -webkit-box-shadow: var(--elevation-stroke), var(--elevation-medium);
+  box-shadow: var(--elevation-stroke), var(--elevation-medium);
+}
