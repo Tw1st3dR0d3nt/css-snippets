@@ -13,17 +13,6 @@ A snippet that makes role mentions match the default color of the role.
 https://tw1st3dr0d3nt.github.io/css-snippets/ColoredRoleMentions/import.css
 
 
-## Custom Css
-A backup of Vencord's quickCss file.
-
-### Importing:
-```css
-@import url(//tw1st3dr0d3nt.github.io/css-snippets/CustomCss/import.css);
-```
-#### Theme Link
-https://tw1st3dr0d3nt.github.io/css-snippets/CustomCss/import.css
-
-
 ## Decluttered
 A snippet that removes redundancies and cleans up Discord's messy UI.
 
