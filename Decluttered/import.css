@@ -49,3 +49,6 @@ div[aria-label="Start an Activity"] { display: none; }
 button[aria-label="Open GIF picker"] { display: none; }
 button[aria-label="Open sticker picker"] { display: none; }
 button[aria-label="Send a gift"] { display: none; }
+
+/* Start Video Call button */
+div[aria-label="Start Video Call"] {display: none;}
