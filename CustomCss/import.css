@@ -2,11 +2,11 @@
 /* @import url(//dablulite.github.io/css-snippets/NitroThemesFix/import.css); */
 @import url(//dablulite.github.io/css-snippets/UserReimagined/import.css); 
 @import url(//dablulite.github.io/css-snippets/AccountDetailsGrid/import.css);
-@import url("https://dablulite.github.io/css-snippets/SpotifyActivityRedesign/import.css");
+@import url(//dablulite.github.io/css-snippets/SpotifyActivityRedesign/import.css);
 
 /* Disease's Css Snippets */
-@import url("https://syndishanx.github.io/Discord-Dark/Imports/BearableInbox.css");
-@import url("https://syndishanx.github.io/Discord-Dark/Imports/NormalizedForums.css");
+@import url(//syndishanx.github.io/Discord-Dark/Imports/BearableInbox.css);
+@import url(//syndishanx.github.io/Discord-Dark/Imports/NormalizedForums.css);
 
 /* Tw1st3dR0d3nt's Css Snippets */
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/ColoredRoleMentions/import.css);
@@ -49,21 +49,9 @@
      transform: rotate(-10deg);   
     }
 }
-
-/* Hide New Message Stuff When Unfocused */
-/* Red New Message Bar */
-html:not(.app-focused) .isUnread__6f880 {
-    border-color: transparent
-}
-.isUnread__6f880 {
-    transition: .15s
-}
-/* New Message Bar */
-html:not(.app-focused) .newMessagesBar__8b6d7 {
-    opacity: 0
-}
-.newMessagesBar__8b6d7 {
-    transition: .15s
+/* Recolored New message badge */
+.numberBadge__50328 {
+  background-color: var(--background-accent)!important;
 }
 
 /* Hide new messages bar until hovered */
@@ -96,6 +84,9 @@ html:not(.app-focused) .newMessagesBar__8b6d7 {
 /* General annoyances */
 /* ------------------ */
 
+/* Bugfix laggy server scroll */
+div[data-dnd-name] > div[class^="wrapper"] svg { overflow: hidden; }
+
 /* disable discord's laggy settings animation */
 .layer_e552e0 {transform: none !important;opacity: 1 !important;}
 .layers_a40797>.layer_e552e0.animating__64b42 *,
@@ -114,3 +105,12 @@ html:not(.app-focused) .newMessagesBar__8b6d7 {
   transform: none;
   opacity: 0;
 }
+
+/* Japanese Language */
+button[aria-label="ギフトを贈る"],
+button[aria-label="スタンプピッカーを開く"],
+button[aria-label="GIFピッカーを開く"] {
+  display: none;
+}
+/* Start Video Call button */
+div[aria-label="ビデオ通話を開始"] {display: none;}
