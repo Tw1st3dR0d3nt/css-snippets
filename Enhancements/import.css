@@ -102,18 +102,22 @@
 .sidebarRegionScroller__1fa7e {flex: 0 0 auto;}
 
 /* edited text */
-.timestamp_cdbd93:not(.timestampInline__470e0, .timestampVisibleOnHover_e8cc6d) time::after {
-    content: " (" attr(aria-label) ")";
+[class*="timestamp_"]:not([class*="timestampInline_"],
+[class*="timestampVisibleOnHover_"]) time::after {
+    content: ' (' attr(aria-label) ')';
     color: var(--text-muted);
     font-size: 0.625rem;
     font-weight: 400;
     line-height: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     text-transform: lowercase;
 }
-.edited_b20dd9:not(.message-translate-indicator) {
+[class*="edited"]:not(.message-translate-indicator) {
     display: none;
 }
-
 /* Connection Issue Let Me Be */
 .container__4bde3 {
     background: transparent;
