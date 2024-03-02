@@ -87,12 +87,6 @@
 /* Bugfix laggy server scroll */
 div[data-dnd-name] > div[class^="wrapper"] svg { overflow: hidden; }
 
-/* disable discord's laggy settings animation */
-.layer_e552e0 {transform: none !important;opacity: 1 !important;}
-.layers_a40797>.layer_e552e0.animating__64b42 *,
-.layers_a40797>.layer_e552e0.animating__64b42 {pointer-events: auto !important;will-change: unset;}
-.animating__64b42.stop-animations {z-index: 100 !important;}
-
 /* Removes Super Reaction Animations On Hover */
 .hideEmoji__13ca4 {
   opacity: 1;
@@ -105,12 +99,3 @@ div[data-dnd-name] > div[class^="wrapper"] svg { overflow: hidden; }
   transform: none;
   opacity: 0;
 }
-
-/* Japanese Language */
-button[aria-label="ギフトを贈る"],
-button[aria-label="スタンプピッカーを開く"],
-button[aria-label="GIFピッカーを開く"] {
-  display: none;
-}
-/* Start Video Call button */
-div[aria-label="ビデオ通話を開始"] {display: none;}
