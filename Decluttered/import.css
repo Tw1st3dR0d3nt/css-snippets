@@ -6,11 +6,18 @@
 #guild-header-popout-create-category, #guild-header-popout-create-channel, #guild-header-popout-create-event, #guild-header-popout-insights, #guild-header-popout-application-directory, #guild-header-popout-opt-in, #guild-header-popout-notifications, #guild-header-popout-change-nickname, #guild-header-popout-hide-muted-channels, #guild-header-popout-vc-server-profile,
 /* Guild Context popout */
 #guild-context-invite-people, #guild-context-change-nickname, #guild-context-create-channel, #guild-context-create-event, #guild-context-privacy, #guild-context-server-lockdown, #guild-context-vc-view-guild-raw,
-    /* server settings */
-    #guild-context-guild-settings--WIDGET, #guild-context-guild-settings--GUILD_TEMPLATES, #guild-context-guild-settings--VANITY_URL, #guild-context-guild-settings--INTEGRATIONS, #guild-context-guild-settings--APP_DIRECTORY, #guild-context-guild-settings--SAFETY, #guild-context-guild-settings--COMMUNITY, #guild-context-guild-settings--ONBOARDING, #guild-context-guild-settings--ANALYTICS, #guild-context-guild-settings--DISCOVERY, #guild-context-guild-settings--ROLE_SUBSCRIPTIONS, #guild-context-guild-settings--ROLE_SUBSCRIPTIONS_STORE_PAGE, #guild-context-guild-settings--GUILD_PREMIUM, #guild-context-guild-settings--COMMUNITY_WELCOME
-{
-    display: none;
-}
+/* server settings */
+#guild-context-guild-settings--WIDGET, #guild-context-guild-settings--GUILD_TEMPLATES, #guild-context-guild-settings--VANITY_URL, #guild-context-guild-settings--INTEGRATIONS, #guild-context-guild-settings--APP_DIRECTORY, #guild-context-guild-settings--SAFETY, #guild-context-guild-settings--COMMUNITY, #guild-context-guild-settings--ONBOARDING, #guild-context-guild-settings--ANALYTICS, #guild-context-guild-settings--DISCOVERY, #guild-context-guild-settings--ROLE_SUBSCRIPTIONS, #guild-context-guild-settings--ROLE_SUBSCRIPTIONS_STORE_PAGE, #guild-context-guild-settings--GUILD_PREMIUM, #guild-context-guild-settings--COMMUNITY_WELCOME
+{display: none;}
+
+div[data-tab-id="merchandise"],
+div[data-tab-id="Hypesquad Online"],
+div[data-tab-id="Developer Options"],
+div[data-tab-id="Hotspot Options"],
+div[data-tab-id="Payment Flow Modals"],
+div[data-tab-id="Text Playground"],
+div[data-tab-id="Text Component"]
+{display: none !important;}
 
 /* Experimental Context menu */
 div[id^="user-context-transfer-ownership"], [class^="separator__18122"]{
@@ -45,10 +52,19 @@ div[aria-label="Merch"], div[aria-label="Family Center"], div[class^="socialLink
 }
 
 /* Chatbox buttons */
-div[aria-label="Start an Activity"] { display: none; }
-button[aria-label="Open GIF picker"] { display: none; }
-button[aria-label="Open sticker picker"] { display: none; }
-button[aria-label="Send a gift"] { display: none; }
-
-/* Start Video Call button */
+div[aria-label="Start an Activity"],
+button[aria-label="Open GIF picker"],
+button[aria-label="Open sticker picker"],
+button[aria-label="Send a gift"],
 div[aria-label="Start Video Call"] {display: none;}
+
+/* Japanese */
+button[aria-label="ギフトを贈る"],
+button[aria-label="スタンプピッカーを開く"],
+button[aria-label="GIFピッカーを開く"],
+/* Start Video Call button */
+div[aria-label="ビデオ通話を開始"],
+/* Show user Profile button */
+div[aria-label="ユーザープロフィールを表示（利用できません）"],
+div[aria-label="ユーザープロフィールを表示"]
+{display: none;}
