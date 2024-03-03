@@ -55,7 +55,6 @@ div[aria-label="Merch"], div[aria-label="Family Center"], div[class^="socialLink
 div[aria-label="Start an Activity"],
 button[aria-label="Open GIF picker"],
 button[aria-label="Open sticker picker"],
-button[aria-label="Send a gift"],
 div[aria-label="Start Video Call"] {display: none;}
 
 /* Japanese */
