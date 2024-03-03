@@ -3,16 +3,10 @@
 .containerWrapper-1kh54c, /*Userpopout nitro upsell*/
 .premiumTab__57bdc, /*Nitro Settings Tab*/
 .premiumFeatureBorder__9bbb3, /*Premium settings feature upsell cards.*/
-.container_d6bff4:has(.ctaButton__7d20c) /*Shop advertisement*/ {
+.container_d6bff4:has(.ctaButton__7d20c) /*Shop advertisement*/ 
+button[class^="shinyButton"] /* Shiny nitro button */ {
     display: none;
 }
-
-/* Hide profile customization upsells */
-div[id="account-style-your-profile"] { display: none; }
-button[class^="shinyButton"] { display: none; }
-svg[class^="nitro"] { display: none; }
-div[class^="bannerNitroUpsell"] { display: none; }
-div[class^="optionBox"]:nth-of-type(2) { display: none; }
 
 /* Hide avatar decorations upsell */
 .customizationSection__16fec.showBorder__9e03d, .container_d6bff4 {
