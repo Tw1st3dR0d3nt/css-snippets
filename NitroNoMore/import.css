@@ -3,25 +3,22 @@
 .containerWrapper-1kh54c, /*Userpopout nitro upsell*/
 .premiumTab__57bdc, /*Nitro Settings Tab*/
 .premiumFeatureBorder__9bbb3, /*Premium settings feature upsell cards.*/
-.container_d6bff4:has(.ctaButton__7d20c) /*Shop advertisement*/ 
+.container_d6bff4:has(.ctaButton__7d20c), /*Shop advertisement*/ 
 button[class^="shinyButton"] /* Shiny nitro button */ {
     display: none;
 }
 
-/* Hide avatar decorations upsell */
-.customizationSection__16fec.showBorder__9e03d, .container_d6bff4 {
-    display:none;
-}
+/* Send A Gift button */
+button[aria-label="Send a gift"] { display: none; }
 
 /* Per server avatar */
 div[class^="upsellOverlayContainer__08979"] {display: none}
 
 /* Hide message size upsells */
-div[class*="upsell_"] { display: none; }
-svg[class^="premium__296ca"] { display: none; }
+div[class^="characterCount"] > div[class*=" upsell_"] { display: none; }
 
 /* Hide Go Live quality upsells */
-button[class*="selectorButtonPremiumRequired_"] { display: none; }
+button[class*=" selectorButtonPremiumRequired"] { display: none; }
 div[class^="upsellBanner_"] { display: none; }
 
 /* Hide ad in profile banners */
