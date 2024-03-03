@@ -65,8 +65,8 @@ div[class^="premiumIconWrapper"] { display: none; }
     display:none;
 }
 
-/* Remove grayscale on disabled emotes and stickers */
-.emojiItem_b15dee.emojiItemDisabled__36cbf, .stickerNode__1ea9f.stickerUnsendable__47eae {
+/* Remove grayscale on disabled stickers */
+.stickerNode__1ea9f.stickerUnsendable__47eae {
     filter: grayscale(0);
 }
 
