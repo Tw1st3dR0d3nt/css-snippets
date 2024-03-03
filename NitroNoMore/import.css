@@ -17,11 +17,11 @@ button[class^="shinyButton"] /* Shiny nitro button */ {
 div[class^="upsellOverlayContainer__08979"] {display: none}
 
 /* Hide message size upsells */
-div[class*=" upsell_"] { display: none; }
+div[class*="upsell_"] { display: none; }
 svg[class^="premium__296ca"] { display: none; }
 
 /* Hide Go Live quality upsells */
-button[class*=" selectorButtonPremiumRequired_"] { display: none; }
+button[class*="selectorButtonPremiumRequired_"] { display: none; }
 div[class^="upsellBanner_"] { display: none; }
 
 /* Hide ad in profile banners */
