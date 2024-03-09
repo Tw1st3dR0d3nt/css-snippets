@@ -1,3 +1,9 @@
+/**
+ * @name Nitro No More
+ * @author tw1st3dr0d3nt
+ * @description Removes Discord Nitro upsells and bloat.
+*/
+
 /* hide a few more common nitro upsells */
 .channel_c21703:has([data-list-item-id$="___nitro"]), .channel_c21703:has([data-list-item-id$="___shop"]), /*Shop and nitro private channels*/
 .containerWrapper-1kh54c, /*Userpopout nitro upsell*/
