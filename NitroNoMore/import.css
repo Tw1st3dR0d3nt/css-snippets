@@ -84,6 +84,12 @@ div[class*="burstToggle__"]{
     pointer-events: none;
 }
 
+/* Hide Profile Effects */
+[class*="profileEffects_"] {display: none;}
+
+/* Hide unlock banner upsell in profile customization */
+[class*="bannerNitroUpsell__"] {display: none;}
+
 /* Server boosts */
 /* Display settings in Overview */
 div[id="overview-tab"] > div > div + div > div:last-child{ display: none; }
