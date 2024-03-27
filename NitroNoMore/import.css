@@ -14,6 +14,9 @@ button[class^="shinyButton"] /* Shiny nitro button */ {
     display: none;
 }
 
+/* Better Settings Billing Section */
+#user-settings-cog-Billing_Settings {display:none;}
+
 /* Send A Gift button */
 button[aria-label="Send a gift"] { display: none; }
 
