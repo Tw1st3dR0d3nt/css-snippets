@@ -172,3 +172,8 @@
 .spoilerContent__37bfa.hidden_f44e41 .obscuredTextContentInner__07680 span {
   filter: blur(4px);
 }
+
+/* Extend badges background if it makes a new line */
+[class^="profileBadges"][class^="profileBadges"] {
+  flex: none;
+}
