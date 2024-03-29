@@ -6,64 +6,67 @@
 
 /* Rounded Borders */
 /* Spotify Status Images */
-.assetsLargeImageSpotify__06348{
+.assetsLargeImageSpotify__3df69{
   border-radius: 8px;
 }
 /* message field */
-.channelTextArea__2e60f {
+.channelTextArea_c2094b {
   border-radius: 50px;
 }
-.scrollableContainer__33e06 {
+.scrollableContainer_ff917f {
   border-radius: 26px;
   padding: 4px 6px;
 }
 /* hover and selected */
-.selected__9800b .layout_bb8e67 {
+.selected__7f4cb .layout_bb8e67 {
   box-shadow: var(--08dpShadow);
 }  
-.interactive_a868bc {
+.interactive__3e804 {
   border-radius: 50px;
 }
 [class*="side"] > [class*="item"], [class*="side"] > [class*="item"]:hover{
   border-radius: 50px;
 }
 /* channel/memberlist */
-.modeSelected__487d6 .link__95dc0, .modeSelected__487d6:hover,  .wrapper__7bcde, .link__95dc0, .layout_bb8e67 {
+.modeSelected__473f1 .link_ddbb36, .modeSelected__473f1:hover,  .wrapper__612a5, .link_ddbb36, .layout_bb8e67 {
   border-radius: 50px !important;
 }
 /* Corners Servers/Channels/Chat Box */
-.content__4bf10>.sidebar_ded4b5,.chat__52833,.container__5c7e7{
+.content__76dcf>.sidebar_e031be,.chat__52833,.container_bd15da{
   margin: 10px 10px 10px 0;
   border-radius: 15px;
 }
 /* Context Menu */
-.menu_dc52c6, .item__183e8 { 
+.menu__088f7, .item__183e8 { 
   border-radius: 15px; 
 }
 /* Userarea buttons */
-.button__66e8c[aria-label="Start an Activity"],
-.button__66e8c[aria-label="Open Soundboard"] {
+.button_b82d53[aria-label="Start an Activity"],
+.button_b82d53[aria-label="Open Soundboard"] {
   border-radius: 50px;
 }
-.button__66e8c[aria-label="Turn On Camera"] {
+.button_b82d53[aria-label="Turn On Camera"] {
  border-radius: 50px;
 }
-.button__66e8c[aria-label="Share Your Screen"] {
+.button_b82d53[aria-label="Share Your Screen"] {
   border-radius: 50px;
 }
 
 /* SImple channel/settings/dms/member list hover animations */
-.wrapper__7bcde .link__95dc0 /* channels */,
-.container__4f20e /* members */,
-.channel_c21703 /* dms */,
+.wrapper__612a5 .link_ddbb36 /* channels */,
+.container_a48b21 /* members */,
+.channel__0aef5 /* dms */,
 .side_b4b3f6 .item__48dda /* settings */ {
   transition: margin-left 0.2s ease;
 }
-.wrapper__7bcde:hover .link__95dc0,
+.wrapper__612a5:hover .link_ddbb36,
 .side_b4b3f6 .item__48dda:hover {
   margin-left: 10px;
 }
-.container__4f20e:hover,
-.channel_c21703:hover {
+.container_a48b21:hover,
+.channel__0aef5:hover {
   margin-left: 18px;
 }
+
+/* Voice channel participants hover */
+[class^="content__"]:hover {border-radius: 50px;}
