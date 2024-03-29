@@ -7,7 +7,7 @@
 /* User Settings context */
 #user-settings-cog-Family_Center, #user-settings-cog-Settings_Clips, #user-settings-cog-Friend_Requests, #user-settings-cog-Notifications, #user-settings-cog-Keybinds, #user-settings-cog-Windows, #user-settings-cog-Language, #user-settings-cog-Advanced, #user-settings-cog-Activity_Privacy, #user-settings-cog-Game_Activity, #user-settings-cog-Overlay, #user-settings-cog-Hypesquad_Online, #user-settings-cog-changelog, #user-settings-cog-merchandise, #user-settings-cog-Experiments, #user-settings-cog-Developer_Options, #user-settings-cog-Hotspot_Options, #user-settings-cog-Dismissible_Content_Options, #user-settings-cog-Payment_Flow_Modals, #user-settings-cog-Payment_Flow_Modals, #user-settings-cog-Text_Playground, #user-settings-cog-Text_Component, #user-settings-cog-VencordSettings, #user-settings-cog-VencordPlugins, #user-settings-cog-VencordThemes, #user-settings-cog-VencordUpdater, #user-settings-cog-VencordCloud, #user-settings-cog-VencordSettingsSync,
 /* Context menu  */
-#user-context-vc-view-user-raw, #user-context-mention, #user-context-invite-to-server, #user-context-call, #user-context-note, #user-context-add-friend, #user-context-view-avatar, #message-mark-unread, #message-thread, #message-tts, #message-actions-tts, #message-add-reaction, #message-apps, #message-quickreact-0, #message-quickreact-1, #message-quickreact-2, #message-quickreact-3, .wrapper__2e846,  #channel-context-vc-view-channel-raw,
+#user-context-vc-view-user-raw, #user-context-mention, #user-context-invite-to-server, #user-context-call, #user-context-note, #user-context-add-friend, #user-context-view-avatar, #message-mark-unread, #message-thread, #message-tts, #message-actions-tts, #message-add-reaction, #message-apps, #message-quickreact-0, #message-quickreact-1, #message-quickreact-2, #message-quickreact-3, .wrapper__01a96,  #channel-context-vc-view-channel-raw, #message-vc-trans,
 /* Guild Header popout */
 #guild-header-popout-create-category, #guild-header-popout-create-channel, #guild-header-popout-create-event, #guild-header-popout-insights, #guild-header-popout-application-directory, #guild-header-popout-opt-in, #guild-header-popout-notifications, #guild-header-popout-change-nickname, #guild-header-popout-hide-muted-channels, #guild-header-popout-vc-server-profile,
 /* Guild Context popout */
@@ -26,7 +26,7 @@ div[data-tab-id="Text Component"]
 {display: none !important;}
 
 /* Experimental Context menu */
-div[id^="user-context-transfer-ownership"], [class^="separator__18122"]{
+div[id^="user-context-transfer-ownership"], [class^="separator__174fc"]{
     display: none;
 } 
 
@@ -38,22 +38,22 @@ div[id^="channel-context-transfer-xbox"] {
 div[aria-label="Create Invite"] { display: none !important; } 
 
 /* Hide Show User Profile button in the toolbar */
-.iconWrapper_af9215[aria-label="Show User Profile (Unavailable)"], div[aria-label="Show User Profile"] {
+.iconWrapper_de6cd1[aria-label="Show User Profile (Unavailable)"], div[aria-label="Show User Profile"] {
     display: none;
 }
 
 /* Settings Sidebar */
-div[aria-label="Merch"], div[aria-label="Family Center"], div[class^="socialLinks_c1fc99"] {
+div[aria-label="Merch"], div[aria-label="Family Center"], div[class^="socialLinks_dbdd6f"] {
     display: none !important;
 }
 
 /* Help Button  */
-.toolbar__88c63 [href="https://support.discord.com"]{
+.toolbar__62fb5 [href="https://support.discord.com"]{
     display: none;
 }
 
 /* Hide Voice channel button */
-.voiceChannelsButton__46c37 {
+.voiceChannelsButton_fd0b98 {
     display:none;
 }
 
