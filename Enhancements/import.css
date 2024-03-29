@@ -4,7 +4,15 @@
  * @description Improves various elements of Discord's UI.
 */
 
+:root {
+  --font-primary: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, "TwemojiColor";
+}
+
 /* Dashless channel names */
+@font-face {
+  font-family: "TwemojiColor";
+  src: url("https://vendicated.github.io/random-files/Twemoji.Mozilla.ttf");
+}
 @font-face
  { font-family: "Twemoji Mozilla";
    src: url("https://vendicated.github.io/random-files/Twemoji.Mozilla.ttf") format("truetype");
@@ -30,7 +38,7 @@
 { font-family: "Twemoji Mozilla", "dashless", var(--font-primary); }
 
 /* Channel Names Capitalized */
-.name__8d1ec {
+.name__4eb92 {
     text-transform: capitalize;
 }
 
@@ -44,7 +52,7 @@
     margin-top: 16px;
     gap: 12px;
 }
-[class*="sessionIcon__"]{
+[class*="sessionIcon_"]{
     color: var(--interactive-normal);
     background: transparent;
 }
@@ -104,8 +112,8 @@
 }
 
 /* More space-efficient settings layout */
-.sidebarRegion__60457,
-.sidebarRegionScroller__1fa7e {flex: 0 0 auto;}
+.sidebarRegion__36437,
+.sidebarRegionScroller__8113e {flex: 0 0 auto;}
 
 /* edited text */
 [class*="timestamp_"]:not([class*="timestampInline_"],
@@ -126,25 +134,25 @@
 }
 
 /* Connection Issue Let Me Be */
-.container__4bde3 {
+.container__827e6 {
   background: transparent;
   pointer-events: none;
 }
-.container__4bde3 .anchor_c8ddc0 { pointer-events: auto; }
-.container__4bde3 .content__0e954 .text__32559 {
+.container__827e6 .anchor_c8ddc0 { pointer-events: auto; }
+.container__827e6 .content_de05de .text__35f5c {
   display:none;
 }
-.container__4bde3 .ready__61f2f {
+.container__827e6 .ready__61f2f {
   position: absolute;
   bottom: 44px;
   right: 244px;
   z-index: 1;
 }
-.container__4bde3 img, .container__4bde3 video {
+.container__827e6 img, .container__827e6 video {
   width: 32px;
   height: 32px;
 }
-.container__4bde3 .problems__755eb {
+.container__827e6 .problems__4ae6d {
   padding: 8px 16px;
   bottom: 18px;
   left: unset;
@@ -158,18 +166,18 @@
 }
 
 /* Blur Spoilers */
-.spoilerMarkdownContent__2b8f8 {
+.spoilerMarkdownContent__5c448 {
     background-color: rgba(255, 255, 255, .01);
 }
-.obscuredTextContentInner__07680 {
+.obscuredTextContentInner_b4656f {
   color: var(--text-normal)    
 }
-.obscuredTextContentInner__07680 code, .obscuredTextContentInner__07680 span {
+.obscuredTextContentInner_b4656f code, .obscuredTextContentInner_b4656f span {
   opacity: unset;
   -webkit-transition: none;
   transition: none;
 }
-.spoilerContent__37bfa.hidden_f44e41 .obscuredTextContentInner__07680 span {
+.spoilerContent__383f3.hidden_f44e41 .obscuredTextContentInner_b4656f span {
   filter: blur(4px);
 }
 
