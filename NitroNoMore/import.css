@@ -5,11 +5,11 @@
 */
 
 /* hide a few more common nitro upsells */
-.channel_c21703:has([data-list-item-id$="___nitro"]), .channel_c21703:has([data-list-item-id$="___shop"]), /*Shop and nitro private channels*/
+.channel__0aef5:has([data-list-item-id$="___nitro"]), .channel__0aef5:has([data-list-item-id$="___shop"]), /*Shop and nitro private channels*/
 .containerWrapper-1kh54c, /*Userpopout nitro upsell*/
-.premiumTab__57bdc, /*Nitro Settings Tab*/
-.premiumFeatureBorder__9bbb3, /*Premium settings feature upsell cards.*/
-.container_d6bff4:has(.ctaButton__7d20c), /*Shop advertisement*/ 
+.premiumTab_ad0913, /*Nitro Settings Tab*/
+.premiumFeatureBorder__6ac04, /*Premium settings feature upsell cards.*/
+.container__686c4:has(.ctaButton__0d23d), /*Shop advertisement*/ 
 button[class^="shinyButton"] /* Shiny nitro button */ {
     display: none;
 }
@@ -21,7 +21,7 @@ button[class^="shinyButton"] /* Shiny nitro button */ {
 button[aria-label="Send a gift"] { display: none; }
 
 /* Per server avatar */
-div[class^="upsellOverlayContainer__08979"] {display: none}
+div[class^="upsellOverlayContainer__9580e"] {display: none}
 
 /* Hide message size upsells */
 div[class^="characterCount"] > div[class*=" upsell_"] { display: none; }
@@ -34,38 +34,38 @@ div[class^="upsellBanner_"] { display: none; }
 div[class^="premiumIconWrapper"] { display: none; }
 
 /* Removes nitro promotion when you press on disabled emojis and stickers */
-.premiumPromo__2d678 .premiumPromoTitle__68b72{
+.premiumPromo__9e1ca .premiumPromoTitle_abafab{
     font-size: 0;
 }
-.premiumPromo__2d678{
+.premiumPromo__9e1ca{
     display: none;
 }
-.premiumUpsell_e1bfd9{
+.premiumUpsell_aae531{
     display:none;
 }
 /* Stickers */
-.emptyState__7b522 .header__2d943{
+.emptyState__7a164 .header__7c79c{
     font-size: 0px;
 }
-.emptyState__7b522 .header__2d943:before{
+.emptyState__7a164 .header__7c79c:before{
     content:'Hello, You need nitro to use custom stickers but its useless so dont buy nitro!';
     font-size: 24px;
 }
-.premiumLabel_f2cd55 {
+.premiumLabel__68f78 {
     color: var(--color-muted);
 }
-.upsellWrapper_d04266{
+.upsellWrapper_c600a6{
     display:none;
 }
 
 /* Hide your server is waiting to upload stickers in picker */
-.upsell__780f6, .emptyGuildUpsell__59f36{
+.upsell__780f6, .emptyGuildUpsell__10612{
     display: none;
 }
 
 /* Hide billing section in user settings */
-.layer__2efaa  > .standardSidebarView__1129a .side_b4b3f6 > div:nth-of-type(n+11):nth-of-type(-n+17),
-#user-settings-cog > .scroller__750f5 > .item__183e8:nth-of-type(n+10):nth-of-type(-n+16) {
+.layer_f7d46a  > .standardSidebarView__12528 .side_b4b3f6 > div:nth-of-type(n+11):nth-of-type(-n+17),
+#user-settings-cog > .scroller__8f066 > .item__183e8:nth-of-type(n+10):nth-of-type(-n+16) {
   display: none;
 }
 
@@ -75,7 +75,7 @@ div[class^="premiumIconWrapper"] { display: none; }
 }
 
 /* Remove grayscale on disabled stickers */
-.stickerNode__1ea9f.stickerUnsendable__47eae {
+.stickerNode__1d58c.stickerUnsendable__6d4dd {
     filter: grayscale(0);
 }
 
@@ -83,7 +83,7 @@ div[class^="premiumIconWrapper"] { display: none; }
 div[class*="burstToggle__"]{
     display: none;
 }
-.reaction_fef95b[style*="background"] {
+.reaction__4a43f[style*="background"] {
     pointer-events: none;
 }
 
