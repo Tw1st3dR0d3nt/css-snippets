@@ -35,6 +35,17 @@ A snippet that improves various elements in Discord.
 https://tw1st3dr0d3nt.github.io/css-snippets/Enhancements/import.css
 
 
+# Import Fixes
+Temporarily fixes broken imports while waiting for the original to update.
+
+### Importing:
+```css
+@import url(//tw1st3dr0d3nt.github.io/css-snippets/ImportFixes/import.css);
+```
+#### Theme Link
+https://tw1st3dr0d3nt.github.io/css-snippets/ImportFixes/import.css
+
+
 ## NitroNoMore
 A snippet that removes any Nitro upsells from discord.
 
