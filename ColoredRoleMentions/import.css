@@ -1,17 +1,17 @@
-.mentioned__58017 {
+.mentioned_fa6fd2 {
     background: none;
   }
-  .message__80c10:hover {
+  .message_ccca67:hover {
     background-color: var(--background-message-hover) !important;
   }
-  .messageContent__21e69, .compact__54ecc .contents_f41bb2 {
+  .messageContent_abea64, .compact_eda3c8 .contents_d3ae0d {
     position: unset !important;
   }
-  .mention, .roleMention__02469 {
+  .mention, .roleMention_d441cd {
     position: unset;
     filter: none;
   }
-  .hasReply_febd50.mentioned__58017:not(:has(.roleMention__02469[style])):before, .mentioned__58017:before, .mentioned__58017 .roleMention__02469:before {
+  .hasReply__602e2.mentioned_fa6fd2:not(:has(.roleMention_d441cd[style])):before, .mentioned_fa6fd2:before, .mentioned_fa6fd2 .roleMention_d441cd:before {
     content: "";
     position: absolute;
     top: 0;
@@ -21,7 +21,7 @@
     background-color: var(--info-warning-foreground);
     filter: saturate(var(--saturation-factor,1));
   }
-  .hasReply_febd50.mentioned__58017:not(:has(.roleMention__02469[style])):after, .mentioned__58017:after, .mentioned__58017 .roleMention__02469:after {
+  .hasReply__602e2.mentioned_fa6fd2:not(:has(.roleMention_d441cd[style])):after, .mentioned_fa6fd2:after, .mentioned_fa6fd2 .roleMention_d441cd:after {
     content: "";
     position: absolute;
     inset: 0;
@@ -29,13 +29,13 @@
     z-index: -1;
     filter: saturate(var(--saturation-factor,1));
   }
-  .roleMention__02469[style]:before {
+  .roleMention_d441cd[style]:before {
     background-color: currentColor;
   }
-  .roleMention__02469[style]:after {
+  .roleMention_d441cd[style]:after {
     background: currentColor;
     opacity: 0.1;
   }
-  .roleMention__02469 ~ [class*="ention"]:before, .roleMention__02469 ~ [class*="ention"].roleMention__02469:after, .repliedMessage_e2bf4a [class*="ention"]:before, .repliedMessage_e2bf4a [class*="ention"]:after, .hasReply_febd50 .mention:before, .hasReply_febd50 .mention:after, .messageContent__21e69:has(.roleMention__02469) .mention:before, .messageContent__21e69:has(.roleMention__02469) .mention:after, .mentioned__58017:has([class*="ention"]):before, .mentioned__58017:has([class*="ention"]):after {
+  .roleMention_d441cd ~ [class*="ention"]:before, .roleMention_d441cd ~ [class*="ention"].roleMention_d441cd:after, .repliedMessage__636d2 [class*="ention"]:before, .repliedMessage__636d2 [class*="ention"]:after, .hasReply__602e2 .mention:before, .hasReply__602e2 .mention:after, .messageContent_abea64:has(.roleMention_d441cd) .mention:before, .messageContent_abea64:has(.roleMention_d441cd) .mention:after, .mentioned_fa6fd2:has([class*="ention"]):before, .mentioned_fa6fd2:has([class*="ention"]):after {
     content: unset !important;
   }
