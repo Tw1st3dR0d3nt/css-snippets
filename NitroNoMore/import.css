@@ -4,99 +4,108 @@
  * @description Removes Discord Nitro upsells and bloat.
 */
 
-/* hide a few more common nitro upsells */
-.channel__0aef5:has([data-list-item-id$="___nitro"]), .channel__0aef5:has([data-list-item-id$="___shop"]), /*Shop and nitro private channels*/
-.containerWrapper-1kh54c, /*Userpopout nitro upsell*/
-.premiumTab_ad0913, /*Nitro Settings Tab*/
-.premiumFeatureBorder__6ac04, /*Premium settings feature upsell cards.*/
-.container__686c4:has(.ctaButton__0d23d), /*Shop advertisement*/ 
-button[class^="shinyButton"] /* Shiny nitro button */ {
-    display: none;
+[class^=channel_] > div > [href="/store"],
+[class^=channel_] > div > [href="/shop"],
+[class^=channelTextArea] [class^=buttons_] > button,
+[class^=upsellVisible_],
+[class^=premiumIconWrapper],
+[class^=characterCount_] [class*=upsell_],
+[class^=emojiSection_] [class*=shinyButton_],
+[class*=tryItOutSection_],
+[class^=premiumIcon],
+[class^=customizationSection_] + [class^=upsellContainer_],
+[class^=customizationSection_][class*=disabled_],
+[class*=bannerNitroUpsell_],
+[class^=imageUploaderHint_],
+[class^=imagePickerContainer_] > [class^=optionBox_]:nth-child(2),
+[class^="upsellContainer_"],
+[class*="profileEffects_"], /* Profile Effects */
+[class*=" selectorButtonPremiumRequired"], [class^="upsellBanner_"] /* Go Live quality upsells */ {
+  display: none !important;
 }
 
-/* Better Settings Billing Section */
-#user-settings-cog-Billing_Settings {display:none;}
-
-/* Send A Gift button */
-button[aria-label="Send a gift"] { display: none; }
-
-/* Per server avatar */
-div[class^="upsellOverlayContainer__9580e"] {display: none}
-
-/* Hide message size upsells */
-div[class^="characterCount"] > div[class*=" upsell_"] { display: none; }
-
-/* Hide Go Live quality upsells */
-button[class*=" selectorButtonPremiumRequired"] { display: none; }
-div[class^="upsellBanner_"] { display: none; }
-
-/* Hide ad in profile banners */
-div[class^="premiumIconWrapper"] { display: none; }
-
-/* Removes nitro promotion when you press on disabled emojis and stickers */
-.premiumPromo__9e1ca .premiumPromoTitle_abafab{
-    font-size: 0;
-}
-.premiumPromo__9e1ca{
-    display: none;
-}
-.premiumUpsell_aae531{
-    display:none;
-}
-/* Stickers */
-.emptyState__7a164 .header__7c79c{
-    font-size: 0px;
-}
-.emptyState__7a164 .header__7c79c:before{
-    content:'Hello, You need nitro to use custom stickers but its useless so dont buy nitro!';
-    font-size: 24px;
-}
-.premiumLabel__68f78 {
-    color: var(--color-muted);
-}
-.upsellWrapper_c600a6{
-    display:none;
+[class^=premiumTab],
+#user-settings-cog-Discord_Nitro,
+#user-settings-cog-Billing,
+[class^=subscribeAction],
+[class^=upsellBanner],
+[class^=userPopoutInner] > [class^=wrapper] > [class^=banner],
+[class^=userPopoutInner] > [class^=containerWrapper],
+[class*=premiumFeatureBannerBackground], [class^=container_]:has([class^=artContainer_]),
+[class*=premiumFeatureBorder], [class^=customizationSection__]:has([class^=nitroWheel__]),
+[class^=userPanelInner] > [class*=inSidebar],
+[class^=messageLengthUpsellContainer_],
+a[href*="/snowsgiving"], [class^=customizationSection] > [class^=limitedFeatureBorder],
+[class*=botTagRemix_],
+[class^=nitroFileSizeUpsell__],
+[class^=upsellOverlayContainer_],
+[class*=sansAttachButton] > [class^=buttons] > [class^=container],
+[id^=popout] [class*=contentPremium],
+[class^=birthdayFeatureBorder],
+[class^=nitroAuthorBadgeContainer_],
+[class^=container_]:has([class^=falloweenArtContainer_]),
+[class^=sidebar] > [class^=container] > [class^=wrapper] > [class^=container] > [class^=content],
+[class^=themeEditor],
+[class*=cozyMessage] > [class*=buttonContainer] > [class*=buttons] > [class*=wrapper] > [aria-label*="Add Super Reaction"],
+[id^=popout] [class*=colorPremiumGradient],
+#message [class*=colorPremiumGradient],
+[class^=notAppAsidePanel__] > [class^=layerContainer_] > [id^=popout_] > [class^=animatorRight__] > div:has([class*=artInline_]),
+[class^=notAppAsidePanel__] > [class^=layerContainer_] > [id^=popout_] > [class^=animatorBottom_] > div:has(.image_f4d883),
+[class^=burstReactionTooltipPrompt],
+#emoji-picker-tab-panel [class^=burstToggle],
+[aria-label="Add Super Reaction"],
+[aria-label=GET_PREMIUM],
+[class^=emojiPickerListWrapper_] [class^=upsellContainer__],
+button:has([class*=premiumSubscribeButton]),
+[class*=autocompleteInner__]:has([class*=premiumHeader_]) [class*=nitroTopDividerContainer__], [class*=autocompleteInner__]:has([class*=premiumHeader_]) [class*=premiumHeader_], [class*=autocompleteInner__]:has([class*=premiumHeader_]) [class*=premiumHeader_] ~ [class*=premiumEmoji__],
+[class^=giftButtonContainer__],
+[class^=accountProfilePopoutWrapper_] > [class^=popoutContainer__] > [class^=container__],
+[class^=side_] > [class^=header_] + [class^=premiumTab] + [class^=item_] + [class^=item_] + [class^=item_] + [class^=item_],
+#emoji-picker-tab-panel > [class*=emojiPickerHeader]:first-child > [class^=tooltipContainer]:nth-child(2) {
+  display: none !important;
 }
 
-/* Hide your server is waiting to upload stickers in picker */
-.upsell__780f6, .emptyGuildUpsell__10612{
-    display: none;
+[class^=emojiSection] > div > div > div > a {
+  color: inherit;
+  pointer-events: none;
 }
+
+[class^=reactionInner][aria-label*="burst react"] {
+  pointer-events: none;
+}
+
+[class*=categorySectionNitroLocked_] {
+  background-color: unset !important;
+}
+
+[class^=userPopoutInner] > [class^=containerWrapper] {
+  top: 0 !important;
+}
+
+[class="nitroTopDividerContainer_b829ac"], [class="categoryItemLockIconContainer__61fa5"], [class="emojiLockIconContainer_ed2f80"] {display: none !important;}
 
 /* Hide billing section in user settings */
 .layer_f7d46a  > .standardSidebarView__12528 .side_b4b3f6 > div:nth-of-type(n+11):nth-of-type(-n+17),
-#user-settings-cog > .scroller__8f066 > .item__183e8:nth-of-type(n+10):nth-of-type(-n+16) {
+#user-settings-cog > .scroller__8f066 > .item__183e8:nth-of-type(n+10):nth-of-type(-n+16), #user-settings-cog-Billing_Settings  {
   display: none;
 }
 
-/* Hide boosted server emojis Upsell */
-.banner__01dd2{
-    display:none;
-}
-
-/* Remove grayscale on disabled stickers */
-.stickerNode__1d58c.stickerUnsendable__6d4dd {
-    filter: grayscale(0);
-}
-
-/* Hide Super Reaction Upsells */
-div[class*="burstToggle__"]{
-    display: none;
-}
-.reaction__4a43f[style*="background"] {
-    pointer-events: none;
-}
-
-/* Hide Profile Effects */
-[class*="profileEffects_"] {display: none;}
-
-/* Hide unlock banner upsell in profile customization */
-[class*="bannerNitroUpsell__"] {display: none;}
-
 /* Server boosts */
-/* Display settings in Overview */
-div[id="overview-tab"] > div > div + div > div:last-child{ display: none; }
-/* Boost progress bar */
-ul[aria-label="Channels"] > div + div + div[class^="container_"] { display: none; }
-/* Boost in chat bar */
-button[aria-label="Boost this server"] { display: none; }
+div[id="overview-tab"] > div > div + div > div:last-child,
+ul[aria-label="Channels"] > div + div + div[class^="container_"],
+button[aria-label="Boost this server"],
+[class^="banner__01dd2"] /* Boost this server upsell in emojis */ {
+   display: none; 
+}
+
+/* Removes nitro promotion when you press on disabled emojis and stickers */
+[class^="premiumPromo"], [class^="upsellWrapper_c600a6"] {
+  display: none;
+}
+/* Remove grayscale on disabled stickers */
+[class^="stickerNode__1d58c stickerUnsendable"] {
+  filter: grayscale(0);
+}
+
+/* Hide your server is waiting to upload stickers in picker */
+/* [class="upsell__780f6 emptyGuildUpsell__10612"] {display: none;} */
