@@ -22,7 +22,10 @@ div[data-tab-id="Developer Options"],
 div[data-tab-id="Hotspot Options"],
 div[data-tab-id="Payment Flow Modals"],
 div[data-tab-id="Text Playground"],
-div[data-tab-id="Text Component"]
+div[data-tab-id="Text Component"],
+[data-tab-id^="ANALYTICS"],
+[data-tab-id^="DISCOVERY"],
+[data-tab-id^="VANITY_URL"]
 {display: none !important;}
 
 /* Experimental Context menu */
