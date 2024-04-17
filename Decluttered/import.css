@@ -60,6 +60,12 @@ div[aria-label="Merch"], div[aria-label="Family Center"], div[class^="socialLink
     display:none;
 }
 
+/* Plus button context menu in message bar */
+#channel-attach-SLASH_COMMAND,
+#channel-attach-THREAD
+/* #channel-attach-activity */
+{display: none !important;}
+
 /* Chatbox buttons */
 button[aria-label="Open GIF picker"], [aria-label="GIFピッカーを開く"],
 button[aria-label="Open sticker picker"], [aria-label="スタンプピッカーを開く"], 
