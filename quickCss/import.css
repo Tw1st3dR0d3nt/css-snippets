@@ -28,6 +28,13 @@
     display: none;
 }
 
+/* User Area Icon Recolor */
+.panels__58331 {
+  .lottieIcon_c7076c :not(defs *)[fill][fill-opacity] {
+    fill: white;
+  }
+}
+
 /* Remove close dm button on side */
 @media (hover: hover) {
     .channel__0aef5:focus-within .closeButton__116c3, .channel__0aef5:hover .closeButton__116c3 {
@@ -111,14 +118,24 @@
 }
 
 /* Removes Super Reaction Animations On Hover */
-.hideEmoji__4f175 {
+.hideEmoji__76c97 {
   opacity: 1;
 }
-.effect__50f2a svg {
+.effect__50f2a svg,
+.effect__50f2a {
   transform: none !important;
 }
 .effect__50f2a g {
   clip-path: none !important;
   transform: none;
   opacity: 0;
+}
+.reaction__4a43f.shakeReaction_e7ae8d {
+  animation: none !important;
+}
+
+/* Replace Vencord settings donation banner image */
+img[role="presentation"] {
+  content: url(https://i.imgur.com/KXpmb4V.png) !important;
+  transform: rotate(0deg) !important;
 }
