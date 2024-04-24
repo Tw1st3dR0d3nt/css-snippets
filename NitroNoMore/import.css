@@ -107,5 +107,8 @@ button[aria-label="Boost this server"],
   filter: grayscale(0);
 }
 
+/* Nitro Upsell in forums message bar */
+.premium_bc4eb4 {display: none;}
+
 /* Hide your server is waiting to upload stickers in picker */
 /* [class="upsell__780f6 emptyGuildUpsell__10612"] {display: none;} */
