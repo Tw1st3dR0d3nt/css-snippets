@@ -19,7 +19,6 @@
 [class^=imageUploaderHint_],
 [class^=imagePickerContainer_] > [class^=optionBox_]:nth-child(2),
 [class^="upsellContainer_"],
-[class*="profileEffects_"], /* Profile Effects */
 [class*=" selectorButtonPremiumRequired"], [class^="upsellBanner_"] /* Go Live quality upsells */ {
   display: none !important;
 }
