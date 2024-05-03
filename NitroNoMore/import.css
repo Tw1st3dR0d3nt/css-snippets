@@ -91,7 +91,7 @@ button:has([class*=premiumSubscribeButton]),
 
 /* Server boosts */
 div[id="overview-tab"] > div > div + div > div:last-child,
-ul[aria-label="Channels"] > div + div + div[class^="container_"],
+div[class="container_bc43c1 containerWithMargin__3a652"], /* Boost Bar */
 button[aria-label="Boost this server"],
 [class^="banner__01dd2"] /* Boost this server upsell in emojis */ {
    display: none; 
