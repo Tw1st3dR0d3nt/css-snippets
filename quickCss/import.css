@@ -6,7 +6,7 @@
 
 /* Syndishanx's Css Snippets */
 @import url(//syndishanx.github.io/Discord-Dark/Imports/BearableInbox.css);
-@import url(//syndishanx.github.io/Discord-Dark/Imports/NormalizedForums.css);
+/* @import url(//syndishanx.github.io/Discord-Dark/Imports/NormalizedForums.css); */
 
 /* Tw1st3dR0d3nt's Css Snippets */
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/ColoredRoleMentions/import.css);
@@ -16,9 +16,19 @@
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Roundcord/import.css);
 
 
-/* --------- */
-/* UI Tweaks */
-/* --------- */
+@import url("https://ukrioo.github.io/cssCord/Other/PrettyCA.css");
+/*
+Head over to Settings > Accessibility > "Sync profile themes"
+And turn on the option.
+If your theme is mainly dark/light, change the text/icon color accordingly.
+*/
+[class*="connectedAccountContainer_"] {
+    --CA-radius: 16px;
+    --CA-icon-color: white;
+    --CA-checkmark-color: rgba(0, 0, 0, 0.65);
+    --CA-background: var(--profile-gradient-secondary-color);
+    /* Alternatively, you can have var(--profile-gradient-primary-color), but it might blend in with the profile and not stand out. */
+}
 
 /* Onboarding Theme Fixes --Darker background-- */
 .container__03ec9, .header__71942, .scrollerContainer_dda72c .container__6b2e5, .theme-dark .scrollerContainer_dda72c, .theme-dark .emptyPage_feb902, .theme-dark .container__6b2e5  {
