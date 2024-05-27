@@ -15,7 +15,7 @@
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/NitroNoMore/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Roundcord/import.css);
 
-
+/* Better Connected Accounts */
 @import url("https://ukrioo.github.io/cssCord/Other/PrettyCA.css");
 /*
 Head over to Settings > Accessibility > "Sync profile themes"
@@ -148,4 +148,16 @@ If your theme is mainly dark/light, change the text/icon color accordingly.
 img[role="presentation"] {
   content: url(https://i.imgur.com/KXpmb4V.png) !important;
   transform: rotate(0deg) !important;
+}
+
+/* hides super reactions */
+[class^=reaction_]:has(div > [class^="burstGlow"]) {
+  display: none;
+}
+
+/*moves vc hang status to the left*/
+[class*=iconGroup]:has([class*=hangStatusIcon], [d*='M13 3a1'], [class*=gameIcon]) {
+  display: flex;
+  position: absolute;
+  right: 101%;
 }
