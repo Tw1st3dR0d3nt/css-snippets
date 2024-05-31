@@ -9,11 +9,13 @@
 /* @import url(//syndishanx.github.io/Discord-Dark/Imports/NormalizedForums.css); */
 
 /* Tw1st3dR0d3nt's Css Snippets */
-@import url(//tw1st3dr0d3nt.github.io/css-snippets/ColoredRoleMentions/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Decluttered/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Enhancements/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/NitroNoMore/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Roundcord/import.css);
+
+/* Role Color Mentions */
+@import url(//davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
 
 /* Better Connected Accounts */
 @import url("https://ukrioo.github.io/cssCord/Other/PrettyCA.css");
