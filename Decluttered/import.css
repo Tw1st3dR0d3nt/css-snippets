@@ -56,8 +56,8 @@ div[aria-label="Merch"], div[aria-label="Family Center"], div[class^="socialLink
 }
 
 /* Help Button  */
-.toolbar__62fb5 [href="https://support.discord.com"]{
-    display: none;
+.toolbar__62fb5 [aria-label="Help"]{
+  display: none;
 }
 
 /* Hide Voice channel button */
