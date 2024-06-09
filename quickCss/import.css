@@ -9,13 +9,11 @@
 /* @import url(//syndishanx.github.io/Discord-Dark/Imports/NormalizedForums.css); */
 
 /* Tw1st3dR0d3nt's Css Snippets */
+@import url(//tw1st3dr0d3nt.github.io/css-snippets/ColoredRoleMentions/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Decluttered/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Enhancements/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/NitroNoMore/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Roundcord/import.css);
-
-/* Role Color Mentions */
-@import url(//davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
 
 /* Better Connected Accounts */
 @import url("https://ukrioo.github.io/cssCord/Other/PrettyCA.css");
@@ -155,6 +153,19 @@ img[role="presentation"] {
 /* hides super reactions */
 [class^=reaction_]:has(div > [class^="burstGlow"]) {
   display: none;
+}
+
+/* Hide chat box if you have no permissions to write in the channel */
+[class*=channelTextAreaDisabled] {
+  display: none!important;
+}
+/* or if it doesn't work like because of themes: */
+[class*=channelTextAreaDisabled] {
+  opacity: 0!important;
+  position: absolute!important;
+  height: 0px!important;
+  width: 0px!important;
+  z-index: 0!important;
 }
 
 /*moves vc hang status to the left*/
