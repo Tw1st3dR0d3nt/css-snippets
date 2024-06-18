@@ -174,3 +174,11 @@ img[role="presentation"] {
   position: absolute;
   right: 101%;
 }
+
+/* Server boosts */
+div[id="overview-tab"] > div > div + div > div:last-child,
+div[class="container_bc43c1 containerWithMargin__3a652"], /* Boost Bar */
+button[aria-label="Boost this server"],
+[class^="banner__01dd2"] /* Boost this server upsell in emojis */ {
+   display: none; 
+}
