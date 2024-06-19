@@ -10,7 +10,7 @@
 {display: none;}
 
 /* Context menu  */
-#user-context-vc-view-user-raw, #user-context-mention, #user-context-invite-to-server, #user-context-call, #user-context-note, #user-context-add-friend, #user-context-view-avatar, #message-mark-unread, #message-thread, #message-tts, #message-actions-tts, #message-add-reaction, #message-apps, #message-quickreact-0, #message-quickreact-1, #message-quickreact-2, #message-quickreact-3, .wrapper__01a96,  #channel-context-vc-view-channel-raw, #message-vc-trans,
+#user-context-vc-view-user-raw, #user-context-mention, #user-context-invite-to-server, #user-context-call, #user-context-note, #user-context-add-friend, #user-context-view-avatar, #message-mark-unread, #message-thread, #message-tts, #message-actions-tts, #message-add-reaction, #message-apps, #message-quickreact-0, #message-quickreact-1, #message-quickreact-2, #message-quickreact-3, .wrapper_a24e84,  #channel-context-vc-view-channel-raw, #message-vc-trans,
 /* Guild Header popout */
 #guild-header-popout-create-category, #guild-header-popout-create-channel, #guild-header-popout-create-event, #guild-header-popout-insights, #guild-header-popout-application-directory, #guild-header-popout-opt-in, #guild-header-popout-notifications, #guild-header-popout-change-nickname, #guild-header-popout-hide-muted-channels, #guild-header-popout-vc-server-profile,
 /* Guild Context popout */
@@ -34,7 +34,7 @@ div[data-tab-id="Design System"],
 {display: none !important;}
 
 /* Experimental Context menu */
-div[id^="user-context-transfer-ownership"], [class^="separator__174fc"]{
+div[id^="user-context-transfer-ownership"], [class^="separator_d90b3d"]{
     display: none;
 } 
 
@@ -46,22 +46,22 @@ div[id^="channel-context-transfer-xbox"] {
 div[aria-label="Create Invite"] { display: none !important; } 
 
 /* Hide Show User Profile button in the toolbar */
-.iconWrapper_de6cd1[aria-label="Show User Profile (Unavailable)"], div[aria-label="Show User Profile"] {
+.iconWrapper_e44302[aria-label="Show User Profile (Unavailable)"], div[aria-label="Show User Profile"] {
     display: none;
 }
 
 /* Settings Sidebar */
-div[aria-label="Merch"], div[aria-label="Family Center"], div[class^="socialLinks_dbdd6f"] {
+div[aria-label="Merch"], div[aria-label="Family Center"], div[class^="socialLinks_c44e94"] {
     display: none !important;
 }
 
 /* Help Button  */
-.toolbar__62fb5 [aria-label="Help"]{
+.toolbar_e44302 [aria-label="Help"]{
   display: none;
 }
 
 /* Hide Voice channel button */
-.voiceChannelsButton_fd0b98 {
+.voiceChannelsButton_a08117 {
     display:none;
 }
 
