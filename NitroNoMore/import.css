@@ -49,7 +49,7 @@ a[href*="/snowsgiving"], [class^=customizationSection] > [class^=limitedFeatureB
 [id^=popout] [class*=colorPremiumGradient],
 #message [class*=colorPremiumGradient],
 [class^=notAppAsidePanel__] > [class^=layerContainer_] > [id^=popout_] > [class^=animatorRight__] > div:has([class*=artInline_]),
-[class^=notAppAsidePanel__] > [class^=layerContainer_] > [id^=popout_] > [class^=animatorBottom_] > div:has(.image_f4d883),
+[class^=notAppAsidePanel__] > [class^=layerContainer_] > [id^=popout_] > [class^=animatorBottom_] > div:has(.image_fcfd9f),
 [class^=burstReactionTooltipPrompt],
 #emoji-picker-tab-panel [class^=burstToggle],
 [aria-label="Add Super Reaction"],
@@ -81,33 +81,33 @@ button:has([class*=premiumSubscribeButton]),
   top: 0 !important;
 }
 
-[class="nitroTopDividerContainer_b829ac"], [class="categoryItemLockIconContainer__61fa5"], [class="emojiLockIconContainer_ed2f80"] {display: none !important;}
+[class="nitroTopDividerContainer_e8f337"], [class="categoryItemLockIconContainer_bfabc4"], [class="emojiLockIconContainer_bcf389"] {display: none !important;}
 
 /* Hide billing section in user settings */
-.layer_f7d46a  > .standardSidebarView__12528 .side_b4b3f6 > div:nth-of-type(n+11):nth-of-type(-n+17),
-#user-settings-cog > .scroller__8f066 > .item__183e8:nth-of-type(n+10):nth-of-type(-n+16) {
+.layer_d4b6c5  > .standardSidebarView_c25c6d .side_a0 > div:nth-of-type(n+19):nth-of-type(-n+25),
+#user-settings-cog > .scroller_d90b3d > .item_d90b3d:nth-of-type(n+16):nth-of-type(-n+20) {
   display: none;
 }}
 
 /* Server boosts */
 div[id="overview-tab"] > div > div + div > div:last-child,
-div[class="container_bc43c1 containerWithMargin__3a652"], /* Boost Bar */
+div[class="container_c75f85 containerWithMargin_c75f85"], /* Boost Bar */
 button[aria-label="Boost this server"],
-[class^="banner__01dd2"] /* Boost this server upsell in emojis */ {
+[class^="banner_ad4cb5"] /* Boost this server upsell in emojis */ {
    display: none; 
 }
 
 /* Removes nitro promotion when you press on disabled emojis and stickers */
-[class^="premiumPromo"], [class^="upsellWrapper_c600a6"] {
+[class^="premiumPromo"], [class^="upsellWrapper_b8772d"] {
   display: none;
 }
 /* Remove grayscale on disabled stickers */
-[class^="stickerNode__1d58c stickerUnsendable"] {
+[class^="stickerNode_a708c4 stickerUnsendable"] {
   filter: grayscale(0);
 }
 
 /* Nitro Upsell in forums message bar */
-.premium_bc4eb4 {display: none;}
+.premium_d6170c {display: none;}
 
 /* Hide your server is waiting to upload stickers in picker */
-/* [class="upsell__780f6 emptyGuildUpsell__10612"] {display: none;} */
+/* [class="upsell_b6ac1a emptyGuildUpsell_de4721"] {display: none;} */
