@@ -6,7 +6,8 @@
 
 /* Better Settings context menu */
 #user-settings-cog-Other_options,
-#user-settings-cog-User_Settings--Family_Center
+#user-settings-cog-User_Settings--Family_Center,
+#user-settings-cog-Billing_Settings
 {display: none;}
 
 /* Context menu  */
