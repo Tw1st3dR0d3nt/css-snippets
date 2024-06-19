@@ -18,7 +18,7 @@
 #guild-context-invite-people, #guild-context-change-nickname, #guild-context-create-channel, #guild-context-create-event, #guild-context-privacy, #guild-context-server-lockdown, #guild-context-vc-view-guild-raw,
 /* server settings */
 #guild-context-guild-settings--WIDGET, #guild-context-guild-settings--GUILD_TEMPLATES, #guild-context-guild-settings--VANITY_URL, #guild-context-guild-settings--INTEGRATIONS, #guild-context-guild-settings--APP_DIRECTORY, #guild-context-guild-settings--SAFETY, #guild-context-guild-settings--COMMUNITY, #guild-context-guild-settings--ONBOARDING, #guild-context-guild-settings--ANALYTICS, #guild-context-guild-settings--DISCOVERY, #guild-context-guild-settings--ROLE_SUBSCRIPTIONS, #guild-context-guild-settings--ROLE_SUBSCRIPTIONS_STORE_PAGE, #guild-context-guild-settings--GUILD_PREMIUM, #guild-context-guild-settings--COMMUNITY_WELCOME
-{display: none;}
+{display: none !important;}
 
 div[data-tab-id="merchandise"],
 div[data-tab-id="Hypesquad Online"],
