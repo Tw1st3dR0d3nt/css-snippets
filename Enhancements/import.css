@@ -38,7 +38,7 @@
 { font-family: "Twemoji Mozilla", "dashless", var(--font-primary); }
 
 /* Channel Names Capitalized */
-.name__4eb92 {
+.name_d8bfb3 {
     text-transform: capitalize;
 }
 
@@ -112,8 +112,8 @@
 }
 
 /* More space-efficient settings layout */
-.sidebarRegion__36437,
-.sidebarRegionScroller__8113e {flex: 0 0 auto;}
+.sidebarRegion_c25c6d,
+.sidebarRegionScroller_c25c6d {flex: 0 0 auto;}
 
 /* edited text */
 [class*="timestamp_"]:not([class*="timestampInline_"],
@@ -134,25 +134,25 @@
 }
 
 /* Connection Issue Let Me Be */
-.container__827e6 {
+.container_e40c16 {
   background: transparent;
   pointer-events: none;
 }
-.container__827e6 .anchor_c8ddc0 { pointer-events: auto; }
-.container__827e6 .content_de05de .text__35f5c {
+.container_e40c16 .anchor_af404b { pointer-events: auto; }
+.container_e40c16 .content_e40c16 .text_e40c16 {
   display:none;
 }
-.container__827e6 .ready__61f2f {
+.container_e40c16 .ready_e40c16 {
   position: absolute;
   bottom: 44px;
   right: 244px;
   z-index: 1;
 }
-.container__827e6 img, .container__827e6 video {
+.container_e40c16 img, .container_e40c16 video {
   width: 32px;
   height: 32px;
 }
-.container__827e6 .problems__4ae6d {
+.container_e40c16 .problems_e40c16 {
   padding: 8px 16px;
   bottom: 18px;
   left: unset;
@@ -166,18 +166,18 @@
 }
 
 /* Blur Spoilers */
-.spoilerMarkdownContent__5c448 {
+.spoilerMarkdownContent_a3d0f7 {
     background-color: rgba(255, 255, 255, .01);
 }
-.obscuredTextContentInner_b4656f {
+.obscuredTextContentInner_a3d0f7 {
   color: var(--text-normal)    
 }
-.obscuredTextContentInner_b4656f code, .obscuredTextContentInner_b4656f span {
+.obscuredTextContentInner_a3d0f7 code, .obscuredTextContentInner_a3d0f7 span {
   opacity: unset;
   -webkit-transition: none;
   transition: none;
 }
-.spoilerContent__383f3.hidden_f44e41 .obscuredTextContentInner_b4656f span {
+.spoilerContent_a3d0f7.hidden_a3d0f7 .obscuredTextContentInner_a3d0f7 span {
   filter: blur(4px);
 }
 
