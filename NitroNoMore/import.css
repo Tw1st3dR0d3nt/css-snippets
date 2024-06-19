@@ -84,8 +84,8 @@ button:has([class*=premiumSubscribeButton]),
 [class="nitroTopDividerContainer_b829ac"], [class="categoryItemLockIconContainer__61fa5"], [class="emojiLockIconContainer_ed2f80"] {display: none !important;}
 
 /* Hide billing section in user settings */
-.layer_f7d46a  > .standardSidebarView__12528 .side_b4b3f6 > div:nth-of-type(n+19):nth-of-type(-n+25),
-#user-settings-cog > .scroller__8f066 > .item__183e8:nth-of-type(n+16):nth-of-type(-n+20) {
+.layer_f7d46a  > .standardSidebarView__12528 .side_b4b3f6 > div:nth-of-type(n+11):nth-of-type(-n+17),
+#user-settings-cog > .scroller__8f066 > .item__183e8:nth-of-type(n+10):nth-of-type(-n+16) {
   display: none;
 }}
 
