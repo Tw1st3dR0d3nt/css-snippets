@@ -24,8 +24,6 @@
 }
 
 [class^=premiumTab],
-#user-settings-cog-Discord_Nitro,
-#user-settings-cog-Billing,
 [class^=subscribeAction],
 [class^=upsellBanner],
 [class^=userPopoutInner] > [class^=wrapper] > [class^=banner],
