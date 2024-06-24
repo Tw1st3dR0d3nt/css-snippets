@@ -87,14 +87,6 @@ button:has([class*=premiumSubscribeButton]),
   display: none;
 }}
 
-/* Server boosts */
-div[id="overview-tab"] > div > div + div > div:last-child,
-div[class="container_c75f85 containerWithMargin_c75f85"], /* Boost Bar */
-button[aria-label="Boost this server"],
-[class^="banner_ad4cb5"] /* Boost this server upsell in emojis */ {
-   display: none; 
-}
-
 /* Removes nitro promotion when you press on disabled emojis and stickers */
 [class^="premiumPromo"], [class^="upsellWrapper_b8772d"] {
   display: none;
