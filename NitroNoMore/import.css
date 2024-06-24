@@ -109,3 +109,8 @@ button[aria-label="Boost this server"],
 
 /* Hide your server is waiting to upload stickers in picker */
 /* [class="upsell_b6ac1a emptyGuildUpsell_de4721"] {display: none;} */
+
+/* hides super reactions */
+[class^=reaction_]:has(div > [class^="burstGlow"]) {
+  display: none;
+}
