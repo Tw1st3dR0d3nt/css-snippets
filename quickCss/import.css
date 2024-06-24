@@ -6,13 +6,16 @@
 
 /* Syndishanx's Css Snippets */
 @import url(//syndishanx.github.io/Discord-Dark/Imports/BearableInbox.css);
-/* @import url(//syndishanx.github.io/Discord-Dark/Imports/NormalizedForums.css); */
 
 /* Tw1st3dR0d3nt's Css Snippets */
+@import url(//tw1st3dr0d3nt.github.io/css-snippets/ColoredRoleMentions/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Decluttered/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Enhancements/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/NitroNoMore/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Roundcord/import.css);
+
+/* Forum Improvements */
+@import url("https://minidiscordthemes.github.io/Snippets/ForumImprovements/main.css");
 
 /* Role-Color Mentions */
 @import url(https://davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
@@ -32,21 +35,6 @@ If your theme is mainly dark/light, change the text/icon color accordingly.
     /* Alternatively, you can have var(--profile-gradient-primary-color), but it might blend in with the profile and not stand out. */
 }
 
-/* Onboarding Theme Fixes --Darker background-- */
-.container_f1fd9c, .header_f1fd9c, .scrollerContainer_c6b11b .container_c2efea, .theme-dark .scrollerContainer_c6b11b, .theme-dark .emptyPage_c6b11b, .theme-dark .container_c2efea  {
-  background-color: var(--home-background) !important;
-}
-.theme-dark .innerHeader_f1fd9c:after {
-    display: none;
-}
-
-/* User Area Icon Recolor */
-.panels_a4d4d9 {
-  .lottieIcon_f73ef7 :not(defs *)[fill][fill-opacity] {
-    fill: white;
-  }
-}
-
 /* Remove close dm button on side */
 @media (hover: hover) {
     .channel_c91bad:focus-within .closeButton_c91bad, .channel_c91bad:hover .closeButton_c91bad {
@@ -54,7 +42,7 @@ If your theme is mainly dark/light, change the text/icon color accordingly.
 } 
 
 /* Animated Pings */
-.numberBadge__40d6f {
+.numberBadge_df8943 {
   animation: animatedPing 1.3s infinite ease-in-out;
 }
 @keyframes animatedPing {
@@ -68,93 +56,16 @@ If your theme is mainly dark/light, change the text/icon color accordingly.
      transform: rotate(-10deg);   
     }
 }
+
 /* Recolored New message badge */
-.numberBadge__40d6f {
+.numberBadge_df8943 {
   background-color: var(--background-accent)!important;
-}
-
-/* Hide new messages bar until hovered */
-.messagesWrapper_e2e187 {
-    overflow: hidden;
-}
-.newMessagesBar_cf58b5 {
-    top: -48px;
-    height: 72px;
-    transition: top 0.2s ease;
-    background: none;
-    box-shadow: none;
-    border-radius: 0;
-}
-.newMessagesBar_cf58b5::before {
-    content: '';
-    background: var(--brand-experiment);
-    box-shadow: var(--elevation-low);
-    width: 100%;
-    position: absolute;
-    height: 32px;
-    border-radius: 12px;
-}
-.newMessagesBar_cf58b5:hover {
-    top: -12px;
-}
-
-/* Prettier Search bar */
-.iconContainer_effbe2, .icon_effbe2 { /* Make the Search icon match the styling of the other icons.*/
-  width: 21px;
-  height: 21px;
-  color: var(--interactive-normal);
-  transition: ease-in-out .3s;
-}
-
-.searchBar_a46bef { /*Fully Hide the search bar*/
-  width: 21px;
-  height: 24px;
-  padding: 0;
-  background: none;
-  transition: ease-in-out 0.3s!important;
-}
-
-.searchBar_a46bef:hover .iconContainer_effbe2,
-.searchBar_a46bef:hover .icon_effbe2,
-.focused_a46bef .icon_effbe2,
-.focused_a46bef .iconContainer_effbe2 { /*Hide Search Icon on hover*/
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-.searchBar_a46bef:hover,
-.focused_a46bef .searchBar_a46bef, .open_a46bef .searchBar_a46bef  { /*Reveal Search Bar on Hover*/
-  width: 175px;
-  background: var(--background-tertiary);
-  border: 1px solid var(--button-outline-primary-border-hover);
-}
-
-/* Removes Super Reaction Animations On Hover */
-.hideEmoji_ec6b19 {
-  opacity: 1;
-}
-.effect_e5651 svg,
-.effect_e5651 {
-  transform: none !important;
-}
-.effect_e5651 g {
-  clip-path: none !important;
-  transform: none;
-  opacity: 0;
-}
-.reaction_ec6b19.shakeReaction_ec6b19 {
-  animation: none !important;
 }
 
 /* Replace Vencord settings donation banner image */
 img[role="presentation"] {
   content: url(https://i.imgur.com/KXpmb4V.png) !important;
   transform: rotate(0deg) !important;
-}
-
-/* hides super reactions */
-[class^=reaction_]:has(div > [class^="burstGlow"]) {
-  display: none;
 }
 
 /* Hide chat box if you have no permissions to write in the channel */
@@ -168,13 +79,6 @@ img[role="presentation"] {
   height: 0px!important;
   width: 0px!important;
   z-index: 0!important;
-}
-
-/*moves vc hang status to the left*/
-[class*=iconGroup]:has([class*=hangStatusIcon], [d*='M13 3a1'], [class*=gameIcon]) {
-  display: flex;
-  position: absolute;
-  right: 101%;
 }
 
 /* Server boosts */
