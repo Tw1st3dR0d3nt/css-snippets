@@ -114,3 +114,20 @@ button[aria-label="Boost this server"],
 [class^=reaction_]:has(div > [class^="burstGlow"]) {
   display: none;
 }
+
+/* Removes Super Reaction Animations On Hover */
+.hideEmoji_ec6b19 {
+  opacity: 1;
+}
+.effect_e5651 svg,
+.effect_e5651 {
+  transform: none !important;
+}
+.effect_e5651 g {
+  clip-path: none !important;
+  transform: none;
+  opacity: 0;
+}
+.reaction_ec6b19.shakeReaction_ec6b19 {
+  animation: none !important;
+}
