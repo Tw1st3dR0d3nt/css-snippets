@@ -185,3 +185,67 @@
 [class^="profileBadges"][class^="profileBadges"] {
   flex: none;
 }
+
+/* Onboarding Theme Fixes --Darker background-- */
+.container_f1fd9c, .header_f1fd9c, .scrollerContainer_c6b11b .container_c2efea, .theme-dark .scrollerContainer_c6b11b, .theme-dark .emptyPage_c6b11b, .theme-dark .container_c2efea  {
+  background-color: var(--home-background) !important;
+}
+.theme-dark .innerHeader_f1fd9c:after {
+    display: none;
+}
+
+/* User Area Icon Recolor */
+.panels_a4d4d9 {
+  .lottieIcon_f73ef7 :not(defs *)[fill][fill-opacity] {
+    fill: white;
+  }
+}
+
+/*moves vc hang status to the left*/
+[class*=iconGroup]:has([class*=hangStatusIcon], [d*='M13 3a1'], [class*=gameIcon]) {
+  display: flex;
+  position: absolute;
+  right: 101%;
+}
+
+/* Better Ban UI */
+/* Hides the video, "Reason for Ban", the radio group, "Other", then inserts text in front of "Other" */
+video.spacing_e6c06b {display: none;}
+.focusLock_f9a4c9 .content_f9a4c9.modalContent_e6c06b.thin_c49869.scrollerBase_c49869:has(.banReasonOtherClickable_e6c06b) div:nth-child(2) > h2 {display: none;} 
+.animatedNode_ae36eb:has(.banReasonOtherClickable_e6c06b) [role=radio] {display: none;}
+.focusLock_f9a4c9 .banReasonOtherClickable_e6c06b div {font-size: 0px;} 
+.focusLock_f9a4c9 .banReasonOtherClickable_e6c06b div::after {content: "Submit an optional ban reason"; font-size: 16px;} 
+
+/* fix webm */
+[class*="inlineMediaEmbed"] {
+  max-height: max-content !important;
+  max-width: max-content !important;
+}
+
+[class*="loadingOverlay"] {
+  aspect-ratio: unset !important;
+}
+
+[class*="imageWrapper"] {
+  aspect-ratio: unset !important;
+  width: max-content !important;
+  height: max-content !important;
+}
+
+[class*="oneByOneGrid"] {
+  max-height: max-content !important;
+}
+
+[class*="wrapperPaused"] {
+  width: max-content;
+  height: max-content;
+}
+
+/* Unclamp User Bios */
+.descriptionClamp_fc5c48:not(.headerText_d331f1 .descriptionClamp_fc5c48) {
+    -webkit-line-clamp: unset;
+    max-height: 112px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.viewFullBio_fc5c48{display: none;}
