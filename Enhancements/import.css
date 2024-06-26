@@ -216,31 +216,6 @@ video.spacing_e6c06b {display: none;}
 .focusLock_f9a4c9 .banReasonOtherClickable_e6c06b div {font-size: 0px;} 
 .focusLock_f9a4c9 .banReasonOtherClickable_e6c06b div::after {content: "Submit an optional ban reason"; font-size: 16px;} 
 
-/* fix webm */
-[class*="inlineMediaEmbed"] {
-  max-height: max-content !important;
-  max-width: max-content !important;
-}
-
-[class*="loadingOverlay"] {
-  aspect-ratio: unset !important;
-}
-
-[class*="imageWrapper"] {
-  aspect-ratio: unset !important;
-  width: max-content !important;
-  height: max-content !important;
-}
-
-[class*="oneByOneGrid"] {
-  max-height: max-content !important;
-}
-
-[class*="wrapperPaused"] {
-  width: max-content;
-  height: max-content;
-}
-
 /* Unclamp User Bios */
 .descriptionClamp_fc5c48:not(.headerText_d331f1 .descriptionClamp_fc5c48) {
     -webkit-line-clamp: unset;
