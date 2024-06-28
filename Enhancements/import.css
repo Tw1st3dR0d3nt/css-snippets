@@ -195,10 +195,11 @@
 }
 
 /* User Area Icon Recolor */
-.panels_a4d4d9 {
-  .lottieIcon_f73ef7 :not(defs *)[fill][fill-opacity] {
-    fill: white;
-  }
+.panels_a4d4d9 .lottieIcon_f73ef7 :not(defs *)[fill][fill-opacity] {
+  fill: white;
+}
+.lottieIcon_f73ef7 > svg > g > g > g:nth-child(1) > g > g:nth-child(2) > g:nth-child(2) > path {
+  stroke: white;
 }
 
 /*moves vc hang status to the left*/
