@@ -57,16 +57,6 @@
     background: transparent;
 }
 
-/* Adds @ infront of usernames and dims it down */
-[class*="userTag"]:not([class*="nameTag"]) [class*="userTagUsernameBase"]:before,
-[class*="info"][class*="nameTagSmall"] [class*="discriminator"]:before {
-    content: "@";
-}
-[class*="userTag"]:not([class*="nameTag"]) [class*="userTagUsernameBase"],
-[class*="info"][class*="nameTagSmall"] [class*="discriminator"] {
-    color: var(--interactive-normal);
-}
-
 /* Better Jump To Present Button */
 [class*="jumpToPresentBar"] {
     display: contents;
