@@ -17,7 +17,7 @@
 @import url(//minidiscordthemes.github.io/Snippets/ForumImprovements/main.css);
 
 /* Role-Color Mentions */
-@import url(https://davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
+@import url(//davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
 
 /* Better Connected Accounts */
 @import url(//ukrioo.github.io/cssCord/Other/PrettyCA.css);
@@ -86,7 +86,7 @@ button[aria-label="Boost this server"],
 /* Unclamp User Bios */
 [class^="descriptionClamp_"] {
     display: block!important;
-} 
+}
 /* Unclamp bio length in user popout */
 [class^="userPopoutInner_"] [class^="descriptionClamp_"] {
     -webkit-line-clamp: unset;
