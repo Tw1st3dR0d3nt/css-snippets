@@ -14,13 +14,13 @@
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Roundcord/import.css);
 
 /* Forum Improvements */
-@import url("https://minidiscordthemes.github.io/Snippets/ForumImprovements/main.css");
+@import url(//minidiscordthemes.github.io/Snippets/ForumImprovements/main.css);
 
 /* Role-Color Mentions */
 @import url(https://davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
 
 /* Better Connected Accounts */
-@import url("https://ukrioo.github.io/cssCord/Other/PrettyCA.css");
+@import url(//ukrioo.github.io/cssCord/Other/PrettyCA.css);
 /*
 Head over to Settings > Accessibility > "Sync profile themes"
 And turn on the option.
@@ -65,4 +65,39 @@ div[class^="container_c75f85 containerWithMargin_c75f85"], /* Boost Bar */
 button[aria-label="Boost this server"],
 [class^="banner_ad4cb5"] /* Boost this server upsell in emojis */ {
    display: none; 
+}
+
+/* Fix Discord insanity */
+[class^=userPopoutInner_] [class^=blockquoteContainer_] {
+  max-height: 90px;
+}
+
+/* Makes super reactions look like normal ones */
+[class*="reaction"][class*="reactionMe"] {border-color: var(--brand-experiment) !important; background-color: var(--brand-experiment-15a) !important;}
+[class*="reactionCount"] {color: var(--interactive-normal) !important;}
+[class*="effectsWrapper"] {display: none;}
+[class^="burstGlow"], [class*="reaction_"], [class*="reaction"][class*="shakeReaction"] {
+    box-shadow: none !Important; 
+    background: var(--background-secondary) !important;
+    animation: none;
+}
+[class*="hideEmoji"] {opacity: 1;}
+
+/* Unclamp User Bios */
+[class^="descriptionClamp_"] {
+    display: block!important;
+} 
+/* Unclamp bio length in user popout */
+[class^="userPopoutInner_"] [class^="descriptionClamp_"] {
+    -webkit-line-clamp: unset;
+    max-height: unset;
+    &+[class^="viewFullBio_"] {
+        display: none;
+    }
+}
+
+/* Unclamp status bubble size in user popout */
+[class^="userPopoutInner_"] [class^="statusBubble_"] [class*="clamp_"] {
+    -webkit-line-clamp: unset;
+    max-height: unset!important;
 }
