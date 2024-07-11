@@ -267,3 +267,38 @@ video.spacing_e6c06b {display: none;}
 .numberBadge_df8943 {
   background-color: var(--background-accent)!important;
 }
+
+/* Add "@" before Usernames */
+/* User Area */
+[aria-label="User area"] [class^=nameTag_] [class^=hovered_]::before,
+/* Switch Accounts */
+[class^=submenu_] [class^=userMenuUsername] [class^=defaultColor_]::before,
+/* Profiles */
+[class^=accountCard_] [class^=userDetails_] [class^=username_]::before,
+:where([class^=userPopoutInner_], [class^=fullSizeOuter_], [class^=userPanelInner_]) [class^=userTagUsername_]::before,
+/* Mod View */
+[class^=guildSidebar_] [class^=memberNameContainer_] [class="text-md/medium_dc00ef"]::before,
+[class^=userProfileModalOuter_] [class^=memberNameContainer_] [class="text-md/medium_dc00ef"]::before,
+/* Members List */
+[class^=roundedRow_] [class="text-xs/normal_dc00ef"]::before,
+/* Roles/Add Member */
+[class^=addMemberRow_] [class*=rowLabelSubText_]::before,
+/* Roles/Members */
+[class^=memberRow_] [class*=userTag_]::before,
+/* Emoji */
+[class^=emojiRow_] [class^=colorStandard_]::before,
+/* Stickers */
+[class^=tiers_] [class^=user_] [class="text-xs/normal_dc00ef"]::before,
+/* Soundboard */
+[class^=soundTable_] [class^=uploader_] [class^=defaultColor_]::before,
+/* Audit Log */
+[class^=auditLog_] [class^=title_] [class^=defaultColor_]::before,
+/* Ban List */
+[class^=bannedUser_] [class^=username_]::before,
+/* Friends list */
+[class^=peopleListItem_] [class^=infoSpacing_]::before,
+/* Settings/My Account */
+[class^=accountProfileCard_] [class^=field_]:nth-last-child(3) [class^=usernameInnerRow_]::before {
+    color: var(--text-muted);
+    content: "@";
+}
