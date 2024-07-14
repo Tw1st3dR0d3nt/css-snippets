@@ -101,3 +101,25 @@ button[aria-label="Boost this server"],
     -webkit-line-clamp: unset;
     max-height: unset!important;
 }
+
+/* Minimal Quests */
+.questsListContainer_f1791d .questsCard_c366aa:has(.outerContainer_d7df05[aria-hidden=false]) {
+  max-height: 115px!important;
+  transition: max-height 1s;
+}
+.questsListContainer_f1791d .questsCard_c366aa:has(.outerContainer_d7df05[aria-hidden=false]):hover {
+  max-height: 323px!important;
+}
+
+/* Minimal Connections */
+.connectionList_e2a436 {
+  gap: 0px;
+}
+.connectionList_e2a436 .connection_e2a436 {
+  max-height: 65px!important;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+.connectionList_e2a436 .connection_e2a436:hover {
+  max-height: 250px!important;
+}
