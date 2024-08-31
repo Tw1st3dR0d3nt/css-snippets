@@ -156,18 +156,18 @@
 }
 
 /* Blur Spoilers */
-.spoilerMarkdownContent_a3d0f7 {
+.spoilerMarkdownContent_aa9639 {
     background-color: rgba(255, 255, 255, .01);
 }
-.obscuredTextContentInner_a3d0f7 {
+.obscuredTextContentInner_aa9639 {
   color: var(--text-normal)    
 }
-.obscuredTextContentInner_a3d0f7 code, .obscuredTextContentInner_a3d0f7 span {
+.obscuredTextContentInner_aa9639 code, .obscuredTextContentInner_aa9639 span {
   opacity: unset;
   -webkit-transition: none;
   transition: none;
 }
-.spoilerContent_a3d0f7.hidden_a3d0f7 .obscuredTextContentInner_a3d0f7 span {
+.spoilerContent_aa9639.hidden_aa9639 .obscuredTextContentInner_aa9639 span {
   filter: blur(4px);
 }
 
