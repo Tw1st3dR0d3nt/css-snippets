@@ -81,3 +81,16 @@ button[aria-label^="Turn On Camera"], [aria-label="カメラをオン"],
 /* Show user Profile button */
 div[aria-label="ユーザープロフィールを表示（利用できません）"], [aria-label="ユーザープロフィールを表示"]
 {display: none;}
+
+/* Hides annoying reaction suggestions in message popover  */
+[class="reactionSuggestion_d1c246 hoverBarButton_e986d9 button_f7e168"] {
+  display: none;
+}
+
+/* Hide Soundboard button in group voice calls */
+[class="voiceEffectsActionBar_d7b7fd"], [class="leftDivider_d8c748"]
+{display: none !important;}
+
+/* Hide transfer to console button in group voice */
+[class="flex_dc333f horizontal_dc333f justifyStart_ec1a20 alignCenter_ec1a20 noWrap_ec1a20"]
+{display: none;}
