@@ -82,10 +82,10 @@ button:has([class*=premiumSubscribeButton]),
 [class="nitroTopDividerContainer_e8f337"], [class="categoryItemLockIconContainer_bfabc4"], [class="emojiLockIconContainer_bcf389"] {display: none !important;}
 
 /* Hide billing section in user settings */
-.layer_d4b6c5  > .standardSidebarView_c25c6d .side_a0 > div:nth-of-type(n+11):nth-of-type(-n+17),
+.layer_d4b6c5  > .standardSidebarView_c25c6d .side_a0 > div:nth-of-type(n+12):nth-of-type(-n+18),
 #user-settings-cog > .scroller_d90b3d > .item_d90b3d:nth-of-type(n+16):nth-of-type(-n+20) {
   display: none;
-}}
+}
 
 /* Removes nitro promotion when you press on disabled emojis and stickers */
 [class^="premiumPromo"], [class^="upsellWrapper_b8772d"] {
