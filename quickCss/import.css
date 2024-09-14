@@ -1,6 +1,6 @@
 /* DaBluLite's CSS Snippets */
 /* @import url(//dablulite.github.io/css-snippets/NitroThemesFix/import.css); */
-@import url(//dablulite.github.io/css-snippets/UserReimagined/import.css);
+/* @import url(//dablulite.github.io/css-snippets/UserReimagined/import.css); */
 @import url(//dablulite.github.io/css-snippets/AccountDetailsGrid/import.css);
 @import url(//dablulite.github.io/css-snippets/QuickSwitchV2/import.css);
 
@@ -19,19 +19,30 @@
 /* Role-Color Mentions */
 @import url(//davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
 
-/* Better Connected Accounts */
-@import url(//ukrioo.github.io/cssCord/Other/PrettyCA.css);
-/*
-Head over to Settings > Accessibility > "Sync profile themes"
-And turn on the option.
-If your theme is mainly dark/light, change the text/icon color accordingly.
-*/
-[class*="connectedAccountContainer_"] {
-    --CA-radius: 16px;
-    --CA-icon-color: white;
-    --CA-checkmark-color: rgba(0, 0, 0, 0.65);
-    --CA-background: var(--profile-gradient-secondary-color);
-    /* Alternatively, you can have var(--profile-gradient-primary-color), but it might blend in with the profile and not stand out. */
+/* Remove Chat Buttons snippet */
+@import url(//smolalli.github.io/Themes/Snippets/removechatbuttons.css);
+:root {
+    /* Chat Area */
+    --gift: none;
+    --gif: none;
+    --sticker: none;
+    /* --emoji: none; */
+    /* --upload: none; */
+
+    /* Channels Sidebar */
+    --invite: none;
+    /* --guide: none; */
+    /* --channels: none; */
+    /* --browse: none; */
+    /* --members: none; */
+    --server-shop: none;
+    /* --events: none; */
+    --boost: none; /* Boost Bar */
+
+    /* DM Area */
+    /* --friends: none; */
+    --store: none; /* Nitro store */
+    --shop: none; 
 }
 
 /* Remove close dm button on side */
@@ -102,13 +113,16 @@ button[aria-label="Boost this server"],
     max-height: unset!important;
 }
 
-/* Minimal Quests */
-.questsListContainer_f1791d .questsCard_c366aa:has(.outerContainer_d7df05[aria-hidden=false]) {
-  max-height: 115px!important;
-  transition: max-height 1s;
+/* Brighter Status Text for Custom Profiles */
+.custom-profile-theme [class^=statusBubble_] [class^=defaultColor_] {
+  color: var(--white-500);
 }
-.questsListContainer_f1791d .questsCard_c366aa:has(.outerContainer_d7df05[aria-hidden=false]):hover {
-  max-height: 323px!important;
+
+/* Match Status Bubble Color with Profile Button Color for Custom Profiles */
+.custom-profile-theme [class^=statusBubble_],
+.custom-profile-theme [class^=statusBubbleOuter_]:before,
+.custom-profile-theme [class^=statusBubbleOuter_]:after {
+  background-color: var(--profile-gradient-button-color);
 }
 
 /* Minimal Connections */
@@ -122,4 +136,29 @@ button[aria-label="Boost this server"],
 }
 .connectionList_e2a436 .connection_e2a436:hover {
   max-height: 250px!important;
+}
+
+/* Desktop Refresh Experiment fixes */
+.toolbar_fc4f04 [aria-label="Start Video Call"],
+.toolbar_fc4f04 [aria-label="Show User Profile"]
+{display: none !important;}
+/* align personal profile properly */
+[class^=accountProfilePopoutWrapper] {
+  /* tested on various screen sizes */
+  left: -5px;
+}
+/* top spacing fix */
+.visual-refresh .container_a4d4d9 {
+  padding-top: unset;
+}
+
+/* Hide new Activity section in member list */
+[class^='membersGroup']:has([role=button]),
+[class^='member'] [class^='container']:has([class*='badges']) {
+  display: none;
+}
+
+/* Remove Onboarding  member todos bar channel list */
+[class="progressBarContainer_e31e8a"], [class="divider_e31e8a"] {
+  display: none;
 }
