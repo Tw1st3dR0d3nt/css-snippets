@@ -93,7 +93,7 @@ div[aria-label="ユーザープロフィールを表示（利用できません�
 {display: none !important;}
 
 /* Hide transfer to console button in group voice */
-[class="flex_dc333f horizontal_dc333f justifyStart_ec1a20 alignCenter_ec1a20 noWrap_ec1a20"]
+[aria-label="Transfer to Console"]
 {display: none;}
 
 /* Hide new Activity section in member list */
@@ -102,7 +102,7 @@ div[aria-label="ユーザープロフィールを表示（利用できません�
   display: none;
 }
 
-/* Remove Onboarding  member todos bar channel list */
+/* Remove Onboarding member todos bar channel list */
 [class="progressBarContainer_e31e8a"], [class="divider_e31e8a"] {
   display: none;
 }
