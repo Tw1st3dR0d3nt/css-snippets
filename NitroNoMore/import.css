@@ -123,3 +123,23 @@ button:has([class*=premiumSubscribeButton]),
 .reaction_ec6b19.shakeReaction_ec6b19 {
   animation: none !important;
 }
+
+/* Remove Bookmarks */
+/* Toolbar */
+[class*=toolbar_] [class*=clickable_]:has(path[d^="M4 5a3 3 0 0"]), 
+/* Message Context Menu */
+#message-save-for-later-upsell,
+/* Quick Actions */
+[class*=buttonContainer_] [class*=button_]:has(path[d^="M17 4H7a1 1 0 0 0-1"]),
+/* Inbox */
+[class*=tab_][data-tab-id="6"] {
+    display: none;
+}
+
+/* Server boosts */
+div[id="overview-tab"] > div > div + div > div:last-child,
+div[class^="container_c75f85 containerWithMargin_c75f85"], /* Boost Bar */
+button[aria-label="Boost this server"],
+[class^="banner_ad4cb5"] /* Boost this server upsell in emojis */ {
+   display: none !important; 
+}
