@@ -4,6 +4,9 @@
  * @description Cleans up Discord's messy and cluttered UI.
 */
 
+/* Help Button  */
+[aria-label="Help"] {display: none !important;}
+
 /* Better Settings context menu */
 #user-settings-cog-Other_options,
 #user-settings-cog-User_Settings--Family_Center,
