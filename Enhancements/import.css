@@ -281,3 +281,80 @@ video.spacing_e6c06b {display: none;}
 [class^=item_][data-tab-id="logout"]:hover {
     background-color: var(--info-danger-background);
 }
+
+/* Minimal Connections */
+.connectionList_e2a436 {
+  gap: 0px;
+}
+.connectionList_e2a436 .connection_e2a436 {
+  max-height: 65px!important;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+.connectionList_e2a436 .connection_e2a436:hover {
+  max-height: 250px!important;
+}
+
+/**
+  * @name Better Pickers
+  * @description Makes the soundboard/emoji pickers better and less intrusive.
+*/
+[class^=lockedEmoji_]:has(+[class*=emojiLockIconContainer_]),
+[class*=categorySectionNitroLocked_] [class*=emojiItem_]>img,
+[class*=soundRowNitroLocked_] [class^=soundButton_] {
+  filter: grayscale(1) brightness(0.75);
+}
+
+[class^=emojiLockIconContainer_],
+[class^=picker_] [class^=sectionFooter_],
+:is(#emoji-picker-tab-panel, [class^=picker_]) :is(
+  [class^=upsellContainer_],
+  [class^=nitroBottomDivider_],
+  [class^=categoryItemLockIconContainer_]
+) {
+  display: none;
+}
+
+#emoji-picker-tab-panel [class*=categorySectionNitroLocked_],
+[class^=picker_] :is(
+  [class*=sectionContainerNitroLocked_],
+  [class*=soundRowNitroLocked_]
+) {
+  background-color: transparent;
+}
+
+#emoji-picker-tab-panel [class^=closeButton_] {
+  padding: 16px 16px calc(100% - 106px) calc(100% - 40px);
+  margin: 0;
+}
+[class^=picker_] {
+  >[class^=container] [class^=closeButton_] {
+    padding: 16px 16px calc(420px - 106px) calc(100% - 40px);
+    margin: 0;
+  }
+
+  [class^=buttonOverlayActions_] {
+    padding: 0;
+  }
+  [class^=secondaryButton_] {
+    padding: 8px;
+  }
+}
+
+#emoji-picker-tab-panel, [class^=picker_] {
+  [class^=nitroTopDividerShadow_],
+  [class^=nitroTopDividerLower_] {
+    visibility: hidden;
+  }
+  [class^=nitroTopDividerLock],
+  [class^=nitroTopDividerLower_] {
+    background: var(--background-accent);
+  }
+}
+
+/* Remove close dm button on side */
+@media (hover: hover) {
+    .channel_c91bad:focus-within .closeButton_c91bad, .channel_c91bad:hover .closeButton_c91bad {
+        display: none !important;
+    }
+}
