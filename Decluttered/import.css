@@ -63,11 +63,6 @@ div[aria-label="Merch"], div[aria-label="Family Center"], div[class^="socialLink
     display: none !important;
 }
 
-/* Help Button  */
-.toolbar_fc4f04 [aria-label="Help"]{
-  display: none;
-}
-
 /* Hide Voice channel button */
 .voiceChannelsButton_a08117 {
     display:none;
@@ -86,7 +81,7 @@ div[aria-label="Start Video Call"], [aria-label="ビデオ通話を開始"],
 button[aria-label^="Turn On Camera"], [aria-label="カメラをオン"],
 /* Show user Profile button */
 div[aria-label="ユーザープロフィールを表示（利用できません）"], [aria-label="ユーザープロフィールを表示"]
-{display: none;}
+{display: none !important;}
 
 /* Hides annoying reaction suggestions in message popover  */
 [class="reactionSuggestion_d1c246 hoverBarButton_e986d9 button_f7e168"] {
