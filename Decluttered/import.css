@@ -7,6 +7,10 @@
 /* Help Button  */
 [aria-label="Help"] {display: none !important;}
 
+/* Video Call Toolbar Button */
+.toolbar_fc4f04 [aria-label="Start Video Call"],  [aria-label="ビデオ通話を開始"]
+{display: none !important;}
+
 /* Better Settings context menu */
 #user-settings-cog-Other_options,
 #user-settings-cog-User_Settings--Family_Center,
@@ -41,52 +45,24 @@ div[data-tab-id="Revenue Storybook"],
 [data-tab-id^="VANITY_URL"]
 {display: none !important;}
 
-/* Experimental Context menu */
-div[id^="user-context-transfer-ownership"], [class^="separator_d90b3d"]{
-    display: none;
-} 
-
-div[id^="channel-context-transfer-xbox"] {
-    display: none;
-}
+div[id^="user-context-transfer-ownership"], /* Transfer Ownership */
+div[id^="channel-context-transfer-xbox"], /* Transfer to Xbox */
+[class^="separator_d90b3d"]
+{display: none !important;}
 
 /* Hide Create Invite button in voice */
 div[aria-label="Create Invite"] { display: none !important; } 
-
-/* Hide Show User Profile button in the toolbar */
-.iconWrapper_e44302[aria-label="Show User Profile (Unavailable)"], div[aria-label="Show User Profile"] {
-    display: none;
-}
 
 /* Settings Sidebar */
 div[aria-label="Merch"], div[aria-label="Family Center"], div[class^="socialLinks_c44e94"] {
     display: none !important;
 }
 
-/* Hide Voice channel button */
-.voiceChannelsButton_a08117 {
-    display:none;
-}
-
-/* Plus button context menu in message bar */
-#channel-attach-SLASH_COMMAND,
-#channel-attach-THREAD
-/* #channel-attach-activity */
-{display: none !important;}
-
 /* Chatbox buttons */
 button[aria-label="Open GIF picker"], [aria-label="GIFピッカーを開く"],
 button[aria-label="Open sticker picker"], [aria-label="スタンプピッカーを開く"], 
-div[aria-label="Start Video Call"], [aria-label="ビデオ通話を開始"],
 button[aria-label^="Turn On Camera"], [aria-label="カメラをオン"],
-/* Show user Profile button */
-div[aria-label="ユーザープロフィールを表示（利用できません）"], [aria-label="ユーザープロフィールを表示"]
 {display: none !important;}
-
-/* Hides annoying reaction suggestions in message popover  */
-[class="reactionSuggestion_d1c246 hoverBarButton_e986d9 button_f7e168"] {
-  display: none;
-}
 
 /* Hide Soundboard button in group voice calls */
 [class="voiceEffectsActionBar_d7b7fd"], [class="leftDivider_d8c748"]
@@ -95,12 +71,6 @@ div[aria-label="ユーザープロフィールを表示（利用できません�
 /* Hide transfer to console button in group voice */
 [aria-label="Transfer to Console"]
 {display: none;}
-
-/* Hide new Activity section in member list */
-[class^='membersGroup']:has([role=button]),
-[class^='member'] [class^='container']:has([class*='badges']) {
-  display: none;
-}
 
 /* Remove Onboarding member todos bar channel list */
 [class="progressBarContainer_e31e8a"], [class="divider_e31e8a"] {
