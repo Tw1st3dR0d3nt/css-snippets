@@ -4,6 +4,9 @@
  * @description Cleans up Discord's messy and cluttered UI.
 */
 
+/* Hide camera button in action center */
+[aria-label="Turn On Camera"] {display: none!important;}
+
 /* Help Button  */
 [aria-label="Help"] {display: none !important;}
 
