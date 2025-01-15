@@ -32,6 +32,9 @@
 /* Hides "Try out Nitro!" section in user settings profiles tab */
 [class*=tryItOutSection_] {display: none;}
 
+/* Hide Floating Nitro Upsell in Profile Customiztion */
+.floatingNitroUpsell_bc425c{display: none !important;}
+
 /* Hides "Unlock with Nitro" button when hovering a super reaction */
 [class^="burstReactionTooltipPrompt_"] {display: none;}
 
@@ -49,9 +52,6 @@ a[data-list-item-id$="___nitro"] {display: none;}
 
 /* Hides nitro upsell in user settings server profiles tab */
 [class^=upsellOverlayContainer] {display: none;}
-
-/* Hides profile effects */ 
-[class^="profileEffects_"] {display: none;}
 
 /* Hides shop tab in Home */
 [class^=channel_] > div > [href="/shop"] {display: none;}
@@ -74,6 +74,3 @@ a[data-list-item-id$="___nitro"] {display: none;}
 /* Hides Billing section entirely */
 .layer_d4b6c5  > .standardSidebarView_c25c6d .side_a0 > div:nth-of-type(n+12):nth-of-type(-n+18),
 #user-settings-cog > .scroller_d90b3d > .item_d90b3d:nth-of-type(n+10):nth-of-type(-n+16) {display: none;}
-
-/* Hide Floating Nitro Upsell in Profile Customiztion */
-.floatingNitroUpsell_bc425c{display: none !important;}
