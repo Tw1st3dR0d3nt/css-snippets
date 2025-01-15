@@ -2,17 +2,6 @@
 A repo with all of my CSS snippets.
 
 
-## Colored Role Mentions
-A snippet that makes role mentions match the default color of the role.
-
-### Importing:
-```css
-@import url(//tw1st3dr0d3nt.github.io/css-snippets/ColoredRoleMentions/import.css);
-```
-#### Theme Link
-https://tw1st3dr0d3nt.github.io/css-snippets/ColoredRoleMentions/import.css
-
-
 ## Decluttered
 A snippet that removes redundancies and cleans up Discord's messy UI.
 
