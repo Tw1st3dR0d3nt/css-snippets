@@ -1,11 +1,7 @@
 /* DaBluLite's CSS Snippets */
 /* @import url(//dablulite.github.io/css-snippets/NitroThemesFix/import.css); */
-/* @import url(//dablulite.github.io/css-snippets/UserReimagined/import.css); */
-@import url(//dablulite.github.io/css-snippets/AccountDetailsGrid/import.css);
+@import url(//dablulite.github.io/css-snippets/AccountSettingsRefresh/import.css);
 @import url(//dablulite.github.io/css-snippets/QuickSwitchV2/import.css);
-
-/* Syndishanx's Css Snippets */
-@import url(//syndishanx.github.io/Discord-Dark/Imports/BearableInbox.css);
 
 /* Tw1st3dR0d3nt's Css Snippets */
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Decluttered/import.css);
@@ -18,6 +14,9 @@
 
 /* Role-Color Mentions */
 @import url(//davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
+
+/* Audio Refresh */
+@import url(//davart154.github.io/Themes/Snippets/Audio%20Refresh/AudioRefreshSource.css);
 
 /* Remove Chat Buttons snippet */
 @import url(//smolalli.github.io/Themes/Snippets/removechatbuttons.css);
@@ -45,12 +44,6 @@
     --shop: none; 
 }
 
-/* Remove close dm button on side */
-@media (hover: hover) {
-    .channel_c91bad:focus-within .closeButton_c91bad, .channel_c91bad:hover .closeButton_c91bad {
-        display: none;
-} 
-
 /* Replace Vencord settings donation banner image */
 img[role="presentation"] {
   content: url(https://i.imgur.com/KXpmb4V.png) !important;
@@ -68,97 +61,4 @@ img[role="presentation"] {
   height: 0px!important;
   width: 0px!important;
   z-index: 0!important;
-}
-
-/* Server boosts */
-div[id="overview-tab"] > div > div + div > div:last-child,
-div[class^="container_c75f85 containerWithMargin_c75f85"], /* Boost Bar */
-button[aria-label="Boost this server"],
-[class^="banner_ad4cb5"] /* Boost this server upsell in emojis */ {
-   display: none; 
-}
-
-/* Fix Discord insanity */
-[class^=userPopoutInner_] [class^=blockquoteContainer_] {
-  max-height: 90px;
-}
-
-/* Makes super reactions look like normal ones */
-[class*="reaction"][class*="reactionMe"] {border-color: var(--brand-experiment) !important; background-color: var(--brand-experiment-15a) !important;}
-[class*="reactionCount"] {color: var(--interactive-normal) !important;}
-[class*="effectsWrapper"] {display: none;}
-[class^="burstGlow"], [class*="reaction_"], [class*="reaction"][class*="shakeReaction"] {
-    box-shadow: none !Important; 
-    background: var(--background-secondary) !important;
-    animation: none;
-}
-[class*="hideEmoji"] {opacity: 1;}
-
-/* Unclamp User Bios */
-[class^="descriptionClamp_"] {
-    display: block!important;
-}
-/* Unclamp bio length in user popout */
-[class^="userPopoutInner_"] [class^="descriptionClamp_"] {
-    -webkit-line-clamp: unset;
-    max-height: unset;
-    &+[class^="viewFullBio_"] {
-        display: none;
-    }
-}
-
-/* Unclamp status bubble size in user popout */
-[class^="userPopoutInner_"] [class^="statusBubble_"] [class*="clamp_"] {
-    -webkit-line-clamp: unset;
-    max-height: unset!important;
-}
-
-/* Brighter Status Text for Custom Profiles */
-.custom-profile-theme [class^=statusBubble_] [class^=defaultColor_] {
-  color: var(--white-500);
-}
-
-/* Match Status Bubble Color with Profile Button Color for Custom Profiles */
-.custom-profile-theme [class^=statusBubble_],
-.custom-profile-theme [class^=statusBubbleOuter_]:before,
-.custom-profile-theme [class^=statusBubbleOuter_]:after {
-  background-color: var(--profile-gradient-button-color);
-}
-
-/* Minimal Connections */
-.connectionList_e2a436 {
-  gap: 0px;
-}
-.connectionList_e2a436 .connection_e2a436 {
-  max-height: 65px!important;
-  overflow: hidden;
-  transition: max-height 1s;
-}
-.connectionList_e2a436 .connection_e2a436:hover {
-  max-height: 250px!important;
-}
-
-/* Desktop Refresh Experiment fixes */
-.toolbar_fc4f04 [aria-label="Start Video Call"],
-.toolbar_fc4f04 [aria-label="Show User Profile"]
-{display: none !important;}
-/* align personal profile properly */
-[class^=accountProfilePopoutWrapper] {
-  /* tested on various screen sizes */
-  left: -5px;
-}
-/* top spacing fix */
-.visual-refresh .container_a4d4d9 {
-  padding-top: unset;
-}
-
-/* Hide new Activity section in member list */
-[class^='membersGroup']:has([role=button]),
-[class^='member'] [class^='container']:has([class*='badges']) {
-  display: none;
-}
-
-/* Remove Onboarding  member todos bar channel list */
-[class="progressBarContainer_e31e8a"], [class="divider_e31e8a"] {
-  display: none;
 }
