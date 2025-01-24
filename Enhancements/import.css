@@ -272,16 +272,6 @@ video.spacing_e6c06b {display: none;}
     content: "@";
 }
 
-/* Make Delete/Logout Buttons Red */
-[class^=item_][data-tab-id="DELETE"],
-[class^=item_][data-tab-id="logout"] {
-    color: var(--info-danger-foreground);
-}
-[class^=item_][data-tab-id="DELETE"]:hover,
-[class^=item_][data-tab-id="logout"]:hover {
-    background-color: var(--info-danger-background);
-}
-
 /* Minimal Connections */
 .connectionList_e2a436 {
   gap: 0px;
