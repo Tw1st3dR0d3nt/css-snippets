@@ -25,8 +25,8 @@
 /* #channel-context-delete-channel, */
 #channel-context-invite-people,
 #channel-context-open-chat,
-#channel-context-opt-in-favorite-channel,
-#channel-context-opt-into-channel,
+/* #channel-context-opt-in-favorite-channel, */
+/* #channel-context-opt-into-channel, */
 #channel-context-set-status,
 #channel-context-vc-view-channel-raw,
 [id^="channel-context-transfer-xbox"],
