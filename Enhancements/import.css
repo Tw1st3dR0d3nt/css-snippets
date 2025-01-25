@@ -1,350 +1,225 @@
 /**
- * @name Enhancements
+ * @name Decluttered
  * @author tw1st3dr0d3nt
- * @description Improves various elements of Discord's UI.
+ * @description Cleans up Discord's messy and cluttered UI.
 */
 
-:root {
-  --font-primary: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, "TwemojiColor";
-}
+/*                        ##################
+   ====================== # Context Menu's # ======================
+                          ##################                        */
 
-/* Dashless channel names */
-@font-face {
-  font-family: "TwemojiColor";
-  src: url("https://vendicated.github.io/random-files/Twemoji.Mozilla.ttf");
-}
-@font-face
- { font-family: "Twemoji Mozilla";
-   src: url("https://vendicated.github.io/random-files/Twemoji.Mozilla.ttf") format("truetype");
-   unicode-range: U+1F1E6-1F1FF; }
-@font-face
- { font-family: "dashless";
-   size-adjust: 100%; /*adjust this to change word spacing*/
-   src: url("https://vendicated.github.io/random-files/Dashless.woff2") format("woff2");
-   unicode-range: U+002D; }
-[data-list-item-id^=channels___]:not([role=button]), /* channel list */
-[class^=titleWrapper] > h1, /* top bar with topic */
-[id^=":r"] > h1, /* topic popup */
-[class^=resultChannel], [class^=channelNameContainer_], [class^=searchAnswer_], /* search */
-.channelWithIcon, /* channel mentions in chat */
-[class^=emptyChannelIcon_] + h3, /* start of new channel */
-[class^=emptyChannelIcon_] ~ [class*=description_],
-[class^=browser_] [class*=channelText_], /* channel browser*/
-[class^=returnButton_] [class^=text-], /*return button in channel browser*/
-[class^=placeholder][class*=slateTextArea], /* chat input placeholder text */
-[class^=auditLog_] [class^=overflowEllipsis_] strong, /* audit log */
-.vc-permviewer-perms-title, /* permissionsviewer */
-[class^=headerChannelContainer_] > div /* invite to channel dialog */
-{ font-family: "Twemoji Mozilla", "dashless", var(--font-primary); }
+/* Hides "Copy Channel ID" in user context menus */
+.menu_d90b3d.flexible_d90b3d .item_d90b3d.labelContainer_d90b3d.colorDefault_d90b3d[id^="user-context-devmode-copy-id"]:nth-child(2),
 
-/* Channel Names Capitalized */
-.name_d8bfb3 {
-    text-transform: capitalize;
-}
+/* Hides quick react deadspace */
+.wrapper_a24e84,
 
-/* Devices but it looks good */
-[class*="session_"]{
-    background-color: var(--background-secondary);
-    border-radius: 8px;
-    padding: 12px 16px;
-    padding-left: 12px;
-    border-bottom: none;
-    margin-top: 16px;
-    gap: 12px;
-}
-[class*="sessionIcon_"]{
-    color: var(--interactive-normal);
-    background: transparent;
-}
+/* Hides separators in context menus entirely */
+.separator_d90b3d,
 
-/* Better Jump To Present Button */
-[class*="jumpToPresentBar"] {
-    display: contents;
-}
-[class*="jumpToPresentBar"] > button:first-child {
-    display: none;
-}
-[class*="jumpToPresentBar"] > button:last-child {
-    position: absolute;
-    z-index: 1;
-    bottom: 24px;
-    right: 22px;
-    padding: 8px !important;
-    height: auto;
-    background-color: #5865F2;
-    box-shadow: var(--elevation-high);
-    border-radius: 100px;
-    display: flex;
-    font-size: 0px;
-    color: transparent;
-    transition: font-size .2s .1s, color .2s, padding .4s .1s;
-}
-[class*="jumpToPresentBar"] > button svg {
-    order: -1;
-    margin: 0px;
-    height: 24px;
-    width: 24px;
-    top: auto;
-    margin-right: 0px;
-    margin-left: 0px;
-    color: #FFFFFF;
-    transition: margin .6s;
-}
-[class*="jumpToPresentBar"]:hover > button {
-    padding: 8px 18px !important;
-    font-size: 14px;
-    color: #FFFFFF;
-    transition: font-size .2s, color .2s .1s, padding .4s;
-}
-[class*="jumpToPresentBar"]:hover > button svg {
-    margin-right: 2px;
-    margin-left: -6px;
-}
+/* Skins channel context menu */
+#channel-context-clone-channel,
+#channel-context-collapse-category,
+#channel-context-create-text-channel,
+#channel-context-create-voice-channel,
+/* #channel-context-delete-channel, */
+#channel-context-invite-people,
+#channel-context-open-chat,
+#channel-context-opt-in-favorite-channel,
+#channel-context-opt-into-channel,
+#channel-context-set-status,
+#channel-context-vc-view-channel-raw,
+[id^="channel-context-transfer-xbox"],
 
-/* More space-efficient settings layout */
-.sidebarRegion_c25c6d,
-.sidebarRegionScroller_c25c6d {flex: 0 0 auto;}
+/* Skins group dm context menu */
+#gdm-context-instant-invites,
 
-/* edited text */
-[class*="timestamp_"]:not([class*="timestampInline_"],
-[class*="timestampVisibleOnHover_"]) time::after {
-    content: ' (' attr(aria-label) ')';
-    color: var(--text-muted);
-    font-size: 0.625rem;
-    font-weight: 400;
-    line-height: 1;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    text-transform: lowercase;
-}
-[class*="edited"]:not(.message-translate-indicator) {
-    display: none;
-}
+/* Skins message context menu */
+#message-actions-tts,           
+#message-add-reaction,         
+/* #message-apps, */
+#message-guild-automod-add-selection,
+#message-quickreact-0,
+#message-quickreact-1,
+#message-quickreact-2,
+#message-quickreact-3,
+/* #message-report, */
+#message-search,
+#message-search-google,
+#message-thread,
+#message-tts,
 
-/* Connection Issue Let Me Be */
-.container_e40c16 {
-  background: transparent;
-  pointer-events: none;
-}
-.container_e40c16 .anchor_af404b { pointer-events: auto; }
-.container_e40c16 .content_e40c16 .text_e40c16 {
-  display:none;
-}
-.container_e40c16 .ready_e40c16 {
-  position: absolute;
-  bottom: 44px;
-  right: 244px;
-  z-index: 1;
-}
-.container_e40c16 img, .container_e40c16 video {
-  width: 32px;
-  height: 32px;
-}
-.container_e40c16 .problems_e40c16 {
-  padding: 8px 16px;
-  bottom: 18px;
-  left: unset;
-  right: 18px;
-  width:fit-content;
-  height:fit-content;
-  background-color: var(--background-floating);
-  border-radius: 8px;
-  -webkit-box-shadow: var(--elevation-stroke), var(--elevation-medium);
-  box-shadow: var(--elevation-stroke), var(--elevation-medium);
-}
+/* Skins message bar context menu */
+#textarea-context-languages,
+/* #textarea-context-submit-button, */
+#textarea-context-suggestions,
 
-/* Blur Spoilers */
-.spoilerMarkdownContent_aa9639 {
-    background-color: rgba(255, 255, 255, .01);
-}
-.obscuredTextContentInner_aa9639 {
-  color: var(--text-normal)    
-}
-.obscuredTextContentInner_aa9639 code, .obscuredTextContentInner_aa9639 span {
-  opacity: unset;
-  -webkit-transition: none;
-  transition: none;
-}
-.spoilerContent_aa9639.hidden_aa9639 .obscuredTextContentInner_aa9639 span {
-  filter: blur(4px);
-}
+/* Skins server context menu (LMB) */
+#guild-header-popout-application-directory,
+#guild-header-popout-change-nickname,
+#guild-header-popout-create-category,
+#guild-header-popout-create-channel,
+#guild-header-popout-create-event,
+#guild-header-popout-hide-muted-channels,
+#guild-header-popout-insights,
+#guild-header-popout-notifications,
+#guild-header-popout-opt-in,
+#guild-header-popout-perm-viewer-permissions,
+#guild-header-popout-vc-server-profile,
 
-/* Extend badges background if it makes a new line */
-[class^="profileBadges"][class^="profileBadges"] {
-  flex: none;
-}
+/* Skins server context menu (RMB) */
+#guild-context-change-nickname,
+#guild-context-create-channel,
+#guild-context-create-event,
+#guild-context-guild-settings--ANALYTICS,
+#guild-context-guild-settings--APP_DIRECTORY,
+#guild-context-guild-settings--COMMUNITY,
+#guild-context-guild-settings--COMMUNITY_WELCOME,
+#guild-context-guild-settings--DISCOVERY,
+#guild-context-guild-settings--GUILD_PREMIUM,
+#guild-context-guild-settings--GUILD_TEMPLATES,
+#guild-context-guild-settings--INTEGRATIONS,
+#guild-context-guild-settings--ONBOARDING,
+#guild-context-guild-settings--ROLE_SUBSCRIPTIONS,
+#guild-context-guild-settings--SAFETY,
+#guild-context-guild-settings--VANITY_URL,
+#guild-context-guild-settings--WIDGET,
+#guild-context-invite-people,
+#guild-context-privacy,
+#guild-context-server-lockdown,
+#guild-context-vc-view-guild-raw,
 
-/* Onboarding Theme Fixes --Darker background-- */
-.container_f1fd9c, .header_f1fd9c, .scrollerContainer_c6b11b .container_c2efea, .theme-dark .scrollerContainer_c6b11b, .theme-dark .emptyPage_c6b11b, .theme-dark .container_c2efea  {
-  background-color: var(--home-background) !important;
-}
-.theme-dark .innerHeader_f1fd9c:after {
-    display: none;
-}
+/* Skins user context menu */
+#user-context-add-friend,     
+/* #user-context-add-friend-nickname, */
+/* #user-context-edit-friend-nickname, */
+/* #user-context-apps, */
+#user-context-block,
+#user-context-call,            
+#user-context-focus-video,
+#user-context-invite-to-join,
+#user-context-invite-to-server,
+#user-context-join,
+#user-context-mention,
+#user-context-mod-view,
+#user-context-note,       
+#user-context-remove-friend,
+/* #user-context-timeout, */
+#user-context-vc-view-user-raw,
+#user-context-view-avatar,
+#user-context-view-stream-preview,
+#user-context-voice-move,
+#user-context-watch-stream,
+[id^="user-context-transfer-ownership"],
 
-/* User Area Icon Recolor */
-.panels_a4d4d9 .lottieIcon_f73ef7 :not(defs *)[fill][fill-opacity] {
-  fill: white;
-}
-.lottieIcon_f73ef7 > svg > g > g > g:nth-child(1) > g > g:nth-child(2) > g:nth-child(2) > path {
-  stroke: white;
-}
+/* Skins user settings context menu */ 
+#user-settings-cog-Accessibility,
+#user-settings-cog-Activity_Privacy,
+#user-settings-cog-Appearance, 
+#user-settings-cog-Advanced,
+#user-settings-cog-changelog, 
+#user-settings-cog-Developer_Options, 
+#user-settings-cog-Dismissible_Content_Options, 
+#user-settings-cog-Experiments, 
+#user-settings-cog-Family_Center, 
+#user-settings-cog-Friend_Requests, 
+#user-settings-cog-Game_Activity, 
+#user-settings-cog-Hotspot_Options, 
+#user-settings-cog-Hypesquad_Online, 
+#user-settings-cog-Keybinds, 
+#user-settings-cog-Language,
+#user-settings-cog-merchandise,
+#user-settings-cog-Notifications, 
+#user-settings-cog-Overlay, 
+#user-settings-cog-Payment_Flow_Modals, 
+#user-settings-cog-Settings_Clips,
+#user-settings-cog-Streamer_Mode,
+#user-settings-cog-Text___Images,
+#user-settings-cog-Text_Component, 
+#user-settings-cog-Text_Playground, 
+#user-settings-cog-VencordCloud, 
+#user-settings-cog-VencordPlugins, 
+#user-settings-cog-VencordSettings, 
+#user-settings-cog-VencordSettingsSync,
+#user-settings-cog-VencordThemes, 
+#user-settings-cog-VencordUpdater, 
+#user-settings-cog-Windows,
 
-/*moves vc hang status to the left*/
-[class*=iconGroup]:has([class*=hangStatusIcon], [d*='M13 3a1'], [class*=gameIcon]) {
-  display: flex;
-  position: absolute;
-  right: 101%;
-}
+/* Better Settings context menu */
+#user-settings-cog-Other_options,
+#user-settings-cog-User_Settings--Family_Center,
+#user-settings-cog-Billing_Settings
+{display: none !important;}
 
-/* Better Ban UI */
-/* Hides the video, "Reason for Ban", the radio group, "Other", then inserts text in front of "Other" */
-video.spacing_e6c06b {display: none;}
-.focusLock_f9a4c9 .content_f9a4c9.modalContent_e6c06b.thin_c49869.scrollerBase_c49869:has(.banReasonOtherClickable_e6c06b) div:nth-child(2) > h2 {display: none;} 
-.animatedNode_ae36eb:has(.banReasonOtherClickable_e6c06b) [role=radio] {display: none;}
-.focusLock_f9a4c9 .banReasonOtherClickable_e6c06b div {font-size: 0px;} 
-.focusLock_f9a4c9 .banReasonOtherClickable_e6c06b div::after {content: "Submit an optional ban reason"; font-size: 16px;} 
 
-/* Unclamp User Bios */
-.descriptionClamp_fc5c48:not(.headerText_d331f1 .descriptionClamp_fc5c48) {
-    -webkit-line-clamp: unset;
-    max-height: 112px;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-.viewFullBio_fc5c48{display: none;}
+/*                        ##################
+   ====================== #    Settings    # ======================
+                          ##################                        */
 
-/* Animated Pings */
-.numberBadge_df8943 {
-  animation: animatedPing 1.3s infinite ease-in-out;
-}
-@keyframes animatedPing {
-   0% {
-     transform: rotate(-12deg); 
-    }
-   50% {
-     transform: rotate(12deg) scale(1.2); 
-    }
-   100% {
-     transform: rotate(-10deg);   
-    }
-}
+/* Skins user settings. Some of these will not work without the Theme Attributes plugin enabled */
+[data-tab-id="Family Center"],
+[aria-label="Merch"], 
+[class="socialLinks_c44e94"],
 
-/* Recolored New message badge */
-.numberBadge_df8943 {
-  background-color: var(--background-accent)!important;
-}
+/* Experiments Section */
+[data-tab-id="merchandise"],
+[data-tab-id="Hypesquad Online"],
+[data-tab-id="Developer Options"],
+[data-tab-id="Hotspot Options"],
+[data-tab-id="Payment Flow Modals"],
+[data-tab-id="Payment Components"],
+[data-tab-id="Text Playground"],
+[data-tab-id="Text Component"],
+[data-tab-id="Profile Effects Preview Tool"],
+[data-tab-id="Design System"],
+[data-tab-id="Intl Testing"],
+[data-tab-id="Web Setting Tree Tool"],
+[data-tab-id="Revenue Storybook"],
+[data-tab-id^="ANALYTICS"],
+[data-tab-id^="DISCOVERY"],
+[data-tab-id^="VANITY_URL"]
+{display: none !important;}
 
-/* Add "@" before Usernames */
-/* User Area */
-[aria-label="User area"] [class^=nameTag_] [class^=hovered_]::before,
-/* Switch Accounts */
-[class^=submenu_] [class^=userMenuUsername] [class^=defaultColor_]::before,
-/* Profiles */
-[class^=accountCard_] [class^=userDetails_] [class^=username_]::before,
-:where([class^=userPopoutInner_], [class^=fullSizeOuter_], [class^=userPanelInner_]) [class^=userTagUsername_]::before,
-/* Mod View */
-[class^=guildSidebar_] [class^=memberNameContainer_] [class="text-md/medium_dc00ef"]::before,
-[class^=userProfileModalOuter_] [class^=memberNameContainer_] [class="text-md/medium_dc00ef"]::before,
-/* Members List */
-[class^=roundedRow_] [class="text-xs/normal_dc00ef"]::before,
-/* Roles/Add Member */
-[class^=addMemberRow_] [class*=rowLabelSubText_]::before,
-/* Roles/Members */
-[class^=memberRow_] [class*=userTag_]::before,
-/* Emoji */
-[class^=emojiRow_] [class^=colorStandard_]::before,
-/* Stickers */
-[class^=tiers_] [class^=user_] [class="text-xs/normal_dc00ef"]::before,
-/* Soundboard */
-[class^=soundTable_] [class^=uploader_] [class^=defaultColor_]::before,
-/* Audit Log */
-[class^=auditLog_] [class^=title_] [class^=defaultColor_]::before,
-/* Ban List */
-[class^=bannedUser_] [class^=username_]::before,
-/* Friends list */
-[class^=peopleListItem_] [class^=infoSpacing_]::before,
-/* Settings/My Account */
-[class^=accountProfileCard_] [class^=field_]:nth-last-child(3) [class^=usernameInnerRow_]::before {
-    color: var(--text-muted);
-    content: "@";
-}
 
-/* Minimal Connections */
-.connectionList_e2a436 {
-  gap: 0px;
-}
-.connectionList_e2a436 .connection_e2a436 {
-  max-height: 65px!important;
-  overflow: hidden;
-  transition: max-height 1s;
-}
-.connectionList_e2a436 .connection_e2a436:hover {
-  max-height: 250px!important;
-}
+/* Hides Billing section entirely */
+.layer_d4b6c5  > .standardSidebarView_c25c6d .side_a0 > div:nth-of-type(n+12):nth-of-type(-n+18),
+#user-settings-cog > .scroller_d90b3d > .item_d90b3d:nth-of-type(n+10):nth-of-type(-n+16) {display: none;}
 
-/**
-  * @name Better Pickers
-  * @description Makes the soundboard/emoji pickers better and less intrusive.
-*/
-[class^=lockedEmoji_]:has(+[class*=emojiLockIconContainer_]),
-[class*=categorySectionNitroLocked_] [class*=emojiItem_]>img,
-[class*=soundRowNitroLocked_] [class^=soundButton_] {
-  filter: grayscale(1) brightness(0.75);
-}
 
-[class^=emojiLockIconContainer_],
-[class^=picker_] [class^=sectionFooter_],
-:is(#emoji-picker-tab-panel, [class^=picker_]) :is(
-  [class^=upsellContainer_],
-  [class^=nitroBottomDivider_],
-  [class^=categoryItemLockIconContainer_]
-) {
+/*                        ##################
+   ====================== # Tabs & Buttons # ====================== 
+                          ##################                        */
+
+/* Hides "Create Invite" button on voice channels */
+div[aria-label="Create Invite"] { display: none !important; } 
+
+/* Hides "Help" button in home */
+div[aria-label="Help"] {display: none !important;}
+
+/* Skins message bar */
+button[aria-label="Open GIF picker"], [aria-label="GIFピッカーを開く"],
+button[aria-label="Open sticker picker"], [aria-label="スタンプピッカーを開く"],
+button[aria-label="Send a gift"], [aria-label="ギフトを贈る"]
+{display: none;}
+
+/* Hide Soundboard button in group voice calls */
+[class="voiceEffectsActionBar_d7b7fd"], [class="leftDivider_d8c748"]
+{display: none !important;}
+
+/* Hide transfer to console button in group voice */
+[aria-label="Transfer to Console"], [aria-label="コンソール本体に転送"],
+[class="divider_d7b7fd"] /* remove wasted space */
+{display: none;}
+
+/* Video Call Toolbar Button */
+.toolbar_fc4f04 [aria-label="Start Video Call"], [aria-label="ビデオ通話を開始"]
+{display: none !important;}
+
+/* Hide camera button in action center */
+.actionButtons_adcaac [aria-label="Turn On Camera"]
+{display: none!important;}
+
+/* Remove Onboarding member todos bar channel list */
+[class="progressBarContainer_e31e8a"], [class="divider_e31e8a"] {
   display: none;
-}
-
-#emoji-picker-tab-panel [class*=categorySectionNitroLocked_],
-[class^=picker_] :is(
-  [class*=sectionContainerNitroLocked_],
-  [class*=soundRowNitroLocked_]
-) {
-  background-color: transparent;
-}
-
-#emoji-picker-tab-panel [class^=closeButton_] {
-  padding: 16px 16px calc(100% - 106px) calc(100% - 40px);
-  margin: 0;
-}
-[class^=picker_] {
-  >[class^=container] [class^=closeButton_] {
-    padding: 16px 16px calc(420px - 106px) calc(100% - 40px);
-    margin: 0;
-  }
-
-  [class^=buttonOverlayActions_] {
-    padding: 0;
-  }
-  [class^=secondaryButton_] {
-    padding: 8px;
-  }
-}
-
-#emoji-picker-tab-panel, [class^=picker_] {
-  [class^=nitroTopDividerShadow_],
-  [class^=nitroTopDividerLower_] {
-    visibility: hidden;
-  }
-  [class^=nitroTopDividerLock],
-  [class^=nitroTopDividerLower_] {
-    background: var(--background-accent);
-  }
-}
-
-/* Remove close dm button on side */
-@media (hover: hover) {
-    .channel_c91bad:focus-within .closeButton_c91bad, .channel_c91bad:hover .closeButton_c91bad {
-        display: none !important;
-    }
 }
