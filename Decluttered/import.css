@@ -189,6 +189,10 @@
    ====================== # Tabs & Buttons # ====================== 
                           ##################                        */
 
+/* Remove Close button in DMs */
+[class="closeButton__972a0"]
+{display: none !important;}
+
 /* Hides "Create Invite" button on voice channels */
 div[aria-label="Create Invite"] { display: none !important; } 
 
