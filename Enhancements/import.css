@@ -102,8 +102,8 @@
 }
 
 /* More space-efficient settings layout */
-.sidebarRegion_c25c6d,
-.sidebarRegionScroller_c25c6d {flex: 0 0 auto;}
+.sidebarRegion__23e6b,
+.sidebarRegionScroller__23e6b  {flex: 0 0 auto;}
 
 /* edited text */
 [class*="timestamp_"]:not([class*="timestampInline_"],
@@ -342,9 +342,7 @@ video.spacing_e6c06b {display: none;}
   }
 }
 
-/* Remove close dm button on side */
-@media (hover: hover) {
-    .channel_c91bad:focus-within .closeButton_c91bad, .channel_c91bad:hover .closeButton_c91bad {
-        display: none !important;
-    }
+/* Remove grayscale on disabled emojis in reaction picker */
+[class^=lockedEmoji_]:has(+[class*=emojiLockIconContainer_]), [class*=categorySectionNitroLocked_] [class*=emojiItem_]>img, [class*=soundRowNitroLocked_] [class^=soundButton_] {
+    filter: grayscale(0) brightness(1);
 }
