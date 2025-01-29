@@ -158,11 +158,11 @@
 
 /* Skins user settings. Some of these will not work without the Theme Attributes plugin enabled */
 [data-tab-id="Family Center"],
+[data-tab-id="merchandise"],
+[data-tab-id="Hypesquad Online"],
 [class="socialLinks__7df54"],
 
 /* Experiments Section */
-[data-tab-id="merchandise"],
-[data-tab-id="Hypesquad Online"],
 [data-tab-id="Developer Options"],
 [data-tab-id="Hotspot Options"],
 [data-tab-id="Payment Flow Modals"],
