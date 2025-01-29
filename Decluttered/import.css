@@ -179,10 +179,13 @@
 [data-tab-id^="VANITY_URL"]
 {display: none !important;}
 
-
 /* Hides Billing section entirely */
 .layer_d4b6c5  > .standardSidebarView_c25c6d .side_a0 > div:nth-of-type(n+12):nth-of-type(-n+18),
 #user-settings-cog > .scroller_d90b3d > .item_d90b3d:nth-of-type(n+10):nth-of-type(-n+16) {display: none;}
+
+/* Skins Server Settings Sidebar */
+[data-tab-id="APP_DIRECTORY"]
+{display: none !important;}
 
 
 /*                        ##################
