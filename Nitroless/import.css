@@ -33,7 +33,7 @@
 [class*=tryItOutSection_] {display: none;}
 
 /* Hide Floating Nitro Upsell in Profile Customiztion */
-.floatingNitroUpsell_bc425c{display: none !important;}
+.floatingNitroUpsell__39749{display: none !important;}
 
 /* Hides "Unlock with Nitro" button when hovering a super reaction */
 [class^="burstReactionTooltipPrompt_"] {display: none;}
