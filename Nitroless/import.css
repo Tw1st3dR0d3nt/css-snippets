@@ -19,11 +19,11 @@
 [class^="nitroTopDividerContainer"]                          /* Hides the top of the garish pink nitro overlay  */
 {display: none;}                                            
 
-.categorySection_a3bc57.categorySectionNitroLocked_a3bc57    /* Hides body of the nitro overlay                 */
+.categorySection_c656ac.categorySectionNitroLocked_c656ac    /* Hides body of the nitro overlay                 */
 {background-color: unset !important; } 
 
 /* Hides "Boost Server" button in server settings emoji tab */
-.banner_ad4cb5 {display: none;}
+.banner_ec75b3 {display: none;}
 
 /* Hides "Get Nitro" button when pressing on a nitro emoji in chat */
 [class^=emojiSection_] [class*=shinyButton_]
@@ -33,19 +33,19 @@
 [class*=tryItOutSection_] {display: none;}
 
 /* Hide Floating Nitro Upsell in Profile Customiztion */
-.floatingNitroUpsell__39749{display: none !important;}
+[class*="floatingNitroUpsell__39749"]{display: none !important;}
 
 /* Hides "Unlock with Nitro" button when hovering a super reaction */
 [class^="burstReactionTooltipPrompt_"] {display: none;}
 
 /* Hide Super Reactions button toggle in reaction picker */
-div[class="burstToggle_c6ee36"]{display: none!important;}
+div[class="burstToggle_c0e32c"]{display: none !important;}
 
 /* Hides boost progress bar in servers */
 ul[aria-label="Channels"] > div + div + div[class^="container_"] {display: none;}
 
 /* Hides message size upsell in message bar */
-.root_d6170c.upsell_b82429,
+.root__6c5a1.upsell__795fb,
 
 /* Hides nitro icon in profile banners */
 div[class^="premiumIconWrapper"] {display: none;}
@@ -73,7 +73,3 @@ a[data-list-item-id$="___nitro"] {display: none;}
     animation: none;
 }
 [class*="hideEmoji"] {opacity: 1;}
-
-/* Hides Billing section entirely */
-.layer_d4b6c5  > .standardSidebarView_c25c6d .side_a0 > div:nth-of-type(n+12):nth-of-type(-n+18),
-#user-settings-cog > .scroller_d90b3d > .item_d90b3d:nth-of-type(n+10):nth-of-type(-n+16) {display: none;}
