@@ -9,7 +9,7 @@
                           ##################                        */
 
 /* Hides "Copy Channel ID" in user context menus */
-.menu_d90b3d.flexible_d90b3d .item_d90b3d.labelContainer_d90b3d.colorDefault_d90b3d[id^="user-context-devmode-copy-id"]:nth-child(2),
+.menu_c1e9c4.flexible_c1e9c4 .item_c1e9c4.labelContainer_c1e9c4.colorDefault_c1e9c4[id^="user-context-devmode-copy-id"]:nth-child(2),
 
 /* Hides quick react deadspace */
 .wrapper_f563df,
@@ -66,6 +66,7 @@
 #guild-header-popout-opt-in,
 #guild-header-popout-perm-viewer-permissions,
 #guild-header-popout-vc-server-profile,
+#guild-header-popout-premium-subscribe,
 
 /* Skins server context menu (RMB) */
 #guild-context-change-nickname,
@@ -180,8 +181,8 @@
 {display: none !important;}
 
 /* Hides Billing section entirely */
-.layer_d4b6c5  > .standardSidebarView_c25c6d .side_a0 > div:nth-of-type(n+12):nth-of-type(-n+18),
-#user-settings-cog > .scroller_d90b3d > .item_d90b3d:nth-of-type(n+10):nth-of-type(-n+16) {display: none;}
+.layer__960e4  > .standardSidebarView__23e6b .side_b3f026 > div:nth-of-type(n+12):nth-of-type(-n+18),
+#user-settings-cog > .scroller_c1e9c4 > .item_c1e9c4:nth-of-type(n+10):nth-of-type(-n+16) {display: none;}
 
 /* Skins Server Settings Sidebar */
 [data-tab-id="APP_DIRECTORY"]
@@ -209,23 +210,23 @@ button[aria-label="Send a gift"], [aria-label="ギフトを贈る"]
 {display: none;}
 
 /* Hide Soundboard button in group voice calls */
-[class="voiceEffectsActionBar_d7b7fd"], [class="leftDivider_d8c748"]
+[class="voiceEffectsActionBar__68198"], [class="divider__68198"]
 {display: none !important;}
 
 /* Hide transfer to console button in group voice */
 [aria-label="Transfer to Console"], [aria-label="コンソール本体に転送"],
-[class="divider_d7b7fd"] /* remove wasted space */
+[class="divider__68198"] /* remove wasted space */
 {display: none;}
 
 /* Video Call Toolbar Button */
-.toolbar_fc4f04 [aria-label="Start Video Call"], [aria-label="ビデオ通話を開始"]
+.toolbar__9293f [aria-label="Start Video Call"], [aria-label="ビデオ通話を開始"]
 {display: none !important;}
 
 /* Hide camera button in action center */
-.actionButtons_adcaac [aria-label="Turn On Camera"]
+.actionButtons_e131a9 [aria-label="Turn On Camera"]
 {display: none!important;}
 
 /* Remove Onboarding member todos bar channel list */
-[class="progressBarContainer_e31e8a"], [class="divider_e31e8a"] {
+[class="progressBarContainer_baf530"], [class="divider_baf530"] {
   display: none;
 }
