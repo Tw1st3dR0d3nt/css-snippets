@@ -38,7 +38,7 @@
 { font-family: "Twemoji Mozilla", "dashless", var(--font-primary); }
 
 /* Channel Names Capitalized */
-.name_d8bfb3 {
+.name__2ea32 {
     text-transform: capitalize;
 }
 
@@ -124,25 +124,25 @@
 }
 
 /* Connection Issue Let Me Be */
-.container_e40c16 {
+.container_a2f514 {
   background: transparent;
   pointer-events: none;
 }
-.container_e40c16 .anchor_af404b { pointer-events: auto; }
-.container_e40c16 .content_e40c16 .text_e40c16 {
+.container_a2f514 .anchor_edefb8 { pointer-events: auto; }
+.container_a2f514 .content_a2f514 .text_a2f514 {
   display:none;
 }
-.container_e40c16 .ready_e40c16 {
+.container_a2f514 .ready_a2f514 {
   position: absolute;
   bottom: 44px;
   right: 244px;
   z-index: 1;
 }
-.container_e40c16 img, .container_e40c16 video {
+.container_a2f514 img, .container_a2f514 video {
   width: 32px;
   height: 32px;
 }
-.container_e40c16 .problems_e40c16 {
+.container_a2f514 .problems_a2f514 {
   padding: 8px 16px;
   bottom: 18px;
   left: unset;
@@ -156,18 +156,18 @@
 }
 
 /* Blur Spoilers */
-.spoilerMarkdownContent_aa9639 {
+.spoilerMarkdownContent__54ab5 {
     background-color: rgba(255, 255, 255, .01);
 }
-.obscuredTextContentInner_aa9639 {
+.obscuredTextContentInner__54ab5 {
   color: var(--text-normal)    
 }
-.obscuredTextContentInner_aa9639 code, .obscuredTextContentInner_aa9639 span {
+.obscuredTextContentInner__54ab5 code, .obscuredTextContentInner__54ab5 span {
   opacity: unset;
   -webkit-transition: none;
   transition: none;
 }
-.spoilerContent_aa9639.hidden_aa9639 .obscuredTextContentInner_aa9639 span {
+.spoilerContent__54ab5.hidden__54ab5 .obscuredTextContentInner__54ab5 span {
   filter: blur(4px);
 }
 
@@ -176,48 +176,24 @@
   flex: none;
 }
 
-/* Onboarding Theme Fixes --Darker background-- */
-.container_f1fd9c, .header_f1fd9c, .scrollerContainer_c6b11b .container_c2efea, .theme-dark .scrollerContainer_c6b11b, .theme-dark .emptyPage_c6b11b, .theme-dark .container_c2efea  {
-  background-color: var(--home-background) !important;
-}
-.theme-dark .innerHeader_f1fd9c:after {
-    display: none;
-}
-
 /* User Area Icon Recolor */
-.panels_a4d4d9 .lottieIcon_f73ef7 :not(defs *)[fill][fill-opacity] {
+.panels_c48ade .buttons__37e49 :not(defs *)[fill][fill-opacity] {
   fill: white;
 }
-.lottieIcon_f73ef7 > svg > g > g > g:nth-child(1) > g > g:nth-child(2) > g:nth-child(2) > path {
+.lottieIcon__5eb9b > svg > g > g > g:nth-child(1) > g > g:nth-child(2) > g:nth-child(2) > path {
   stroke: white;
-}
-
-/*moves vc hang status to the left*/
-[class*=iconGroup]:has([class*=hangStatusIcon], [d*='M13 3a1'], [class*=gameIcon]) {
-  display: flex;
-  position: absolute;
-  right: 101%;
 }
 
 /* Better Ban UI */
 /* Hides the video, "Reason for Ban", the radio group, "Other", then inserts text in front of "Other" */
-video.spacing_e6c06b {display: none;}
-.focusLock_f9a4c9 .content_f9a4c9.modalContent_e6c06b.thin_c49869.scrollerBase_c49869:has(.banReasonOtherClickable_e6c06b) div:nth-child(2) > h2 {display: none;} 
-.animatedNode_ae36eb:has(.banReasonOtherClickable_e6c06b) [role=radio] {display: none;}
-.focusLock_f9a4c9 .banReasonOtherClickable_e6c06b div {font-size: 0px;} 
-.focusLock_f9a4c9 .banReasonOtherClickable_e6c06b div::after {content: "Submit an optional ban reason"; font-size: 16px;} 
-
-/* Unclamp User Bios */
-.descriptionClamp_fc5c48:not(.headerText_d331f1 .descriptionClamp_fc5c48) {
-    -webkit-line-clamp: unset;
-    max-height: 112px;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-.viewFullBio_fc5c48{display: none;}
+video.spacing__837b7 {display: none;}
+.focusLock__49fc1 .content__49fc1.modalContent__837b7.thin_d125d2.scrollerBase_d125d2:has(.banReasonOtherClickable__837b7) div:nth-child(2) > h2 {display: none;} 
+.animatedNode__6ba63:has(.banReasonOtherClickable__837b7) [role=radio] {display: none;}
+.focusLock__49fc1 .banReasonOtherClickable__837b7 div {font-size: 0px;} 
+.focusLock__49fc1 .banReasonOtherClickable__837b7 div::after {content: "Submit an optional ban reason"; font-size: 16px;} 
 
 /* Animated Pings */
-.numberBadge_df8943 {
+.numberBadge__2b1f5 {
   animation: animatedPing 1.3s infinite ease-in-out;
 }
 @keyframes animatedPing {
@@ -246,10 +222,10 @@ video.spacing_e6c06b {display: none;}
 [class^=accountCard_] [class^=userDetails_] [class^=username_]::before,
 :where([class^=userPopoutInner_], [class^=fullSizeOuter_], [class^=userPanelInner_]) [class^=userTagUsername_]::before,
 /* Mod View */
-[class^=guildSidebar_] [class^=memberNameContainer_] [class="text-md/medium_dc00ef"]::before,
-[class^=userProfileModalOuter_] [class^=memberNameContainer_] [class="text-md/medium_dc00ef"]::before,
+[class^=guildSidebar_] [class^=memberNameContainer_] [class="text-md/medium_cf4812"]::before,
+[class^=userProfileModalOuter_] [class^=memberNameContainer_] [class="text-md/medium_cf4812"]::before,
 /* Members List */
-[class^=roundedRow_] [class="text-xs/normal_dc00ef"]::before,
+[class^=roundedRow__] [class="text-xs/normal_cf4812"]::before,
 /* Roles/Add Member */
 [class^=addMemberRow_] [class*=rowLabelSubText_]::before,
 /* Roles/Members */
@@ -257,7 +233,7 @@ video.spacing_e6c06b {display: none;}
 /* Emoji */
 [class^=emojiRow_] [class^=colorStandard_]::before,
 /* Stickers */
-[class^=tiers_] [class^=user_] [class="text-xs/normal_dc00ef"]::before,
+[class^=tiers_] [class^=user_] [class="text-xs/normal_cf4812"]::before,
 /* Soundboard */
 [class^=soundTable_] [class^=uploader_] [class^=defaultColor_]::before,
 /* Audit Log */
@@ -273,15 +249,15 @@ video.spacing_e6c06b {display: none;}
 }
 
 /* Minimal Connections */
-.connectionList_e2a436 {
+.connectionList_c7f964 {
   gap: 0px;
 }
-.connectionList_e2a436 .connection_e2a436 {
+.connectionList_c7f964 .connection_c7f964 {
   max-height: 65px!important;
   overflow: hidden;
   transition: max-height 1s;
 }
-.connectionList_e2a436 .connection_e2a436:hover {
+.connectionList_c7f964 .connection_c7f964:hover {
   max-height: 250px!important;
 }
 
