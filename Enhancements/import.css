@@ -322,3 +322,24 @@ video.spacing__837b7 {display: none;}
 [class^=lockedEmoji_]:has(+[class*=emojiLockIconContainer_]), [class*=categorySectionNitroLocked_] [class*=emojiItem_]>img, [class*=soundRowNitroLocked_] [class^=soundButton_] {
     filter: grayscale(0) brightness(1);
 }
+
+/* Hide chat box if you have no permissions to write in the channel */
+[class*=channelTextAreaDisabled] {
+  display: none!important;
+}
+/* or if it doesn't work like because of themes: */
+[class*=channelTextAreaDisabled] {
+  opacity: 0!important;
+  position: absolute!important;
+  height: 0px!important;
+  width: 0px!important;
+  z-index: 0!important;
+}
+
+/* Pin page switcher to bottom of search results */
+[class^="searchResultsWrap_"] [class^=container_]:has([class^=pageControlContainer_]){
+  position: sticky;
+  bottom: 0px;
+  z-index: 999;
+  background: var(--bg-overlay-1, var(--background-secondary));
+}
