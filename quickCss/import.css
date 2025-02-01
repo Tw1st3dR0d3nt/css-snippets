@@ -1,5 +1,4 @@
 /* DaBluLite's CSS Snippets */
-/* @import url(//dablulite.github.io/css-snippets/NitroThemesFix/import.css); */
 @import url(//dablulite.github.io/css-snippets/AccountSettingsRefresh/import.css);
 @import url(//dablulite.github.io/css-snippets/QuickSwitchV2/import.css);
 
@@ -9,14 +8,16 @@
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Nitroless/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Roundcord/import.css);
 
+@import url(//tw1st3dr0d3nt.github.io/css-snippets/ImportFixes/import.css);
+
 /* Forum Improvements */
-@import url(//minidiscordthemes.github.io/Snippets/ForumImprovements/main.css);
+/* @import url(//minidiscordthemes.github.io/Snippets/ForumImprovements/main.css); */
 
 /* Role-Color Mentions */
-@import url(//davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
+/* @import url(//davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css); */
 
 /* Audio Refresh */
-@import url(//davart154.github.io/Themes/Snippets/Audio%20Refresh/AudioRefreshSource.css);
+/* @import url(//davart154.github.io/Themes/Snippets/Audio%20Refresh/AudioRefreshSource.css); */
 
 /* Visual Refresh Client Theme */
 @import url(//nspc911.github.io/vc-themes/VisualRefreshClientTheme.theme.css);
@@ -49,21 +50,8 @@
 
 /* Replace Vencord settings donation banner image */
 img[role="presentation"] {
-  content: url(https://i.imgur.com/KXpmb4V.png) !important;
+  content: url(https://i.imgur.com/SCW56GW.png) !important;
   transform: rotate(0deg) !important;
-}
-
-/* Hide chat box if you have no permissions to write in the channel */
-[class*=channelTextAreaDisabled] {
-  display: none!important;
-}
-/* or if it doesn't work like because of themes: */
-[class*=channelTextAreaDisabled] {
-  opacity: 0!important;
-  position: absolute!important;
-  height: 0px!important;
-  width: 0px!important;
-  z-index: 0!important;
 }
 
 /* Discord Version and other client information in User Settings */
@@ -71,3 +59,6 @@ img[role="presentation"] {
 
 /* Hide Minimum System Requirements warning for Clips */
 .warning_e3f97f {display: none;}
+
+/* Hide duplicate guild name in center of titlebar */
+.visual-refresh .guild__85643 {display: none;}
