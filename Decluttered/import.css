@@ -177,7 +177,8 @@
 [data-tab-id="Revenue Storybook"],
 [data-tab-id^="ANALYTICS"],
 [data-tab-id^="DISCOVERY"],
-[data-tab-id^="VANITY_URL"]
+[data-tab-id^="VANITY_URL"],
+[data-tab-id="Name Plate Tool"]
 {display: none !important;}
 
 /* Hides Billing section entirely */
