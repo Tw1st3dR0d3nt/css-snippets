@@ -231,3 +231,6 @@ button[aria-label="Send a gift"], [aria-label="ギフトを贈る"]
 [class="progressBarContainer_baf530"], [class="divider_baf530"] {
   display: none;
 }
+
+/* Hide duplicate guild name in center of titlebar */
+.visual-refresh .title__85643 {display: none;}
