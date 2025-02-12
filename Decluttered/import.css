@@ -178,7 +178,8 @@
 [data-tab-id^="ANALYTICS"],
 [data-tab-id^="DISCOVERY"],
 [data-tab-id^="VANITY_URL"],
-[data-tab-id="Name Plate Tool"]
+[data-tab-id="Name Plate Tool"],
+[data-tab-id="Virtual Currency Configuration"]
 {display: none !important;}
 
 /* Hides Billing section entirely */
