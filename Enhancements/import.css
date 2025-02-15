@@ -176,14 +176,6 @@
   flex: none;
 }
 
-/* User Area Icon Recolor */
-.panels_c48ade .buttons__37e49 :not(defs *)[fill][fill-opacity] {
-  fill: white;
-}
-.lottieIcon__5eb9b > svg > g > g > g:nth-child(1) > g > g:nth-child(2) > g:nth-child(2) > path {
-  stroke: white;
-}
-
 /* Better Ban UI */
 /* Hides the video, "Reason for Ban", the radio group, "Other", then inserts text in front of "Other" */
 video.spacing__837b7 {display: none;}
