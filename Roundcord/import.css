@@ -4,54 +4,6 @@
  * @description Rounds various UI elements in discord for a more modern feel.
 */
 
-/* Rounded Borders */
-/* Spotify Status Images */
-.assetsLargeImageSpotify__2ef49{
-  border-radius: 8px;
-}
-/* message field */
-.channelTextArea_f75fb0 {
-  border-radius: 15px;
-}
-.scrollableContainer__74017 {
-  border-radius: 26px;
-  padding: 4px 6px;
-}
-/* hover and selected */
-.selected__91a9d .layout__91a9d {
-  box-shadow: var(--08dpShadow);
-}  
-.interactive__972a0 {
-  border-radius: 50px;
-}
-[class*="side"] > [class*="item"], [class*="side"] > [class*="item"]:hover{
-  border-radius: 50px;
-}
-/* channel/memberlist */
-.modeSelected__2ea32 .link__2ea32, .modeSelected__2ea32:hover,  .wrapper__2ea32, .link__2ea32, .layout__91a9d {
-  border-radius: 50px !important;
-}
-/* Corners Servers/Channels/Chat Box */
-.content_c48ade>.sidebar_c48ade,.chat_f75fb0,.container__133bf{
-  margin: 10px 10px 10px 0;
-  border-radius: 15px;
-}
-/* Context Menu */
-.menu_c1e9c4, .item_c1e9c4 { 
-  border-radius: 15px; 
-}
-/* Userarea buttons */
-.button_e131a9[aria-label="Start An Activity"],
-.button_e131a9[aria-label="Open Soundboard"] {
-  border-radius: 50px;
-}
-.button_e131a9[aria-label="Turn On Camera"] {
- border-radius: 50px;
-}
-.button_e131a9[aria-label="Share Your Screen"] {
-  border-radius: 50px;
-}
-
 /* SImple channel/settings/dms/member list hover animations */
 .wrapper__2ea32 .link__2ea32 /* channels */,
 .container__91a9d /* members */,
@@ -67,9 +19,6 @@
 .channel__972a0:hover {
   margin-left: 18px;
 }
-
-/* Voice channel participants hover */
-[class^="content__07f91"]:hover {border-radius: 50px;}
 
 /* round messages on hovering, replies, and mentions */
 :root {
