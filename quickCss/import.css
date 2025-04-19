@@ -2,15 +2,14 @@
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Decluttered/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Enhancements/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Nitroless/import.css);
-@import url(//tw1st3dr0d3nt.github.io/css-snippets/Roundcord/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/ImportFixes/import.css);
 
 /* Other Imports */
 @import url(//dablulite.github.io/css-snippets/AccountSettingsRefresh/import.css);
 @import url(//dablulite.github.io/css-snippets/QuickSwitchV2/import.css);
-@import url(//davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
 @import url(//davart154.github.io/Themes/Snippets/Audio%20Refresh/AudioRefreshSource.css);
-@import url(//nspc911.github.io/vc-themes/VisualRefreshClientTheme.theme.css);
+@import url(//davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
+@import url(//davart154.github.io/Themes/Snippets/Two-Row%20Chat%20Bar%20Layout/TwoRowChatBar.css);
 
 /* Remove Chat Buttons snippet */
 @import url(//smolalli.github.io/Themes/Snippets/removechatbuttons.css);
@@ -38,6 +37,7 @@
     --shop: none; 
 }
 
+
 /* Replace Vencord settings donation banner image */
 img[role="presentation"] {
   content: url(https://i.imgur.com/SCW56GW.png) !important;
@@ -49,3 +49,64 @@ img[role="presentation"] {
 
 /* Hide Minimum System Requirements warning for Clips */
 .warning_e3f97f {display: none;}
+
+/* Fix DM/Group call profiles being misaligned */
+[class*=voiceCallWrapper_] {
+    margin: auto;
+}
+
+/* Hide nameplates */
+[class*="nameplated_"] > :has([src*="nameplates"]) { display: none; }
+
+/* Extre Chatbar Buttons */
+/* [aria-label="Insert Timestamp"] {display: none;} */
+/* [aria-label="Open Translate Modal"] {display: none;} */
+
+/* Better Bot Forms */
+form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
+    width: var(--modal-width-medium);
+
+    .header__49fc1 {
+        padding: var(--modal-vertical-padding) var(--modal-horizontal-padding);
+        margin-bottom: var(--modal-vertical-padding);
+        border-bottom: var(--border-normal) solid 1px;
+
+        .colorHeaderPrimary_c9946a {
+            text-align: center;
+            font-weight: var(--font-weight-semibold);
+            flex-grow: 1;
+        }
+
+        .closeButton_e858dd {
+            top: unset;
+            right: var(--modal-horizontal-padding);
+            margin-bottom: auto;
+            margin-top: auto;
+
+            .contents__201d5 {
+                height: 24px;
+            }
+        }
+    }
+
+    .submissionWarning_e858dd {
+        display: none;
+    }
+
+    .formItem__1b11b .eyebrow_b717a1 {
+        margin-bottom: 4px;
+
+        .errorMessage_b717a1 {
+            color: var(--text-danger);
+        }
+    }
+
+    .input__0f084.error__0f084:focus {
+        color: var(--text-normal);
+        transition-property0: border-color, color;
+    }
+
+    .footer__49fc1 {
+        justify-content: space-between;
+    }
+}
