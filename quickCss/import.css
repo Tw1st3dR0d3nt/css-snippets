@@ -2,6 +2,7 @@
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Decluttered/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Enhancements/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Nitroless/import.css);
+@import url(//tw1st3dr0d3nt.github.io/css-snippets/SettingsIcons/main.min.css);
 
 /* Other Imports */
 @import url(//dablulite.github.io/css-snippets/AccountSettingsRefresh/import.css);
@@ -35,7 +36,6 @@
     --store: none; /* Nitro store */
     --shop: none; 
 }
-
 
 /* Replace Vencord settings donation banner image */
 img[role="presentation"] {
@@ -108,4 +108,12 @@ form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
     .footer__49fc1 {
         justify-content: space-between;
     }
+}
+
+/* Remove Profile Reactions */
+[class*='statusPopover'], [class*='avatarPopover__']{display:none;}
+
+/* Hide invite button next to guild name */
+[class="inviteButton_f37cb1"] {
+    display: none !important;
 }
