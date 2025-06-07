@@ -179,7 +179,8 @@
 [data-tab-id^="DISCOVERY"],
 [data-tab-id^="VANITY_URL"],
 [data-tab-id="Nameplates Preview Tool"],
-[data-tab-id="Virtual Currency Configuration"]
+[data-tab-id="Virtual Currency Configuration"],
+[data-tab-id="Shop Keeper"]
 {display: none !important;}
 
 /* Hides Billing section entirely */
