@@ -57,50 +57,6 @@
     background: transparent;
 }
 
-/* Better Jump To Present Button */
-[class*="jumpToPresentBar"] {
-    display: contents;
-}
-[class*="jumpToPresentBar"] > button:first-child {
-    display: none;
-}
-[class*="jumpToPresentBar"] > button:last-child {
-    position: absolute;
-    z-index: 1;
-    bottom: 24px;
-    right: 22px;
-    padding: 8px !important;
-    height: auto;
-    background-color: #5865F2;
-    box-shadow: var(--elevation-high);
-    border-radius: 100px;
-    display: flex;
-    font-size: 0px;
-    color: transparent;
-    transition: font-size .2s .1s, color .2s, padding .4s .1s;
-}
-[class*="jumpToPresentBar"] > button svg {
-    order: -1;
-    margin: 0px;
-    height: 24px;
-    width: 24px;
-    top: auto;
-    margin-right: 0px;
-    margin-left: 0px;
-    color: #FFFFFF;
-    transition: margin .6s;
-}
-[class*="jumpToPresentBar"]:hover > button {
-    padding: 8px 18px !important;
-    font-size: 14px;
-    color: #FFFFFF;
-    transition: font-size .2s, color .2s .1s, padding .4s;
-}
-[class*="jumpToPresentBar"]:hover > button svg {
-    margin-right: 2px;
-    margin-left: -6px;
-}
-
 /* More space-efficient settings layout */
 .sidebarRegion__23e6b,
 .sidebarRegionScroller__23e6b  {flex: 0 0 auto;}
@@ -200,6 +156,21 @@ video.spacing__837b7 {display: none;}
     }
 }
 
+/* Animate messages on hover */
+[data-list-item-id*="message"],
+[class*="messageListItem"],
+[id*="message-"],
+li[class*="messageListItem"] {
+    position: relative;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+[data-list-item-id*="message"]:hover,
+[class*="messageListItem"]:hover,
+li[class*="messageListItem"]:hover {
+    transform: translateX(6px);
+}
+
 /* Recolored New message badge */
 .numberBadge__2b1f5 {
   background-color: var(--background-accent)!important;
@@ -238,6 +209,13 @@ video.spacing__837b7 {display: none;}
 [class^=accountProfileCard_] [class^=field_]:nth-last-child(3) [class^=usernameInnerRow_]::before {
     color: var(--text-muted);
     content: "@";
+}
+
+/* Bring back the @ Sign */
+.userTag__63ed3:not(:has(.userTagDiscriminator__63ed3), .pronounsText__63ed3)::before {
+    content: "@";
+    color: var(--text-muted);
+    text-decoration: none;
 }
 
 /* Minimal Connections */
@@ -404,4 +382,53 @@ video.spacing__837b7 {display: none;}
   align-self: center;
   border-radius: 2px;
   margin-left: calc(0.5*var(--round-messages-radius));
+}
+
+/* Better Bot Forms */
+form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
+    width: var(--modal-width-medium);
+
+    .header__49fc1 {
+        padding: var(--modal-vertical-padding) var(--modal-horizontal-padding);
+        margin-bottom: var(--modal-vertical-padding);
+        border-bottom: var(--border-normal) solid 1px;
+
+        .colorHeaderPrimary_c9946a {
+            text-align: center;
+            font-weight: var(--font-weight-semibold);
+            flex-grow: 1;
+        }
+
+        .closeButton_e858dd {
+            top: unset;
+            right: var(--modal-horizontal-padding);
+            margin-bottom: auto;
+            margin-top: auto;
+
+            .contents__201d5 {
+                height: 24px;
+            }
+        }
+    }
+
+    .submissionWarning_e858dd {
+        display: none;
+    }
+
+    .formItem__1b11b .eyebrow_b717a1 {
+        margin-bottom: 4px;
+
+        .errorMessage_b717a1 {
+            color: var(--text-danger);
+        }
+    }
+
+    .input__0f084.error__0f084:focus {
+        color: var(--text-normal);
+        transition-property0: border-color, color;
+    }
+
+    .footer__49fc1 {
+        justify-content: space-between;
+    }
 }
