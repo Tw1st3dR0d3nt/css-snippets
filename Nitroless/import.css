@@ -50,14 +50,8 @@ ul[aria-label="Channels"] > div + div + div[class^="container_"] {display: none;
 /* Hides nitro icon in profile banners */
 div[class^="premiumIconWrapper"] {display: none;}
 
-/* Hides nitro tab in Home */
-a[data-list-item-id$="___nitro"] {display: none;}
-
 /* Hides nitro upsell in user settings server profiles tab */
 [class^=upsellOverlayContainer] {display: none;}
-
-/* Hides shop tab in Home */
-[class^=channel_] > div > [href="/shop"] {display: none;}
 
 /* Hides shop upsell in user settings profiles tab */
 [class*=premiumFeatureBannerBackground], [class^=container_]:has([class^=artContainer_]) {display: none;}
