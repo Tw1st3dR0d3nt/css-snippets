@@ -39,7 +39,7 @@
 [class^="burstReactionTooltipPrompt_"] {display: none;}
 
 /* Hide Super Reactions button toggle in reaction picker */
-div[class="burstToggle_c0e32c"]{display: none !important;}
+div[aria-label="Enable Super Reactions"]{display: none !important;}
 
 /* Hides boost progress bar in servers */
 ul[aria-label="Channels"] > div + div + div[class^="container_"] {display: none;}
