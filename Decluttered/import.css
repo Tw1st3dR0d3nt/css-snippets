@@ -197,7 +197,7 @@
                           ##################                        */
 
 /* Remove Close button in DMs */
-[class="closeButton__972a0"]
+[class="closeIcon__972a0"]
 {display: none !important;}
 
 /* Hides "Create Invite" button on voice channels */
