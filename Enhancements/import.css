@@ -432,3 +432,13 @@ form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
         justify-content: space-between;
     }
 }
+
+/* PinDMs Fixes */
+.vc-pindms-section-container {
+    text-transform: unset !important;
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 500;
+    /* V Uncomment this line to use the default category color. */
+    color: var(--channels-default) !important;
+}
