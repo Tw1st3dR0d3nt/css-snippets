@@ -235,4 +235,4 @@ button[aria-label="Send a gift"], [aria-label="ギフトを贈る"]
 }
 
 /* Hide duplicate guild name in center of titlebar */
-.visual-refresh .title__85643 {display: none;}
+[class="title_bb0d86"] {display: none;}
