@@ -1,62 +1,86 @@
-/* Tw1st3dR0d3nt's Imports */
-@import url(//tw1st3dr0d3nt.github.io/css-snippets/Decluttered/import.css);
-@import url(//tw1st3dr0d3nt.github.io/css-snippets/Enhancements/import.css);
-@import url(//tw1st3dr0d3nt.github.io/css-snippets/Nitroless/import.css);
-/* @import url(//tw1st3dr0d3nt.github.io/css-snippets/SettingsIcons/main.min.css); */
-
-/* Other Imports */
-@import url(//dablulite.github.io/css-snippets/AccountSettingsRefresh/import.css);
-@import url(//dablulite.github.io/css-snippets/QuickSwitchV2/import.css);
-@import url(//davart154.github.io/Themes/Snippets/Audio%20Refresh/AudioRefreshSource.css);
-@import url(//davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
-@import url(//davart154.github.io/Themes/Snippets/Two-Row%20Chat%20Bar%20Layout/TwoRowChatBar.css);
-
-/* Remove Chat Buttons snippet */
-@import url(//smolalli.github.io/Themes/Snippets/removechatbuttons.css);
 :root {
-    /* Chat Area */
-    --gift: none;
-    --gif: none;
-    --sticker: none;
-    /* --emoji: none; */
-    /* --upload: none; */
-
-    /* Channels Sidebar */
-    --invite: none;
-    /* --guide: none; */
-    /* --channels: none; */
-    /* --browse: none; */
-    /* --members: none; */
-    --server-shop: none;
-    /* --events: none; */
-    --boost: none; /* Boost Bar */
-
-    /* DM Area */
-    /* --friends: none; */
-    --store: none; /* Nitro store */
-    --shop: none; 
+  --gift: flex;
+  --gif: flex;
+  --sticker: flex;
+  --emoji: flex;
+  --upload: flex;
+  --invite: block;
+  --store: flex;
+  --shop: flex;
+  --friends: flex;
+  --guide: block;
+  --channels: block;
+  --browse: block;
+  --members: block;
+  --events: block;
+  --server-shop: block;
+  --boost: flex;
+  --activity: block;
+  --discover: block;
+  --discover-indicator: 72px;
 }
 
-/* Replace Vencord settings donation banner image */
-img[role="presentation"] {
-  content: url(https://i.imgur.com/SCW56GW.png) !important;
-  transform: rotate(0deg) !important;
+#channels [aria-label="Create Invite"] {
+  display: var(--invite);
+}
+#channels [class*=containerDefault_]:has([aria-label="Server Guide"]) {
+  display: var(--guide);
+}
+#channels [class*=containerDefault_]:has([aria-label="Channels & Roles"]) {
+  display: var(--channels);
+}
+#channels [class*=containerDefault_]:has([aria-label="Browse Channels"]) {
+  display: var(--browse);
+}
+#channels [class*=containerDefault_]:has([aria-label=Members]) {
+  display: var(--members);
+}
+#channels [class*=containerDefault_]:has([data-list-item-id*=channels___upcoming-events-]) {
+  display: var(--events);
+}
+#channels [class*=containerDefault_]:has([aria-label="Server Shop"]) {
+  display: var(--server-shop);
+}
+#channels [data-list-item-id*=channels___boosts-] {
+  display: var(--boost);
 }
 
-/* Discord Version and other client information in User Settings */
-[class="info__2debe"] {display: none;}
-
-/* Hide Minimum System Requirements warning for Clips */
-.warning_e3f97f {display: none;}
-
-/* Fix DM/Group call profiles being misaligned */
-[class*=voiceCallWrapper_] {
-    margin: auto;
+[class*=tree_] [class*=footer_] {
+  display: var(--discover);
 }
 
-/* Hide nameplates */
-[class*="nameplated_"] > :has([src*="nameplates"]) { display: none; }
+[class*=unreadMentionsFixedFooter_] {
+  bottom: var(--discover-indicator);
+}
 
-/* Extra Chatbar Buttons */
-/* [aria-label="Insert Timestamp"] {display: none;} */
-/* [aria-label="Open Translate Modal"] {display: none;} */
+[class*=form-] [class*=attachButton_] {
+  display: var(--upload);
+}
+[class*=form-] [class*=button_][aria-label="Send a gift"] {
+  display: var(--gift);
+}
+[class*=form-] [class*=button_][aria-label="Open GIF picker"] {
+  display: var(--gif);
+}
+[class*=form-] [class*=button_][aria-label="Open sticker picker"] {
+  display: var(--sticker);
+}
+[class*=form-] [class*=button_][aria-label="Select emoji"] {
+  display: var(--emoji);
+}
+[class*=form-] [class*=channelAppLauncher_] {
+  display: var(--activity);
+}
+
+[class*=privateChannels_] [href="/channels/@me"] {
+  display: var(--friends);
+}
+[class*=privateChannels_] [href="/store"] {
+  display: var(--store);
+}
+[class*=privateChannels_] [href="/shop"] {
+  display: var(--shop);
+}
+
+/*# sourceMappingURL=removechatbuttons.css.map */
+
