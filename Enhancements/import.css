@@ -61,24 +61,6 @@
 .sidebarRegion__23e6b,
 .sidebarRegionScroller__23e6b  {flex: 0 0 auto;}
 
-/* edited text */
-[class*="timestamp_"]:not([class*="timestampInline_"],
-[class*="timestampVisibleOnHover_"]) time::after {
-    content: ' (' attr(aria-label) ')';
-    color: var(--text-muted);
-    font-size: 0.625rem;
-    font-weight: 400;
-    line-height: 1;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    text-transform: lowercase;
-}
-[class*="edited"]:not(.message-translate-indicator) {
-    display: none;
-}
-
 /* Connection Issue Let Me Be */
 .container_a2f514 {
   background: transparent;
