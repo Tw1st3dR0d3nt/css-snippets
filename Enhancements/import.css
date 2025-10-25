@@ -338,11 +338,11 @@ li[class*="messageListItem"]:hover {
 .wrapper__2ea32 .link__2ea32 /* channels */,
 .container__91a9d /* members */,
 .channel__972a0 /* dms */,
-.side_b3f026 .item_b3f026 /* settings */ {
+.side_aa8da2 .item_aa8da2 /* settings */ {
   transition: margin-left 0.2s ease;
 }
 .wrapper__2ea32:hover .link__2ea32,
-.side_b3f026 .item_b3f026:hover {
+.side_aa8da2 .item_aa8da2:hover {
   margin-left: 10px;
 }
 .container__91a9d:hover,
@@ -405,7 +405,7 @@ form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
         }
     }
 
-    .input__0f084.error__0f084:focus {
+    .input__0ed4f.error__0ed4f:focus {
         color: var(--text-normal);
         transition-property0: border-color, color;
     }
