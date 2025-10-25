@@ -5,14 +5,13 @@
 /* @import url(//tw1st3dr0d3nt.github.io/css-snippets/SettingsIcons/main.min.css); */
 
 /* Other Imports */
-@import url(//dablulite.github.io/css-snippets/AccountSettingsRefresh/import.css);
 @import url(//dablulite.github.io/css-snippets/QuickSwitchV2/import.css);
 @import url(//davart154.github.io/Themes/Snippets/Audio%20Refresh/AudioRefreshSource.css);
 @import url(//davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
-@import url(//davart154.github.io/Themes/Snippets/Two-Row%20Chat%20Bar%20Layout/TwoRowChatBar.css);
+/* @import url(//davart154.github.io/Themes/Snippets/Two-Row%20Chat%20Bar%20Layout/TwoRowChatBar.css); */
+@import url(//smolalli.github.io/Themes/Snippets/removechatbuttons.css);
 
 /* Remove Chat Buttons snippet */
-@import url(//smolalli.github.io/Themes/Snippets/removechatbuttons.css);
 :root {
     /* Chat Area */
     --gift: none;
@@ -37,6 +36,38 @@
     --shop: none; 
 }
 
+/* Extra Chat Bar Buttons */
+[aria-label="Insert Timestamp"] {display: none;}
+/* [aria-label="Open Translate Modal"] {display: none;} */
+
+/* Better Image Spoilers */
+:root {
+    --spoiler-blur-hover: 8px;
+}
+[class*="attachmentContainer_"][class*="spoilerContent_"] {
+    background-color: unset;
+    &[class*="hiddenSpoiler_"] {
+        > [class*="spoilerWarning_"] {
+            transition: opacity 50ms ease;
+        }
+        [class*="imageContent_"] {
+            filter: none !important;
+            [class*="imageWrapper_"] > [class*="clickableWrapper_"] {
+                filter: blur(var(--custom-message-attachment-spoiler-blur-radius));
+                transition: filter 80ms ease-out;
+            }
+        }
+        &:hover {
+            > [class*="spoilerWarning_"] {
+                opacity: 0.2;
+            }
+            [class*="imageWrapper_"] > [class*="clickableWrapper_"] {
+                filter: blur(var(--spoiler-blur-hover));
+            }
+        }
+    }
+}
+
 /* Replace Vencord settings donation banner image */
 img[role="presentation"] {
   content: url(https://i.imgur.com/SCW56GW.png) !important;
@@ -54,9 +85,57 @@ img[role="presentation"] {
     margin: auto;
 }
 
-/* Hide nameplates */
-[class*="nameplated_"] > :has([src*="nameplates"]) { display: none; }
+/* Colored Embeds */
+.embedFull__623de {
+    overflow: hidden;
 
-/* Extra Chatbar Buttons */
-/* [aria-label="Insert Timestamp"] {display: none;} */
-/* [aria-label="Open Translate Modal"] {display: none;} */
+    &::before {
+        top: -1px;
+        content: "";
+        position: absolute;
+        border: inherit;
+        border-left-width: 100vw;
+        max-width: 100%;
+        height: calc(100% + 2px);
+        box-sizing: border-box !important;
+        opacity: 0.25;
+        z-index: 1;
+        border-radius: 0px 8px 8px 0px;
+    }
+
+    .gridContainer__623de {
+        z-index: 2;
+    }
+}
+
+/* Hide reaction suggestions in message hover bar */
+[class^=buttonContainer] > [class^=buttons] {
+    > [class^=buttonsInner] {
+        border: unset;
+        padding: unset;
+        box-shadow: var(--shadow-low) !important;
+        background-color: var(--background-base-low);
+        border-radius: 4px;
+        > [class^=separator] { display: none; }
+        > span {
+            > [class^=hoverBarButton] {
+                padding: unset;
+                height: 32px;
+                width: 32px;
+                border-radius: unset;
+                &:hover > [class^=icon] { transform: unset; }
+            }
+            &:has(~ [class^=separator]) { display: none; }
+            &:first-of-type ,[class^=separator] + & {
+                > [class^=hoverBarButton] {
+                    border-top-left-radius: 4px;
+                    border-bottom-left-radius: 4px;
+                }
+            }
+            &:nth-last-of-type(2) > [class^=hoverBarButton] {
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+            }
+        }
+    }
+}
