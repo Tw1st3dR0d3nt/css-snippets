@@ -2,13 +2,13 @@
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Decluttered/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Enhancements/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Nitroless/import.css);
-/* @import url(//tw1st3dr0d3nt.github.io/css-snippets/SettingsIcons/main.min.css); */
+@import url(//tw1st3dr0d3nt.github.io/css-snippets/SettingsIcons/main.min.css);
 
 /* Other Imports */
 @import url(//dablulite.github.io/css-snippets/QuickSwitchV2/import.css);
 @import url(//davart154.github.io/Themes/Snippets/Audio%20Refresh/AudioRefreshSource.css);
 @import url(//davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
-/* @import url(//davart154.github.io/Themes/Snippets/Two-Row%20Chat%20Bar%20Layout/TwoRowChatBar.css); */
+@import url(//davart154.github.io/Themes/Snippets/Chat%20Bar%20Context%20Menu/ChatContextMenuSource.css);
 @import url(//smolalli.github.io/Themes/Snippets/removechatbuttons.css);
 
 /* Remove Chat Buttons snippet */
@@ -37,7 +37,7 @@
 }
 
 /* Extra Chat Bar Buttons */
-[aria-label="Insert Timestamp"] {display: none;}
+/* [aria-label="Insert Timestamp"] {display: none;} */
 /* [aria-label="Open Translate Modal"] {display: none;} */
 
 /* Better Image Spoilers */
