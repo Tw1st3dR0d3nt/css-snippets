@@ -424,3 +424,54 @@ form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
     /* V Uncomment this line to use the default category color. */
     color: var(--channels-default) !important;
 }
+
+/* Better Image Spoilers */
+:root {
+    --spoiler-blur-hover: 8px;
+}
+[class*="attachmentContainer_"][class*="spoilerContent_"] {
+    background-color: unset;
+    &[class*="hiddenSpoiler_"] {
+        > [class*="spoilerWarning_"] {
+            transition: opacity 50ms ease;
+        }
+        [class*="imageContent_"] {
+            filter: none !important;
+            [class*="imageWrapper_"] > [class*="clickableWrapper_"] {
+                filter: blur(var(--custom-message-attachment-spoiler-blur-radius));
+                transition: filter 80ms ease-out;
+            }
+        }
+        &:hover {
+            > [class*="spoilerWarning_"] {
+                opacity: 0.2;
+            }
+            [class*="imageWrapper_"] > [class*="clickableWrapper_"] {
+                filter: blur(var(--spoiler-blur-hover));
+            }
+        }
+    }
+}
+
+/* Colored Embeds */
+.embedFull__623de {
+    overflow: hidden;
+
+    &::before {
+        top: -1px;
+        content: "";
+        position: absolute;
+        border: inherit;
+        border-left-width: 100vw;
+        max-width: 100%;
+        height: calc(100% + 2px);
+        box-sizing: border-box !important;
+        opacity: 0.25;
+        z-index: 1;
+        border-radius: 0px 8px 8px 0px;
+    }
+
+    .gridContainer__623de {
+        z-index: 2;
+    }
+}
