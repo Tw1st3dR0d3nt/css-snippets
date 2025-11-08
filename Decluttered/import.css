@@ -197,8 +197,9 @@
                           ##################                        */
 
 /* Remove Close button in DMs */
-[class="closeIcon__972a0"]
-{display: none !important;}
+.closeIcon__972a0, .favoriteIcon__972a0 {
+    display: none;
+}
 
 /* Hides "Create Invite" button on voice channels */
 div[aria-label="Create Invite"] { display: none !important; } 
