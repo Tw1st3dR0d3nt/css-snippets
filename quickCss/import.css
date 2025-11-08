@@ -10,7 +10,7 @@
 @import url(//davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
 @import url(//davart154.github.io/Themes/Snippets/Chat%20Bar%20Context%20Menu/ChatContextMenuSource.css);
 @import url(//smolalli.github.io/Themes/Snippets/removechatbuttons.css);
-@import url("//raw.githubusercontent.com/CeaAPI/vencord-snippets/main/CompactSidebarButtons/CompactSidebarButtons.css");
+@import url(//raw.githubusercontent.com/CeaAPI/vencord-snippets/main/CompactSidebarButtons/CompactSidebarButtons.css);
 
 /* Remove Chat Buttons snippet */
 :root {
@@ -53,3 +53,4 @@ img[role="presentation"] {
 [class*=voiceCallWrapper_] {
     margin: auto;
 }
+
