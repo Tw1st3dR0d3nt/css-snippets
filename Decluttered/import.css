@@ -269,3 +269,8 @@ button[aria-label="Send a gift"], [aria-label="ギフトを贈る"]
         }
     }
 }
+
+/* Clean up duplicate redundant buttons in chat input area */
+.stickerButton__74017, [class="button__74017 button__24af7"] {
+    display: none !important;
+}
