@@ -158,34 +158,12 @@
                           ##################                        */
 
 /* Skins user settings. Some of these will not work without the Theme Attributes plugin enabled */
-[data-tab-id="Family Center"],
-[data-tab-id="merchandise"],
-[data-tab-id="Hypesquad Online"],
-[class="socialLinks__7df54"],
-
-/* Experiments Section */
-[data-tab-id="Developer Options"],
-[data-tab-id="Hotspot Options"],
-[data-tab-id="Payment Flow Modals"],
-[data-tab-id="Payment Components"],
-[data-tab-id="Text Playground"],
-[data-tab-id="Text Component"],
-[data-tab-id="Profile Effects Preview Tool"],
-[data-tab-id="Design System"],
-[data-tab-id="Intl Testing"],
-[data-tab-id="Web Setting Tree Tool"],
-[data-tab-id="Revenue Storybook"],
-[data-tab-id^="ANALYTICS"],
-[data-tab-id^="DISCOVERY"],
-[data-tab-id^="VANITY_URL"],
-[data-tab-id="Nameplates Preview Tool"],
-[data-tab-id="Virtual Currency Configuration"],
-[data-tab-id="Shop Keeper"]
+[data-settings-sidebar-item="family_center_panel"]
 {display: none !important;}
 
 /* Hides Billing section entirely */
-.layer__960e4  > .standardSidebarView__23e6b .side_aa8da2 > div:nth-of-type(n+12):nth-of-type(-n+18),
-#user-settings-cog > .scroller_c1e9c4 > .item_c1e9c4:nth-of-type(n+10):nth-of-type(-n+16) {display: none;}
+[class="section__409aa"]:is([aria-label="Billing Settings"])
+{display: none;}
 
 /* Skins Server Settings Sidebar */
 [data-tab-id="APP_DIRECTORY"]
@@ -202,7 +180,7 @@
 }
 
 /* Hides "Create Invite" button on voice channels */
-div[aria-label="Create Invite"] { display: none !important; } 
+div[class="inviteButton_f37cb1"] { display: none !important; } 
 
 /* Hides "Help" button in home */
 div[aria-label="Help"] {display: none !important;}
