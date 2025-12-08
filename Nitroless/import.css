@@ -70,3 +70,6 @@ div[class^="premiumIconWrapper"] {display: none;}
 
 /* Hide Server Boosts button in guild channel list */
 [class="containerDefault_c69b6d wrapper__2ea32 container__877f0"] {display: none;}
+
+/* Hide Nitro button in DMs list */
+[href="/store"] {display: none}
