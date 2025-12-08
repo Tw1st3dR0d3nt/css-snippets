@@ -11,3 +11,6 @@
 
 /* Hide Minimum System Requirements warning for Clips */
 .warning_e3f97f {display: none;}
+
+/* Hide Checkpoint Button */
+[class="button__85643 iconWrapper__9293f clickable__9293f"]:is([aria-label="Checkpoint"]) {display: none!important;}
