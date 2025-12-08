@@ -179,8 +179,8 @@
     display: none;
 }
 
-/* Hides "Create Invite" button on voice channels */
-div[class="inviteButton_f37cb1"] { display: none !important; } 
+/* Hides "Create Invite" button next to guild name */
+div[aria-label="Create Invite"] { display: none !important; } 
 
 /* Hides "Help" button in home */
 div[aria-label="Help"] {display: none !important;}
