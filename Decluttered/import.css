@@ -186,7 +186,7 @@
 div[class*="inviteButton_f37cb1"] {display: none !important;}
 
 /* Hides "Help" button in home */
-div[aria-label="Help"] {display: none !important;}
+div[aria-label="Help"], [aria-label="ヘルプ"] {display: none !important;}
 
 /* Skins message bar */
 button[aria-label="Open GIF picker"], [aria-label="GIFピッカーを開く"],
