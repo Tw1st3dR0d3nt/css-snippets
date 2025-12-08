@@ -9,14 +9,5 @@
 @import url(//davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
 @import url(//raw.githubusercontent.com/CeaAPI/vencord-snippets/main/CompactSidebarButtons/CompactSidebarButtons.css);
 
-/* Replace Vencord settings donation banner image */
-img[role="presentation"] {
-  content: url(https://i.imgur.com/SCW56GW.png) !important;
-  transform: rotate(0deg) !important;
-}
-
-/* Discord Version and other client information in User Settings */
-[class="info__2debe"] {display: none;}
-
 /* Hide Minimum System Requirements warning for Clips */
 .warning_e3f97f {display: none;}
