@@ -169,6 +169,9 @@
 [data-tab-id="APP_DIRECTORY"]
 {display: none !important;}
 
+/* Discord Version and other client information in User Settings */
+[class="clickable__2debe compact__2debe"], [class="links__7aac8"] {display: none !important;}
+
 
 /*                        ##################
    ====================== # Tabs & Buttons # ====================== 
