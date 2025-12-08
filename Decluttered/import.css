@@ -162,7 +162,7 @@
 {display: none !important;}
 
 /* Hides Billing section entirely */
-[class="section__409aa"]:is([aria-label="Billing Settings"])
+[class="section__409aa"]:is([aria-label="Billing Settings"],[aria-label="請求設定"])
 {display: none;}
 
 /* Skins Server Settings Sidebar */
