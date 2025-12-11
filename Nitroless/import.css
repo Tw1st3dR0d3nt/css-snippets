@@ -57,17 +57,6 @@ div[class^="premiumIconWrapper"] {display: none;}
 [class*=premiumFeatureBannerBackground], [class^=container__8279f]:has([class^=artContainer_]) {display: none;}
 [class^="profileBadges"][class^="profileBadges"] {flex: none;}
 
-/* Makes super reactions look like normal ones */
-[class*="reaction"][class*="reactionMe"] {border-color: var(--brand-experiment) !important; background-color: var(--brand-experiment-15a) !important;}
-[class*="reactionCount"] {color: var(--interactive-normal) !important;}
-[class*="effectsWrapper"] {display: none;}
-[class^="burstGlow"], [class*="reaction_"], [class*="reaction"][class*="shakeReaction"] {
-    box-shadow: none !Important; 
-    background: var(--background-secondary) !important;
-    animation: none;
-}
-[class*="hideEmoji"] {opacity: 1;}
-
 /* Hide Server Boosts button in guild channel list */
 [class="containerDefault_c69b6d wrapper__2ea32 container__877f0"] {display: none;}
 
