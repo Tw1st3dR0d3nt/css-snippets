@@ -191,8 +191,10 @@ div[aria-label="Help"], [aria-label="ヘルプ"] {display: none !important;}
 /* Skins message bar */
 button[aria-label="Open GIF picker"], [aria-label="GIFピッカーを開く"],
 button[aria-label="Open sticker picker"], [aria-label="スタンプピッカーを開く"],
-button[aria-label="Send a gift"], [aria-label="ギフトを贈る"]
 {display: none;}
+
+/* Hide Gift button */
+[class="container_c0c49a"]:has(button[aria-label="Send a gift"], button[aria-label="ギフトを贈る"]) {display: none;}
 
 /* Hide Soundboard button in group voice calls */
 [class="voiceEffectsActionBar__68198"], [class="divider__68198"]
