@@ -194,7 +194,7 @@ button[aria-label="Open sticker picker"], [aria-label="スタンプピッカー�
 {display: none;}
 
 /* Hide Gift button */
-[class="container_c0c49a"]:has(button[aria-label="Send a gift"], button[aria-label="ギフトを贈る"]) {display: none;}
+[class="container_c0c49a"]:has([aria-label="Send a gift"], [aria-label="ギフトを贈る"]) {display: none !important;}
 
 /* Hide Soundboard button in group voice calls */
 [class="voiceEffectsActionBar__68198"], [class="divider__68198"]
