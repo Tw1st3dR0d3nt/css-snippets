@@ -229,7 +229,7 @@ button[aria-label="Open sticker picker"], [aria-label="スタンプピッカー�
         box-shadow: var(--shadow-low) !important;
         background-color: var(--background-base-low);
         border-radius: 4px;
-        > [class^=separator] { display: none; }
+        > [class^=f84418acfdbdfe54-separator] { display: none; }
         > span {
             > [class^=-hoverBarButton] {
                 padding: unset;
