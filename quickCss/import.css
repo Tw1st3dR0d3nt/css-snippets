@@ -7,10 +7,54 @@
 /* Other Imports */
 @import url(//davart154.github.io/Themes/Snippets/Audio%20Refresh/AudioRefreshSource.css);
 @import url(//davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
+@import url(//davart154.github.io/Themes/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css);
 @import url(//raw.githubusercontent.com/CeaAPI/vencord-snippets/main/CompactSidebarButtons/CompactSidebarButtons.css);
 
 /* Hide Minimum System Requirements warning for Clips */
-.warning_e3f97f {display: none;}
+.e3f97f0d3cd70794-warning {display: none;}
 
 /* Hide Checkpoint Button */
-[class="button__85643 iconWrapper__9293f clickable__9293f"]:is([aria-label="Checkpoint"]) {display: none!important;}
+[class="_85643a485899904b-button _9293f6b2fc12398a-iconWrapper _9293f6b2fc12398a-clickable"]:is([aria-label="Checkpoint"]) {display: none!important;}
+
+
+/* --Improved User Area-- */
+/* Make both the username and status message visible at all times. */
+._37e49614b9f110a9-container ._0263c8321829b3e8-hovered, ._0263c8321829b3e8-hoverRoll._0263c8321829b3e8-forceHover:not(._0263c8321829b3e8-disabled) ._0263c8321829b3e8-default{
+  opacity: 1!important;
+  transform: none;
+}
+/* Adds an @ to the username. Discord, for the love of god, just add this yourself already. */
+._37e49614b9f110a9-container ._0263c8321829b3e8-hovered::before{
+  content: "@";
+}
+/* Move the custom Status message down so that it doesnt overlap with the Username */
+.d79086a85aac1823-container{
+  margin-top: 15px;
+  opacity: 1!important;
+  transform: none!important;
+}
+/* Credit to @thecommieaxolotl for this code. */
+/* --Hides User Buttons until Hover-- */
+/* Hide mute and deafen buttons */
+._5e434347c823b592-panels > ._37e49614b9f110a9-container ._37e49614b9f110a9-buttons > :not(:nth-last-child(2)) {
+  opacity: 0% !important;
+  width: 0px;
+  transition: all 0.3s ease-in-out;
+}
+/* Reveal mute and Deafen buttons when settings button is hovered */
+._5e434347c823b592-panels > ._37e49614b9f110a9-container ._37e49614b9f110a9-buttons:hover > :not(:nth-last-child(2)) {
+  opacity: 100% !important;
+  width: 32px;
+}
+/* Resize and move the profile button to take up all the space it can to look clean. */
+._37e49614b9f110a9-avatarWrapper{
+  transition: all 0.3s ease-in-out;
+  width: 100%!important;
+  margin-left: -10px;
+  height: 53px;
+  border-radius: 0!important;
+}
+/* Move the avatar back to the right a bit to look clean. */
+._37e49614b9f110a9-avatarWrapper ._37e49614b9f110a9-avatar{
+  margin-left: 10px;
+}
