@@ -8,32 +8,18 @@
    ====================== #   Nitroless%   # ====================== 
                           ##################                        */
 
-/* Emoji Picker Upsells. If your using a 'free emojis' plugin or similiar you might not need these. */
-[class^="premiumPromo"],                                     /* Hides a popup when pressing disabled emojis     */
-[class^="upsellWrapper_"],                                   /* Hides a popup when pressing disabled stickers   */
-[class^=emojiPickerListWrapper_] [class^=upsellContainer_],  /* Hides a popup when scrolling emojis             */
-[class^="categoryItemLockIconContainer"],                    /* Hides lock icon on servers                      */
-[class^="emojiLockIconContainer"]                            /* Hides lock icon on emojis (visible in servers)  */
-{display: none !important;} 
-
-[class^="nitroTopDividerContainer"]                          /* Hides the top of the garish pink nitro overlay  */
-{display: none;}                                            
-
-.categorySection_c656ac.categorySectionNitroLocked_c656ac    /* Hides body of the nitro overlay                 */
-{background-color: unset !important; } 
-
 /* Hides "Boost Server" button in server settings emoji tab */
-.banner_ec75b3 {display: none;}
+[class="c69b6db0641110f6-containerDefault _2ea32c412048f708-wrapper _877f0e9008f12b8d-container"] {display: none;}
 
 /* Hides "Get Nitro" button when pressing on a nitro emoji in chat */
-[class^=emojiSection_] [class*=shinyButton_]
+[class="d5cd2da5733d0b6e-emojiSection"] [class*=-shinyButton]
 { display: none !important; }
 
 /* Hides "Try out Nitro!" section in user settings profiles tab */
-[class*=tryItOutSection__] {display: none;}
+[class="_65c15724a894a2e0-premiumBackground _65c15724a894a2e0-background"] {display: none;}
 
 /* Hide Floating Nitro Upsell in Profile Customiztion */
-[class*="floatingNitroUpsell__"]{display: none !important;}
+[class*="-floatingNitroUpsell"]{display: none !important;}
 
 /* Hides "Unlock with Nitro" button when hovering a super reaction */
 [class^="burstReactionTooltipPrompt_"] {display: none;}
@@ -45,20 +31,20 @@ div[aria-label="Enable Super Reactions"]{display: none !important;}
 ul[aria-label="Channels"] > div + div + div[class^="container_"] {display: none;}
 
 /* Hides message size upsell in message bar */
-.root__6c5a1.upsell__795fb,
+._6c5a1559a27b6653-root._795fb60671d128c1-upsell,
 
 /* Hides nitro icon in profile banners */
 div[class^="premiumIconWrapper"] {display: none;}
 
 /* Hides nitro upsell in user settings server profiles tab */
-[class="upsellOverlayContainer__0f7dc"] {display: none;}
+[class="_0f7dce48ad846f17-upsellOverlayContainer"] {display: none;}
 
 /* Hides shop upsell in user settings profiles tab */
-[class*=premiumFeatureBannerBackground], [class^=container__8279f]:has([class^=artContainer_]) {display: none;}
+[class^="_8279f38edc620354-container"]:has([class^="_8279f38edc620354-artContainer"]) {display: none;}
 [class^="profileBadges"][class^="profileBadges"] {flex: none;}
 
 /* Hide Server Boosts button in guild channel list */
-[class="containerDefault_c69b6d wrapper__2ea32 container__877f0"] {display: none;}
+[class="_0d0f9ddd12a3ace3-container _0d0f9ddd12a3ace3-containerWithMargin"] {display: none;}
 
 /* Hide Nitro button in DMs list */
 [href="/store"] {display: none}
