@@ -38,7 +38,7 @@
 { font-family: "Twemoji Mozilla", "dashless", var(--font-primary); }
 
 /* Channel Names Capitalized */
-.name__2ea32 {
+._2ea32c412048f708-name {
     text-transform: capitalize;
 }
 
@@ -58,29 +58,29 @@
 }
 
 /* More space-efficient settings layout */
-.sidebarRegion__23e6b,
-.sidebarRegionScroller__23e6b  {flex: 0 0 auto;}
+._23e6b439306f125a-sidebarRegion,
+._23e6b439306f125a-sidebarRegionScroller  {flex: 0 0 auto;}
 
 /* Connection Issue Let Me Be */
-.container_a2f514 {
+.a2f5142ba8328dfd-container {
   background: transparent;
   pointer-events: none;
 }
-.container_a2f514 .anchor_edefb8 { pointer-events: auto; }
-.container_a2f514 .content_a2f514 .text_a2f514 {
+.a2f5142ba8328dfd-container .edefb8e22d63c542-anchor { pointer-events: auto; }
+.a2f5142ba8328dfd-container .a2f5142ba8328dfd-content .a2f5142ba8328dfd-text {
   display:none;
 }
-.container_a2f514 .ready_a2f514 {
+.a2f5142ba8328dfd-container .a2f5142ba8328dfd-ready {
   position: absolute;
   bottom: 44px;
   right: 244px;
   z-index: 1;
 }
-.container_a2f514 img, .container_a2f514 video {
+.a2f5142ba8328dfd-container img, .a2f5142ba8328dfd-container video {
   width: 32px;
   height: 32px;
 }
-.container_a2f514 .problems_a2f514 {
+.a2f5142ba8328dfd-container .a2f5142ba8328dfd-problems {
   padding: 8px 16px;
   bottom: 18px;
   left: unset;
@@ -94,18 +94,18 @@
 }
 
 /* Blur Spoilers */
-.spoilerMarkdownContent__54ab5 {
+._299eb87491f4b6d1-spoilerMarkdownContent {
     background-color: rgba(255, 255, 255, .01);
 }
-.obscuredTextContentInner__54ab5 {
+._299eb87491f4b6d1-obscuredTextContentInner {
   color: var(--text-normal)    
 }
-.obscuredTextContentInner__54ab5 code, .obscuredTextContentInner__54ab5 span {
+._299eb87491f4b6d1-obscuredTextContentInner code, ._299eb87491f4b6d1-obscuredTextContentInner span {
   opacity: unset;
   -webkit-transition: none;
   transition: none;
 }
-.spoilerContent__54ab5.hidden__54ab5 .obscuredTextContentInner__54ab5 span {
+._299eb87491f4b6d1-spoilerContent._299eb87491f4b6d1-hidden ._299eb87491f4b6d1-obscuredTextContentInner span {
   filter: blur(4px);
 }
 
@@ -117,13 +117,13 @@
 /* Better Ban UI */
 /* Hides the video, "Reason for Ban", the radio group, "Other", then inserts text in front of "Other" */
 video.spacing__837b7 {display: none;}
-.focusLock__49fc1 .content__49fc1.modalContent__837b7.thin_d125d2.scrollerBase_d125d2:has(.banReasonOtherClickable__837b7) div:nth-child(2) > h2 {display: none;} 
-.animatedNode__6ba63:has(.banReasonOtherClickable__837b7) [role=radio] {display: none;}
-.focusLock__49fc1 .banReasonOtherClickable__837b7 div {font-size: 0px;} 
-.focusLock__49fc1 .banReasonOtherClickable__837b7 div::after {content: "Submit an optional ban reason"; font-size: 16px;} 
+._49fc18ba07c5025f-focusLock ._49fc18ba07c5025f-content.modalContent__837b7.d125d22cdfd32cfe-thin.d125d22cdfd32cfe-scrollerBase:has(.banReasonOtherClickable__837b7) div:nth-child(2) > h2 {display: none;} 
+._6ba63b0447df0219-animatedNode:has(.banReasonOtherClickable__837b7) [role=radio] {display: none;}
+._49fc18ba07c5025f-focusLock .banReasonOtherClickable__837b7 div {font-size: 0px;} 
+._49fc18ba07c5025f-focusLock .banReasonOtherClickable__837b7 div::after {content: "Submit an optional ban reason"; font-size: 16px;} 
 
 /* Animated Pings */
-.numberBadge__2b1f5 {
+._2b1f52e43a8f1c02-numberBadge {
   animation: animatedPing 1.3s infinite ease-in-out;
 }
 @keyframes animatedPing {
@@ -154,7 +154,7 @@ li[class*="messageListItem"]:hover {
 }
 
 /* Recolored New message badge */
-.numberBadge__2b1f5 {
+._2b1f52e43a8f1c02-numberBadge {
   background-color: var(--background-accent)!important;
 }
 
@@ -167,10 +167,10 @@ li[class*="messageListItem"]:hover {
 [class^=accountCard_] [class^=userDetails_] [class^=username_]::before,
 :where([class^=userPopoutInner_], [class^=fullSizeOuter_], [class^=userPanelInner_]) [class^=userTagUsername_]::before,
 /* Mod View */
-[class^=guildSidebar_] [class^=memberNameContainer_] [class="text-md/medium_cf4812"]::before,
-[class^=userProfileModalOuter_] [class^=memberNameContainer_] [class="text-md/medium_cf4812"]::before,
+[class^=guildSidebar_] [class^=memberNameContainer_] [class="cf48127484dbde85-text-md/medium"]::before,
+[class^=userProfileModalOuter_] [class^=memberNameContainer_] [class="cf48127484dbde85-text-md/medium"]::before,
 /* Members List */
-[class^=roundedRow__] [class="text-xs/normal_cf4812"]::before,
+[class^=roundedRow__] [class="cf48127484dbde85-text-xs/normal"]::before,
 /* Roles/Add Member */
 [class^=addMemberRow_] [class*=rowLabelSubText_]::before,
 /* Roles/Members */
@@ -178,7 +178,7 @@ li[class*="messageListItem"]:hover {
 /* Emoji */
 [class^=emojiRow_] [class^=colorStandard_]::before,
 /* Stickers */
-[class^=tiers_] [class^=user_] [class="text-xs/normal_cf4812"]::before,
+[class^=tiers_] [class^=user_] [class="cf48127484dbde85-text-xs/normal"]::before,
 /* Soundboard */
 [class^=soundTable_] [class^=uploader_] [class^=defaultColor_]::before,
 /* Audit Log */
@@ -194,22 +194,22 @@ li[class*="messageListItem"]:hover {
 }
 
 /* Bring back the @ Sign */
-.userTag__63ed3:not(:has(.userTagDiscriminator__63ed3), .pronounsText__63ed3)::before {
+._63ed30c16c7151f2-userTag:not(:has(._63ed30c16c7151f2-userTagDiscriminator), ._63ed30c16c7151f2-pronounsText)::before {
     content: "@";
     color: var(--text-muted);
     text-decoration: none;
 }
 
 /* Minimal Connections */
-.connectionList_c7f964 {
+.c7f964e7e0fc8b47-connectionList {
   gap: 0px;
 }
-.connectionList_c7f964 .connection_c7f964 {
+.c7f964e7e0fc8b47-connectionList .c7f964e7e0fc8b47-connection {
   max-height: 65px!important;
   overflow: hidden;
   transition: max-height 1s;
 }
-.connectionList_c7f964 .connection_c7f964:hover {
+.c7f964e7e0fc8b47-connectionList .c7f964e7e0fc8b47-connection:hover {
   max-height: 250px!important;
 }
 
@@ -308,11 +308,11 @@ li[class*="messageListItem"]:hover {
   border: none;
   border-radius: 12px;
 
-  .contents__201d5 {
+  ._201d5e8a3c09670a-contents {
     font-size: 0px;
   }
 
-  .contents__201d5::after {
+  ._201d5e8a3c09670a-contents::after {
     content: "asdfg";
     font-size: 18px;
     width: 16px;
@@ -321,32 +321,32 @@ li[class*="messageListItem"]:hover {
     color: transparent;
     top: 2.5px;
     left: 6px;
-    background-image: url("data:image/svg+xml,%3Csvg%20x%3D%220%22%20y%3D%220%22%20class%3D%22icon__9293f%22%20aria-hidden%3D%22true%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23D8D8DB%22%20d%3D%22M9.7%202.89c.18-.07.32-.24.37-.43a2%202%200%200%201%203.86%200c.05.2.19.36.38.43A7%207%200%200%201%2019%209.5v2.09c0%20.12.05.24.13.33l1.1%201.22a3%203%200%200%201%20.77%202.01v.28c0%20.67-.34%201.29-.95%201.56-1.31.6-4%201.51-8.05%201.51-4.05%200-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3%203%200%200%201%20.77-2l1.1-1.23a.5.5%200%200%200%20.13-.33V9.5a7%207%200%200%201%204.7-6.61ZM9.18%2019.84A.16.16%200%200%200%209%2020a3%203%200%201%200%206%200c0-.1-.09-.17-.18-.16a24.86%2024.86%200%200%201-5.64%200Z%22%20class%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg%20x%3D%220%22%20y%3D%220%22%20class%3D%22_9293f6b2fc12398a-icon%22%20aria-hidden%3D%22true%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23D8D8DB%22%20d%3D%22M9.7%202.89c.18-.07.32-.24.37-.43a2%202%200%200%201%203.86%200c.05.2.19.36.38.43A7%207%200%200%201%2019%209.5v2.09c0%20.12.05.24.13.33l1.1%201.22a3%203%200%200%201%20.77%202.01v.28c0%20.67-.34%201.29-.95%201.56-1.31.6-4%201.51-8.05%201.51-4.05%200-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3%203%200%200%201%20.77-2l1.1-1.23a.5.5%200%200%200%20.13-.33V9.5a7%207%200%200%201%204.7-6.61ZM9.18%2019.84A.16.16%200%200%200%209%2020a3%203%200%201%200%206%200c0-.1-.09-.17-.18-.16a24.86%2024.86%200%200%201-5.64%200Z%22%20class%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
     background-repeat: no-repeat;
   }
 
   &:hover {
     background-color: var(--brand-500);
 
-    .contents__201d5::after {
-      background-image: url("data:image/svg+xml,%3Csvg%20x%3D%220%22%20y%3D%220%22%20class%3D%22icon__9293f%22%20aria-hidden%3D%22true%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M9.7%202.89c.18-.07.32-.24.37-.43a2%202%200%200%201%203.86%200c.05.2.19.36.38.43A7%207%200%200%201%2019%209.5v2.09c0%20.12.05.24.13.33l1.1%201.22a3%203%200%200%201%20.77%202.01v.28c0%20.67-.34%201.29-.95%201.56-1.31.6-4%201.51-8.05%201.51-4.05%200-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3%203%200%200%201%20.77-2l1.1-1.23a.5.5%200%200%200%20.13-.33V9.5a7%207%200%200%201%204.7-6.61ZM9.18%2019.84A.16.16%200%200%200%209%2020a3%203%200%201%200%206%200c0-.1-.09-.17-.18-.16a24.86%2024.86%200%200%201-5.64%200Z%22%20class%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    ._201d5e8a3c09670a-contents::after {
+      background-image: url("data:image/svg+xml,%3Csvg%20x%3D%220%22%20y%3D%220%22%20class%3D%22_9293f6b2fc12398a-icon%22%20aria-hidden%3D%22true%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M9.7%202.89c.18-.07.32-.24.37-.43a2%202%200%200%201%203.86%200c.05.2.19.36.38.43A7%207%200%200%201%2019%209.5v2.09c0%20.12.05.24.13.33l1.1%201.22a3%203%200%200%201%20.77%202.01v.28c0%20.67-.34%201.29-.95%201.56-1.31.6-4%201.51-8.05%201.51-4.05%200-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3%203%200%200%201%20.77-2l1.1-1.23a.5.5%200%200%200%20.13-.33V9.5a7%207%200%200%201%204.7-6.61ZM9.18%2019.84A.16.16%200%200%200%209%2020a3%203%200%201%200%206%200c0-.1-.09-.17-.18-.16a24.86%2024.86%200%200%201-5.64%200Z%22%20class%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
     }
   }
 }
 
 /* SImple channel/settings/dms/member list hover animations */
-.wrapper__2ea32 .link__2ea32 /* channels */,
-.container__91a9d /* members */,
-.channel__972a0 /* dms */,
-.side_aa8da2 .item_aa8da2 /* settings */ {
+._2ea32c412048f708-wrapper ._2ea32c412048f708-link /* channels */,
+._91a9d7f7e5248a56-container /* members */,
+._972a0d22c8afa7f0-channel /* dms */,
+.aa8da23faa27393c-side .aa8da23faa27393c-item /* settings */ {
   transition: margin-left 0.2s ease;
 }
-.wrapper__2ea32:hover .link__2ea32,
-.side_aa8da2 .item_aa8da2:hover {
+._2ea32c412048f708-wrapper:hover ._2ea32c412048f708-link,
+.aa8da23faa27393c-side .aa8da23faa27393c-item:hover {
   margin-left: 10px;
 }
-.container__91a9d:hover,
-.channel__972a0:hover {
+._91a9d7f7e5248a56-container:hover,
+._972a0d22c8afa7f0-channel:hover {
   margin-left: 18px;
 }
 
@@ -367,10 +367,10 @@ li[class*="messageListItem"]:hover {
 }
 
 /* Better Bot Forms */
-form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
+form>div._49fc18ba07c5025f-focusLock>div._49fc18ba07c5025f-rootWithShadow {
     width: var(--modal-width-medium);
 
-    .header__49fc1 {
+    ._49fc18ba07c5025f-header {
         padding: var(--modal-vertical-padding) var(--modal-horizontal-padding);
         margin-bottom: var(--modal-vertical-padding);
         border-bottom: var(--border-normal) solid 1px;
@@ -387,30 +387,30 @@ form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
             margin-bottom: auto;
             margin-top: auto;
 
-            .contents__201d5 {
+            ._201d5e8a3c09670a-contents {
                 height: 24px;
             }
         }
     }
 
-    .submissionWarning_e858dd {
+    .e858dd8956328358-submissionWarning {
         display: none;
     }
 
-    .formItem__1b11b .eyebrow_b717a1 {
+    ._1b11bd49fe2d59c9-formItem .b717a15017b82443-eyebrow {
         margin-bottom: 4px;
 
-        .errorMessage_b717a1 {
+        .b717a15017b82443-errorMessage {
             color: var(--text-danger);
         }
     }
 
-    .input__0ed4f.error__0ed4f:focus {
+    ._0ed4fc708cdbac0d-input._0ed4fc708cdbac0d-error:focus {
         color: var(--text-normal);
         transition-property0: border-color, color;
     }
 
-    .footer__49fc1 {
+    ._49fc18ba07c5025f-footer {
         justify-content: space-between;
     }
 }
@@ -454,7 +454,7 @@ form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
 }
 
 /* Colored Embeds */
-.embedFull__623de {
+._623de82e76ad7f82-embedFull {
     overflow: hidden;
 
     &::before {
@@ -471,7 +471,7 @@ form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
         border-radius: 0px 8px 8px 0px;
     }
 
-    .gridContainer__623de {
+    ._623de82e76ad7f82-gridContainer {
         z-index: 2;
     }
 }
