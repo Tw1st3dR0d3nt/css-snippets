@@ -209,10 +209,6 @@ button[aria-label="Open sticker picker"], [aria-label="スタンプピッカー�
 ._9293f6b2fc12398a-toolbar [aria-label="Start Video Call"], [aria-label="ビデオ通話を開始"]
 {display: none !important;}
 
-/* Hide camera button in action center */
-.e131a99484292a19-actionButtons [aria-label="Turn On Camera"]
-{display: none!important;}
-
 /* Remove Onboarding member todos bar channel list */
 [class="baf5304d07bec717-progressBarContainer"], [class="baf5304d07bec717-divider"] {
   display: none;
