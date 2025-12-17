@@ -221,9 +221,9 @@ button[aria-label="Open sticker picker"], [aria-label="スタンプピッカー�
 /* Hide duplicate guild name in center of titlebar */
 [class="c38106a3f0c3ca76-title"] {display: none;}
 
-/* Hide reaction suggestions in message hover bar */
-[class^=buttonContainer] > [class^=buttons] {
-    > [class^=buttonsInner] {
+/* Hide reaction suggestions in message popover */
+[class^=c19a557985eb7793-buttonContainer] > [class^=_5126c0cd07f243a0-buttons] {
+    > [class^=_5126c0cd07f243a0-buttonsInner] {
         border: unset;
         padding: unset;
         box-shadow: var(--shadow-low) !important;
@@ -231,28 +231,27 @@ button[aria-label="Open sticker picker"], [aria-label="スタンプピッカー�
         border-radius: 4px;
         > [class^=separator] { display: none; }
         > span {
-            > [class^=hoverBarButton] {
+            > [class^=-hoverBarButton] {
                 padding: unset;
                 height: 32px;
                 width: 32px;
                 border-radius: unset;
                 &:hover > [class^=icon] { transform: unset; }
             }
-            &:has(~ [class^=separator]) { display: none; }
-            &:first-of-type ,[class^=separator] + & {
+            &:has(~ [class^=f84418acfdbdfe54-separator]) { display: none; }
+            &:first-of-type ,[class^=f84418acfdbdfe54-separator] + & {
                 > [class^=hoverBarButton] {
                     border-top-left-radius: 4px;
                     border-bottom-left-radius: 4px;
                 }
             }
-            &:nth-last-of-type(2) > [class^=hoverBarButton] {
+            &:nth-last-of-type(2) > [class^=f84418acfdbdfe54-hoverBarButton] {
                 border-top-right-radius: 4px;
                 border-bottom-right-radius: 4px;
             }
         }
     }
 }
-
 /* Clean up duplicate redundant buttons in chat input area */
 ._740174f3d6a2c8fe-stickerButton, [class="_740174f3d6a2c8fe-button _24af7f4d0326ba4f-button"] {
     display: none !important;
