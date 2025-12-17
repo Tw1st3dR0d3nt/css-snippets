@@ -42,21 +42,6 @@
     text-transform: capitalize;
 }
 
-/* Devices but it looks good */
-[class*="session_"]{
-    background-color: var(--background-secondary);
-    border-radius: 8px;
-    padding: 12px 16px;
-    padding-left: 12px;
-    border-bottom: none;
-    margin-top: 16px;
-    gap: 12px;
-}
-[class*="sessionIcon_"]{
-    color: var(--interactive-normal);
-    background: transparent;
-}
-
 /* More space-efficient settings layout */
 ._23e6b439306f125a-sidebarRegion,
 ._23e6b439306f125a-sidebarRegionScroller  {flex: 0 0 auto;}
@@ -114,14 +99,6 @@
   flex: none;
 }
 
-/* Better Ban UI */
-/* Hides the video, "Reason for Ban", the radio group, "Other", then inserts text in front of "Other" */
-video.spacing__837b7 {display: none;}
-._49fc18ba07c5025f-focusLock ._49fc18ba07c5025f-content.modalContent__837b7.d125d22cdfd32cfe-thin.d125d22cdfd32cfe-scrollerBase:has(.banReasonOtherClickable__837b7) div:nth-child(2) > h2 {display: none;} 
-._6ba63b0447df0219-animatedNode:has(.banReasonOtherClickable__837b7) [role=radio] {display: none;}
-._49fc18ba07c5025f-focusLock .banReasonOtherClickable__837b7 div {font-size: 0px;} 
-._49fc18ba07c5025f-focusLock .banReasonOtherClickable__837b7 div::after {content: "Submit an optional ban reason"; font-size: 16px;} 
-
 /* Animated Pings */
 ._2b1f52e43a8f1c02-numberBadge {
   animation: animatedPing 1.3s infinite ease-in-out;
@@ -158,121 +135,11 @@ li[class*="messageListItem"]:hover {
   background-color: var(--background-accent)!important;
 }
 
-/* Add "@" before Usernames */
-/* User Area */
-[aria-label="User area"] [class^=nameTag_] [class^=hovered_]::before,
-/* Switch Accounts */
-[class^=submenu_] [class^=userMenuUsername] [class^=defaultColor_]::before,
-/* Profiles */
-[class^=accountCard_] [class^=userDetails_] [class^=username_]::before,
-:where([class^=userPopoutInner_], [class^=fullSizeOuter_], [class^=userPanelInner_]) [class^=userTagUsername_]::before,
-/* Mod View */
-[class^=guildSidebar_] [class^=memberNameContainer_] [class="cf48127484dbde85-text-md/medium"]::before,
-[class^=userProfileModalOuter_] [class^=memberNameContainer_] [class="cf48127484dbde85-text-md/medium"]::before,
-/* Members List */
-[class^=roundedRow__] [class="cf48127484dbde85-text-xs/normal"]::before,
-/* Roles/Add Member */
-[class^=addMemberRow_] [class*=rowLabelSubText_]::before,
-/* Roles/Members */
-[class^=memberRow_] [class*=userTag_]::before,
-/* Emoji */
-[class^=emojiRow_] [class^=colorStandard_]::before,
-/* Stickers */
-[class^=tiers_] [class^=user_] [class="cf48127484dbde85-text-xs/normal"]::before,
-/* Soundboard */
-[class^=soundTable_] [class^=uploader_] [class^=defaultColor_]::before,
-/* Audit Log */
-[class^=auditLog_] [class^=title_] [class^=defaultColor_]::before,
-/* Ban List */
-[class^=bannedUser_] [class^=username_]::before,
-/* Friends list */
-[class^=peopleListItem_] [class^=infoSpacing_]::before,
-/* Settings/My Account */
-[class^=accountProfileCard_] [class^=field_]:nth-last-child(3) [class^=usernameInnerRow_]::before {
-    color: var(--text-muted);
-    content: "@";
-}
-
 /* Bring back the @ Sign */
 ._63ed30c16c7151f2-userTag:not(:has(._63ed30c16c7151f2-userTagDiscriminator), ._63ed30c16c7151f2-pronounsText)::before {
     content: "@";
     color: var(--text-muted);
     text-decoration: none;
-}
-
-/* Minimal Connections */
-.c7f964e7e0fc8b47-connectionList {
-  gap: 0px;
-}
-.c7f964e7e0fc8b47-connectionList .c7f964e7e0fc8b47-connection {
-  max-height: 65px!important;
-  overflow: hidden;
-  transition: max-height 1s;
-}
-.c7f964e7e0fc8b47-connectionList .c7f964e7e0fc8b47-connection:hover {
-  max-height: 250px!important;
-}
-
-/**
-  * @name Better Pickers
-  * @description Makes the soundboard/emoji pickers better and less intrusive.
-*/
-[class^=lockedEmoji_]:has(+[class*=emojiLockIconContainer_]),
-[class*=categorySectionNitroLocked_] [class*=emojiItem_]>img,
-[class*=soundRowNitroLocked_] [class^=soundButton_] {
-  filter: grayscale(1) brightness(0.75);
-}
-
-[class^=emojiLockIconContainer_],
-[class^=picker_] [class^=sectionFooter_],
-:is(#emoji-picker-tab-panel, [class^=picker_]) :is(
-  [class^=upsellContainer_],
-  [class^=nitroBottomDivider_],
-  [class^=categoryItemLockIconContainer_]
-) {
-  display: none;
-}
-
-#emoji-picker-tab-panel [class*=categorySectionNitroLocked_],
-[class^=picker_] :is(
-  [class*=sectionContainerNitroLocked_],
-  [class*=soundRowNitroLocked_]
-) {
-  background-color: transparent;
-}
-
-#emoji-picker-tab-panel [class^=closeButton_] {
-  padding: 16px 16px calc(100% - 106px) calc(100% - 40px);
-  margin: 0;
-}
-[class^=picker_] {
-  >[class^=container] [class^=closeButton_] {
-    padding: 16px 16px calc(420px - 106px) calc(100% - 40px);
-    margin: 0;
-  }
-
-  [class^=buttonOverlayActions_] {
-    padding: 0;
-  }
-  [class^=secondaryButton_] {
-    padding: 8px;
-  }
-}
-
-#emoji-picker-tab-panel, [class^=picker_] {
-  [class^=nitroTopDividerShadow_],
-  [class^=nitroTopDividerLower_] {
-    visibility: hidden;
-  }
-  [class^=nitroTopDividerLock],
-  [class^=nitroTopDividerLower_] {
-    background: var(--background-accent);
-  }
-}
-
-/* Remove grayscale on disabled emojis in reaction picker */
-[class^=lockedEmoji_]:has(+[class*=emojiLockIconContainer_]), [class*=categorySectionNitroLocked_] [class*=emojiItem_]>img, [class*=soundRowNitroLocked_] [class^=soundButton_] {
-    filter: grayscale(0) brightness(1);
 }
 
 /* Hide chat box if you have no permissions to write in the channel */
@@ -286,52 +153,6 @@ li[class*="messageListItem"]:hover {
   height: 0px!important;
   width: 0px!important;
   z-index: 0!important;
-}
-
-/* Pin page switcher to bottom of search results */
-[class^="searchResultsWrap_"] [class^=container_]:has([class^=pageControlContainer_]){
-  position: sticky;
-  bottom: 0px;
-  z-index: 999;
-  background: var(--bg-overlay-1, var(--background-secondary));
-}
-
-/* Changes ReadAllNotifications button to look like the DMs one */
-.vc-ranb-button {
-  margin: 0 16px;
-  width: calc(100% - 32px);
-  height: 40px !important;
-  min-height: 40px;
-  max-height: 40px !important;
-  padding: 2px;
-  background-color: var(--background-surface-higher);
-  border: none;
-  border-radius: 12px;
-
-  ._201d5e8a3c09670a-contents {
-    font-size: 0px;
-  }
-
-  ._201d5e8a3c09670a-contents::after {
-    content: "asdfg";
-    font-size: 18px;
-    width: 16px;
-    height: 16px;
-    position: relative;
-    color: transparent;
-    top: 2.5px;
-    left: 6px;
-    background-image: url("data:image/svg+xml,%3Csvg%20x%3D%220%22%20y%3D%220%22%20class%3D%22_9293f6b2fc12398a-icon%22%20aria-hidden%3D%22true%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23D8D8DB%22%20d%3D%22M9.7%202.89c.18-.07.32-.24.37-.43a2%202%200%200%201%203.86%200c.05.2.19.36.38.43A7%207%200%200%201%2019%209.5v2.09c0%20.12.05.24.13.33l1.1%201.22a3%203%200%200%201%20.77%202.01v.28c0%20.67-.34%201.29-.95%201.56-1.31.6-4%201.51-8.05%201.51-4.05%200-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3%203%200%200%201%20.77-2l1.1-1.23a.5.5%200%200%200%20.13-.33V9.5a7%207%200%200%201%204.7-6.61ZM9.18%2019.84A.16.16%200%200%200%209%2020a3%203%200%201%200%206%200c0-.1-.09-.17-.18-.16a24.86%2024.86%200%200%201-5.64%200Z%22%20class%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
-    background-repeat: no-repeat;
-  }
-
-  &:hover {
-    background-color: var(--brand-500);
-
-    ._201d5e8a3c09670a-contents::after {
-      background-image: url("data:image/svg+xml,%3Csvg%20x%3D%220%22%20y%3D%220%22%20class%3D%22_9293f6b2fc12398a-icon%22%20aria-hidden%3D%22true%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M9.7%202.89c.18-.07.32-.24.37-.43a2%202%200%200%201%203.86%200c.05.2.19.36.38.43A7%207%200%200%201%2019%209.5v2.09c0%20.12.05.24.13.33l1.1%201.22a3%203%200%200%201%20.77%202.01v.28c0%20.67-.34%201.29-.95%201.56-1.31.6-4%201.51-8.05%201.51-4.05%200-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3%203%200%200%201%20.77-2l1.1-1.23a.5.5%200%200%200%20.13-.33V9.5a7%207%200%200%201%204.7-6.61ZM9.18%2019.84A.16.16%200%200%200%209%2020a3%203%200%201%200%206%200c0-.1-.09-.17-.18-.16a24.86%2024.86%200%200%201-5.64%200Z%22%20class%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
-    }
-  }
 }
 
 /* SImple channel/settings/dms/member list hover animations */
@@ -354,11 +175,11 @@ li[class*="messageListItem"]:hover {
 :root {
   --round-messages-radius: 8px;
 }
-[class*=cozyMessage] {
+[class*="_5126c0cd07f243a0-cozyMessage"] {
     margin-left: 4px;
     border-radius: var(--round-messages-radius);
 }
-[class*=cozyMessage]:before {
+[class*="_5126c0cd07f243a0-cozyMessage"]:before {
   width: 4px;
   height: calc(100% - 1.5*var(--round-messages-radius));
   align-self: center;
@@ -423,35 +244,7 @@ form>div._49fc18ba07c5025f-focusLock>div._49fc18ba07c5025f-rootWithShadow {
     font-weight: 500;
     /* V Uncomment this line to use the default category color. */
     color: var(--channels-default) !important;
-}
-
-/* Better Image Spoilers */
-:root {
-    --spoiler-blur-hover: 8px;
-}
-[class*="attachmentContainer_"][class*="spoilerContent_"] {
-    background-color: unset;
-    &[class*="hiddenSpoiler_"] {
-        > [class*="spoilerWarning_"] {
-            transition: opacity 50ms ease;
-        }
-        [class*="imageContent_"] {
-            filter: none !important;
-            [class*="imageWrapper_"] > [class*="clickableWrapper_"] {
-                filter: blur(var(--custom-message-attachment-spoiler-blur-radius));
-                transition: filter 80ms ease-out;
-            }
-        }
-        &:hover {
-            > [class*="spoilerWarning_"] {
-                opacity: 0.2;
-            }
-            [class*="imageWrapper_"] > [class*="clickableWrapper_"] {
-                filter: blur(var(--spoiler-blur-hover));
-            }
-        }
-    }
-}
+}y
 
 /* Colored Embeds */
 ._623de82e76ad7f82-embedFull {
