@@ -314,3 +314,29 @@ form>div._49fc18ba07c5025f-focusLock>div._49fc18ba07c5025f-rootWithShadow {
 ._37e49614b9f110a9-avatarWrapper ._37e49614b9f110a9-avatar{
   margin-left: 10px;
 }
+
+/* Colored Embeds */
+._623de82e76ad7f82-embedFull {
+    overflow: hidden;
+
+    &::before {
+        top: -1px;
+        content: "";
+        position: absolute;
+        border: inherit;
+        border-left-width: 100vw;
+        max-width: 100%;
+        height: calc(100% + 2px);
+        box-sizing: border-box !important;
+        opacity: 0.25;
+        z-index: 1;
+        border-radius: 0px 8px 8px 0px;
+    }
+
+    ._623de82e76ad7f82-gridContainer {
+        z-index: 2;
+    }
+}
+._60fa3b8f3ca9845f-withAccentColor {
+    background: color-mix(in srgb, var(--background-surface-high), var(--__accent-color) 25%);
+}

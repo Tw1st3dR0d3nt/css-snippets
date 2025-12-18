@@ -13,6 +13,3 @@
 
 /* Hide Minimum System Requirements warning for Clips */
 .e3f97f0d3cd70794-warning {display: none;}
-
-/* Hide Checkpoint Button */
-[class="_85643a485899904b-button _9293f6b2fc12398a-iconWrapper _9293f6b2fc12398a-clickable"]:is([aria-label="Checkpoint"]) {display: none!important;}
