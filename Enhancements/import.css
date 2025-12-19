@@ -340,3 +340,42 @@ form>div._49fc18ba07c5025f-focusLock>div._49fc18ba07c5025f-rootWithShadow {
 ._60fa3b8f3ca9845f-withAccentColor {
     background: color-mix(in srgb, var(--background-surface-high), var(--__accent-color) 25%);
 }
+
+
+/* CompactSidebarButtons */
+/* @import url(//raw.githubusercontent.com/CeaAPI/vencord-snippets/main/CompactSidebarButtons/CompactSidebarButtons.css); */
+nav[class^="e6b7699ce8339e1c-privateChannels"] ul[role="list"] {
+    >div:nth-of-type(-n+5),
+    >li:nth-of-type(-n+1) {
+        display: inline-block;
+
+        [class^="_20a53846fe2e8513-avatar"],
+        [href^="/"] {
+            margin: 0;
+            padding: 5px;
+        }
+
+        [class^="_20a53846fe2e8513-name"],
+        [class^="_4ed1af9a212b8f4f-newBadge"] {
+            display: none;
+        }
+    }
+
+    >[class^="e6b7699ce8339e1c-friendsButtonContainer"] {
+        width: calc(100% - 192px);
+		float: left;
+
+        [class^="-name"] {
+            display: block !important;
+        }
+    }
+
+	>:nth-child(2) {
+        width: auto;
+		float: none;
+
+        [class^="-name"] {
+            display: none !important;
+        }
+    }
+}
