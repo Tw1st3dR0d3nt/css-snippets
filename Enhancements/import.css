@@ -212,7 +212,7 @@ form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
 
     .input__0ed4f.error__0ed4f:focus {
         color: var(--text-normal);
-        transition-property0: border-color, color;
+        transition-property: border-color, color;
     }
 
     .footer__49fc1 {
