@@ -228,29 +228,6 @@ form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
     font-weight: 500;
     /* V Uncomment this line to use the default category color. */
     color: var(--channels-default) !important;
-}y
-
-/* Colored Embeds */
-.embedFull__623de {
-    overflow: hidden;
-
-    &::before {
-        top: -1px;
-        content: "";
-        position: absolute;
-        border: inherit;
-        border-left-width: 100vw;
-        max-width: 100%;
-        height: calc(100% + 2px);
-        box-sizing: border-box !important;
-        opacity: 0.25;
-        z-index: 1;
-        border-radius: 0px 8px 8px 0px;
-    }
-
-    .gridContainer__623de {
-        z-index: 2;
-    }
 }
 
 /*                        ##########################
