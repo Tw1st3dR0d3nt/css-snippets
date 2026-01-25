@@ -9,14 +9,14 @@
                           ##################                        */
 
 /* Hides "Boost Server" button in server settings emoji tab */
-[class="c69b6db0641110f6-containerDefault _2ea32c412048f708-wrapper _877f0e9008f12b8d-container"] {display: none;}
+[class="containerDefault_c69b6d wrapper__2ea32 container__877f0"] {display: none;}
 
 /* Hides "Get Nitro" button when pressing on a nitro emoji in chat */
-[class="d5cd2da5733d0b6e-emojiSection"] [class*=-shinyButton]
+[class="emojiSection_d5cd2d"] [class*=-shinyButton]
 { display: none !important; }
 
 /* Hides "Try out Nitro!" section in user settings profiles tab */
-[class="_65c15724a894a2e0-premiumBackground _65c15724a894a2e0-background"] {display: none;}
+[class="premiumBackground__65c15 background__65c15"] {display: none;}
 
 /* Hide Floating Nitro Upsell in Profile Customiztion */
 [class*="-floatingNitroUpsell"]{display: none !important;}
@@ -31,20 +31,20 @@ div[aria-label="Enable Super Reactions"]{display: none !important;}
 ul[aria-label="Channels"] > div + div + div[class^="container_"] {display: none;}
 
 /* Hides message size upsell in message bar */
-._6c5a1559a27b6653-root._795fb60671d128c1-upsell,
+.root__6c5a1.upsell__795fb,
 
 /* Hides nitro icon in profile banners */
 div[class^="premiumIconWrapper"] {display: none;}
 
 /* Hides nitro upsell in user settings server profiles tab */
-[class="_0f7dce48ad846f17-upsellOverlayContainer"] {display: none;}
+[class="upsellOverlayContainer__0f7dc"] {display: none;}
 
 /* Hides shop upsell in user settings profiles tab */
-[class^="_8279f38edc620354-container"]:has([class^="_8279f38edc620354-artContainer"]) {display: none;}
+[class^="container__8279f"]:has([class^="artContainer__8279f"]) {display: none;}
 [class^="profileBadges"][class^="profileBadges"] {flex: none;}
 
 /* Hide Server Boosts button in guild channel list */
-[class="_0d0f9ddd12a3ace3-container _0d0f9ddd12a3ace3-containerWithMargin"] {display: none;}
+[class="container__0d0f9 containerWithMargin__0d0f9"] {display: none;}
 
 /* Hide Nitro button in DMs list */
 [href="/store"] {display: none}

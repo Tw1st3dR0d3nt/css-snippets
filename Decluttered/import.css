@@ -9,13 +9,13 @@
                           ##################                        */
 
 /* Hides "Copy Channel ID" in user context menus */
-.c1e9c47c23f12ca3-menu.c1e9c47c23f12ca3-flexible .c1e9c47c23f12ca3-item.c1e9c47c23f12ca3-labelContainer.c1e9c47c23f12ca3-colorDefault[id^="user-context-devmode-copy-id"]:nth-child(2),
+.menu_c1e9c4.flexible_c1e9c4 .item_c1e9c4.labelContainer_c1e9c4.colorDefault_c1e9c4[id^="user-context-devmode-copy-id"]:nth-child(2),
 
 /* Hides quick react deadspace */
-.f563df886a7377be-wrapper,
+.wrapper_f563df,
 
 /* Hides separators in context menus entirely */
-.c1e9c47c23f12ca3-separator,
+.separator_c1e9c4,
 
 /* Skins channel context menu */
 #channel-context-clone-channel,
@@ -162,7 +162,7 @@
 {display: none !important;}
 
 /* Hides Billing section entirely */
-[class="_409aa1aeee28d5f7-section"]:is([aria-label="Billing Settings"],[aria-label="請求設定"])
+[class="section__409aa"]:is([aria-label="Billing Settings"],[aria-label="請求設定"])
 {display: none;}
 
 /* Skins Server Settings Sidebar */
@@ -170,7 +170,7 @@
 {display: none !important;}
 
 /* Discord Version and other client information in User Settings */
-[class="_2debea61131de3de-clickable _2debea61131de3de-compact"], [class="_7aac80f6cab00c3b-links"] {display: none !important;}
+[class="clickable__2debe compact__2debe"], [class="links__7aac8"] {display: none !important;}
 
 
 /*                        ##################
@@ -178,12 +178,12 @@
                           ##################                        */
 
 /* Remove Close button in DMs */
-._972a0d22c8afa7f0-closeIcon, ._972a0d22c8afa7f0-favoriteIcon {
+.closeIcon__972a0, .favoriteIcon__972a0 {
     display: none;
 }
 
 /* Hides "Create Invite" button next to guild name */
-div[class*="f37cb1984c371ee5-inviteButton"] {display: none !important;}
+div[class*="inviteButton_f37cb1"] {display: none !important;}
 
 /* Hides "Help" button in home */
 div[aria-label="Help"], [aria-label="ヘルプ"] {display: none !important;}
@@ -194,38 +194,38 @@ button[aria-label="Open sticker picker"], [aria-label="スタンプピッカー�
 {display: none;}
 
 /* Hide Gift button */
-[class="c0c49a3e5c8626ac-container"]:has([aria-label="Send a gift"], [aria-label="ギフトを贈る"]) {display: none !important;}
+[class="container_c0c49a"]:has([aria-label="Send a gift"], [aria-label="ギフトを贈る"]) {display: none !important;}
 
 /* Hide Soundboard button in group voice calls */
-[class="_681988f3540a79af-voiceEffectsActionBar"], [class="_681988f3540a79af-divider"]
+[class="voiceEffectsActionBar__68198"], [class="divider__68198"]
 {display: none !important;}
 
 /* Hide transfer to console button in group voice */
 [aria-label="Transfer to Console"], [aria-label="コンソール本体に転送"],
-[class="_681988f3540a79af-divider"] /* remove wasted space */
+[class="divider__68198"] /* remove wasted space */
 {display: none;}
 
 /* Video Call Toolbar Button */
-._9293f6b2fc12398a-toolbar [aria-label="Start Video Call"], [aria-label="ビデオ通話を開始"]
+.toolbar__9293f [aria-label="Start Video Call"], [aria-label="ビデオ通話を開始"]
 {display: none !important;}
 
 /* Remove Onboarding member todos bar channel list */
-[class="baf5304d07bec717-progressBarContainer"], [class="baf5304d07bec717-divider"] {
+[class="progressBarContainer_baf530"], [class="divider_baf530"] {
   display: none;
 }
 
 /* Hide duplicate guild name in center of titlebar */
-[class="c38106a3f0c3ca76-title"] {display: none;}
+[class="title_c38106"] {display: none;}
 
 /* Hide reaction suggestions in message popover */
-[class^=c19a557985eb7793-buttonContainer] > [class^=_5126c0cd07f243a0-buttons] {
-    > [class^=_5126c0cd07f243a0-buttonsInner] {
+[class^=buttonContainer_c19a55] > [class^=buttons__5126c] {
+    > [class^=buttonsInner__5126c] {
         border: unset;
         padding: unset;
         box-shadow: var(--shadow-low) !important;
         background-color: var(--background-base-low);
         border-radius: 4px;
-        > [class^=f84418acfdbdfe54-separator] { display: none; }
+        > [class^=separator_f84418] { display: none; }
         > span {
             > [class^=-hoverBarButton] {
                 padding: unset;
@@ -234,14 +234,14 @@ button[aria-label="Open sticker picker"], [aria-label="スタンプピッカー�
                 border-radius: unset;
                 &:hover > [class^=icon] { transform: unset; }
             }
-            &:has(~ [class^=f84418acfdbdfe54-separator]) { display: none; }
-            &:first-of-type ,[class^=f84418acfdbdfe54-separator] + & {
+            &:has(~ [class^=separator_f84418]) { display: none; }
+            &:first-of-type ,[class^=separator_f84418] + & {
                 > [class^=hoverBarButton] {
                     border-top-left-radius: 4px;
                     border-bottom-left-radius: 4px;
                 }
             }
-            &:nth-last-of-type(2) > [class^=f84418acfdbdfe54-hoverBarButton] {
+            &:nth-last-of-type(2) > [class^=hoverBarButton_f84418] {
                 border-top-right-radius: 4px;
                 border-bottom-right-radius: 4px;
             }
@@ -249,9 +249,9 @@ button[aria-label="Open sticker picker"], [aria-label="スタンプピッカー�
     }
 }
 /* Clean up duplicate redundant buttons in chat input area */
-._740174f3d6a2c8fe-stickerButton, [class="_740174f3d6a2c8fe-button _24af7f4d0326ba4f-button"] {
+.stickerButton__74017, [class="button__74017 button__24af7"] {
     display: none !important;
 }
 
 /* Hide Checkpoint Button */
-[class="_85643a485899904b-button _9293f6b2fc12398a-iconWrapper _9293f6b2fc12398a-clickable"]:is([aria-label="Checkpoint"]) {display: none!important;}
+[class="button__85643 iconWrapper__9293f clickable__9293f"]:is([aria-label="Checkpoint"]) {display: none!important;}
