@@ -22,36 +22,3 @@ A snippet that improves various elements in Discord.
 ```
 #### Theme Link
 https://tw1st3dr0d3nt.github.io/css-snippets/Enhancements/import.css
-
-
-# Import Fixes
-Temporarily fixes broken imports while waiting for the original to update.
-
-### Importing:
-```css
-@import url(//tw1st3dr0d3nt.github.io/css-snippets/ImportFixes/import.css);
-```
-#### Theme Link
-https://tw1st3dr0d3nt.github.io/css-snippets/ImportFixes/import.css
-
-
-## Nitroless
-A snippet that removes any Nitro upsells from discord.
-
-### Importing:
-```css
-@import url(//tw1st3dr0d3nt.github.io/css-snippets/Nitroless/import.css);
-```
-#### Theme Link
-https://tw1st3dr0d3nt.github.io/css-snippets/Nitroless/import.css
-
-
-## Roundcord
-A snippet that rounds various UI elements in discord for a more modern feel.
-
-### Importing:
-```css
-@import url(//tw1st3dr0d3nt.github.io/css-snippets/Roundcord/import.css);
-```
-#### Theme Link
-https://tw1st3dr0d3nt.github.io/css-snippets/Roundcord/import.css
