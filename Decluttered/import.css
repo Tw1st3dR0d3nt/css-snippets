@@ -172,6 +172,9 @@
 /* Discord Version and other client information in User Settings */
 [class="clickable__2debe compact__2debe"], [class="links__7aac8"] {display: none !important;}
 
+/* Hide Minimum System Requirements warning for Clips */
+.warning_e3f97f {display: none;}
+
 
 /*                        ##################
    ====================== # Tabs & Buttons # ====================== 

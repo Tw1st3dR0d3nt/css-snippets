@@ -1,7 +1,6 @@
 /* Tw1st3dR0d3nt's Imports */
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Decluttered/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Enhancements/import.css);
-@import url(//tw1st3dr0d3nt.github.io/css-snippets/Nitroless/import.css);
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/SettingsIcons/main.min.css);
 
 /* Other Imports */
@@ -9,6 +8,3 @@
 @import url(//davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
 @import url(//davart154.github.io/Themes/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css);
 @import url(//raw.githubusercontent.com/CeaAPI/vencord-snippets/main/CompactSidebarButtons/CompactSidebarButtons.css);
-
-/* Hide Minimum System Requirements warning for Clips */
-.warning_e3f97f {display: none;}
