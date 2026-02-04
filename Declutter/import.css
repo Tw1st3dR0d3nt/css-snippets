@@ -216,6 +216,9 @@ button[aria-label="Open sticker picker"], [aria-label="スタンプピッカー�
 /* Hide duplicate guild name in center of titlebar */
 [class="title_c38106"] {display: none;}
 
+/* Hide DevTools button in titlebar */
+[aria-label="DevTools"] {display: none !important;}
+
 /* Hide reaction suggestions in message hover bar */
 [class^=buttonContainer] > [class^=buttons] {
     > [class^=buttonsInner] {
