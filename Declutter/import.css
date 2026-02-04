@@ -218,6 +218,7 @@ button[aria-label="Open sticker picker"], [aria-label="スタンプピッカー�
 
 /* Hide DevTools button in titlebar */
 [aria-label="DevTools"] {display: none !important;}
+.anchor_edefb8 {display: none;} /* hide wasted space from DevTools button */
 
 /* Hide reaction suggestions in message hover bar */
 [class^=buttonContainer] > [class^=buttons] {
@@ -256,6 +257,8 @@ button[aria-label="Open sticker picker"], [aria-label="スタンプピッカー�
     display: none !important;
 }
 
+/* Hides "Open App Launcher" button in chat input area */
+[class="buttonContainer_e6e74f app-launcher-entrypoint"] {display: none !important;}
 
 /*                        ##################
    ====================== #   Nitroless%   # ====================== 
