@@ -338,13 +338,13 @@ form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
 /* Credit to @thecommieaxolotl for this code. */
 /* --Hides User Buttons until Hover-- */
 /* Hide mute and deafen buttons */
-.panels__5e434 > .container__37e49 .buttons__37e49 > :not(:nth-last-child(2)) {
+.panels__5e434 > .container__37e49 .buttons__37e49 > :not(:nth-last-child(1)) {
   opacity: 0% !important;
   width: 0px;
   transition: all 0.3s ease-in-out;
 }
 /* Reveal mute and Deafen buttons when settings button is hovered */
-.panels__5e434 > .container__37e49 .buttons__37e49:hover > :not(:nth-last-child(2)) {
+.panels__5e434 > .container__37e49 .buttons__37e49:hover > :not(:nth-last-child(5)) {
   opacity: 100% !important;
   width: 32px;
 }
