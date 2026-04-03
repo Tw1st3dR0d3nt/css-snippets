@@ -274,7 +274,7 @@ button[aria-label="Open sticker picker"], [aria-label="スタンプピッカー�
 [class*=tryItOutSection__] {display: none;}
 
 /* Hide Floating Nitro Upsell in Profile Customiztion */
-[class*="floatingNitroUpsell__"]{display: none !important;}
+[class*="upsellContainer__"]{display: none !important;}
 
 /* Hides "Unlock with Nitro" button when hovering a super reaction */
 [class^="burstReactionTooltipPrompt_"] {display: none;}
