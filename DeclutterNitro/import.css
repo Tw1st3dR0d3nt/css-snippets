@@ -161,10 +161,6 @@
 [data-settings-sidebar-item="family_center_panel"]
 {display: none !important;}
 
-/* Hides Billing section entirely */
-[class="section__409aa"]:is([aria-label="Billing"],[aria-label="請求"])
-{display: none;}
-
 /* Skins Server Settings Sidebar */
 [data-tab-id="APP_DIRECTORY"]
 {display: none !important;}

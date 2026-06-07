@@ -161,10 +161,6 @@
 [data-settings-sidebar-item="family_center_panel"]
 {display: none !important;}
 
-/* Hides Billing section entirely */
-[class="section__409aa"]:is([aria-label="Billing"],[aria-label="請求"])
-{display: none;}
-
 /* Skins Server Settings Sidebar */
 [data-tab-id="APP_DIRECTORY"]
 {display: none !important;}
@@ -265,6 +261,10 @@ button[aria-label="Open sticker picker"], [aria-label="スタンプピッカー�
 
 /* Hides "Boost Server" button in server settings emoji tab */
 .banner_ec75b3 {display: none;}
+
+/* Hides Billing section entirely */
+[class="section__409aa"]:is([aria-label="Billing"],[aria-label="請求"])
+{display: none;}
 
 /* Hides "Get Nitro" button when pressing on a nitro emoji in chat */
 [class^=emojiSection_] [class*=shinyButton_]
