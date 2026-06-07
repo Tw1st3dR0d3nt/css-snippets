@@ -299,7 +299,7 @@ div[class^="premiumIconWrapper"] {display: none;}
 [class^="profileBadges"][class^="profileBadges"] {flex: none;}
 
 /* Hide Server Boosts button in guild channel list */
-[class="containerDefault_c69b6d wrapper__2ea32 container__877f0"] {display: none;}
+/* [class="containerDefault_c69b6d wrapper__2ea32 container__877f0"] {display: none;} */
 
 /* Hide Nitro button in DMs list */
 [href="/store"] {display: none}
