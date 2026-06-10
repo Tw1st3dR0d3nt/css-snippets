@@ -100,7 +100,7 @@
 }
 
 /* Animated Pings */
-.numberBadge__2b1f5 {
+.numberBadge__463b7 {
   animation: animatedPing 1.3s infinite ease-in-out;
 }
 @keyframes animatedPing {
@@ -113,6 +113,10 @@
    100% {
      transform: rotate(-10deg);   
     }
+}
+/* Recolored New message badge */
+.numberBadge__463b7 {
+  background-color: var(--background-accent)!important;
 }
 
 /* Animate messages on hover */
@@ -128,11 +132,6 @@ li[class*="messageListItem"] {
 [class*="messageListItem"]:hover,
 li[class*="messageListItem"]:hover {
     transform: translateX(6px);
-}
-
-/* Recolored New message badge */
-.numberBadge__2b1f5 {
-  background-color: var(--background-accent)!important;
 }
 
 /* Bring back the @ Sign */
