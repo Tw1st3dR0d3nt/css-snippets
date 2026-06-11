@@ -255,6 +255,9 @@ button[aria-label="Open sticker picker"], [aria-label="スタンプピッカー�
 /* Hides "Open App Launcher" button in chat input area */
 [class="buttonContainer_e6e74f app-launcher-entrypoint"] {display: none !important;}
 
+/* Hide invite suggestion popup when you join voice calls */
+div[class="animation_f2170c"]:has(.content_f2170c) {display: none !important;}
+
 /*                        ##################
    ====================== #   Nitroless%   # ====================== 
                           ##################                        */
