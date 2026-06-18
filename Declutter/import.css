@@ -254,6 +254,21 @@ button[aria-label="Open sticker picker"], [aria-label="スタンプピッカー�
 /* Hide invite suggestion popup when you join voice calls */
 div[class="animation_f2170c"]:has(.content_f2170c) {display: none !important;}
 
+/* Quest tiles */
+div:has(> article[id^="quest-tile-"]) {
+    /* Hide already claimable/completed quests */
+    &:has(button.primary_a22cb0:not([aria-busy])) {
+        display: none;
+    }
+    /* Hide non-orb quests */
+    &:not(:has(img[src*="39556a7eb79145be"])) {
+        display: none;
+    }
+}
+/* Hide sponsor banner */
+.heroWrapper__955a3 {
+    display: none;
+}
 
 /* ====================== #   Nitroless%   # ====================== */
 
