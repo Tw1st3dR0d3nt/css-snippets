@@ -161,10 +161,6 @@
 [data-settings-sidebar-item="family_center_panel"]
 {display: none !important;}
 
-/* Skins Server Settings Sidebar */
-[data-tab-id="APP_DIRECTORY"]
-{display: none !important;}
-
 /* Discord Version and other client information in User Settings */
 [class="clickable__2debe compact__2debe"], [class="links__7aac8"] {display: none !important;}
 
@@ -177,7 +173,7 @@
                           ##################                        */
 
 /* Remove Close button in DMs */
-.closeIcon__972a0, .favoriteIcon__972a0 {
+.closeIcon__972a0{
     display: none;
 }
 
@@ -258,3 +254,37 @@ button[aria-label="Open sticker picker"], [aria-label="スタンプピッカー�
 /* Hide invite suggestion popup when you join voice calls */
 div[class="animation_f2170c"]:has(.content_f2170c) {display: none !important;}
 
+
+/* ====================== #   Nitroless%   # ====================== */
+
+/* No Distractions */
+[class*="marketingButtonBackground"],
+[class*="newBadge_"],
+[class*="premiumTab"],
+[class*="premiumBadge"],
+[class*="premiumFeatureBorder"],
+div[class*="selectionGroup"]:has(div[class*="tryItOutButtons"] > button[class*="shinyButton_"]),
+[class*="upsell"]
+{display: none;}
+
+/* newly added emojis in emoji picker */
+[class*="newlyAddedBadge_"] {display: none;}
+[class*="newlyAddedHighlight_"] {
+    border: unset !important;
+}
+
+/* Hide Nitro button in DMs list */
+[href="/store"] {display: none}
+
+/* Hides shop upsell in user settings profiles tab */
+[class^=container__8279f]:has([class^=artContainer_]) {display: none;}
+[class^="profileBadges"][class^="profileBadges"] {flex: none;}
+
+/* Hides "Boost Server" button in server settings emoji tab */
+.banner_ec75b3 {display: none;}
+
+/* Hides boost progress bar in servers */
+ul[aria-label="Channels"] > div + div + div[class^="container_"] {display: none;}
+
+/* Hide Super Reactions button toggle in reaction picker */
+div[aria-label="Enable Super Reactions"]{display: none !important;}
