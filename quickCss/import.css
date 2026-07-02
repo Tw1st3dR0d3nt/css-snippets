@@ -4,8 +4,9 @@
 
 /* Other Imports */
 @import url(//davart154.github.io/Themes/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css);
+@import url(//davart154.github.io/Themes/Snippets/Plugin%20Icon%20Consistency/IconConsistencySource.css);
 @import url(//raw.githubusercontent.com/CeaAPI/vencord-snippets/main/CompactSidebarButtons/CompactSidebarButtons.css);
 
 /* Hides Billing section entirely */
-[class="section__409aa"]:has([data-settings-sidebar-item="nitro_panel"],[aria-label="請求"])
+[class="section__409aa"]:has([data-settings-sidebar-item="nitro_panel"])
 {display: none;}
