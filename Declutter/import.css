@@ -279,7 +279,8 @@ div:has(> article[id^="quest-tile-"]) {
 [class*="premiumBadge"],
 [class*="premiumFeatureBorder"],
 div[class*="selectionGroup"]:has(div[class*="tryItOutButtons"] > button[class*="shinyButton_"]),
-[class*="upsell"]
+[class*="upsell"],
+[class*="guildProfileUpsell"]
 {display: none;}
 
 /* newly added emojis in emoji picker */
