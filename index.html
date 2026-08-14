@@ -1,108 +1,94 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="CSS snippets for customizing Discord.">
-  <title>CSS Snippets — Discord Customization</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CSS Snippets</title>
+<meta name="description" content="Reusable CSS snippets for Discord customization.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="topbar">
-  <div class="wrap topbar-inner">
-    <a class="brand" href="#top"><span class="prompt">$</span> css-snippets</a>
-    <nav>
-      <a href="#snippets">snippets</a>
-      <a href="#install">install</a>
-      <a href="https://github.com/Tw1st3dR0d3nt/css-snippets" target="_blank" rel="noopener">github ↗</a>
-    </nav>
-  </div>
+<header class="header">
+  <a class="logo" href="#top"><span>CSS</span> Snippets</a>
+  <nav><a href="#snippets">Snippets</a><a href="#install">Guide</a><a href="https://github.com/Tw1st3dR0d3nt/css-snippets" target="_blank" rel="noopener">GitHub ↗</a></nav>
 </header>
 
 <main id="top">
-  <section class="hero wrap">
-    <div class="hero-grid">
-      <div>
-        <div class="terminal-label">TW1ST3DR0D3NT / CSS-SNIPPETS</div>
-        <h1>Customize Discord.<br><span>Keep it yours.</span></h1>
-        <p>A small collection of practical CSS snippets for cleaning up, tweaking, and enhancing the Discord interface.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#snippets">Browse library</a>
-          <a class="btn" href="https://github.com/Tw1st3dR0d3nt/css-snippets" target="_blank" rel="noopener">Open GitHub</a>
-        </div>
-      </div>
-      <div class="terminal">
-        <div class="terminal-head"><span></span><span></span><span></span><b>snippet-import.css</b></div>
-        <pre><code><i>@import</i> url(
-  //tw1st3dr0d3nt.github.io/
-  css-snippets/Declutter/import.css
-);</code></pre>
-        <div class="terminal-foot">ready · 4 snippets available</div>
-      </div>
-    </div>
-  </section>
+<section class="mast">
+  <div class="mast-copy">
+    <div class="eyebrow">DISCORD / CUSTOM CSS</div>
+    <h1>Small CSS.<br><em>Big changes.</em></h1>
+    <p>A focused collection of reusable snippets for changing the Discord interface without digging through a pile of files.</p>
+    <a class="text-link" href="#snippets">Explore the snippets <span>→</span></a>
+  </div>
+  <div class="mast-art" aria-hidden="true">
+    <div class="bracket">{</div>
+    <div class="art-code"><span>.discord</span> {<br>&nbsp;&nbsp;display: <b>better</b>;<br>&nbsp;&nbsp;opacity: <b>1</b>;<br>}</div>
+    <div class="bracket">}</div>
+  </div>
+</section>
 
-  <section class="library wrap" id="snippets">
-    <div class="section-head">
-      <div><span class="section-kicker">01 / LIBRARY</span><h2>Available snippets</h2></div>
-      <span class="count" id="count">4 snippets</span>
-    </div>
+<section class="snippet-section" id="snippets">
+  <div class="section-bar">
+    <div><span class="number">01</span><h2>Snippet library</h2></div>
+    <label class="search"><span>⌕</span><input id="search" placeholder="Find a snippet…" autocomplete="off"></label>
+  </div>
 
-    <div class="tools">
-      <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search snippets..."></label>
-      <div class="filters">
-        <button class="active" data-filter="all">all</button>
-        <button data-filter="cleanup">declutter</button>
-        <button data-filter="enhancement">enhancer</button>
-        <button data-filter="settings">settings</button>
-        <button data-filter="quick">quick css</button>
-      </div>
-    </div>
+  <div class="filters" id="filters">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="cleanup">Declutter</button>
+    <button data-filter="enhancement">Enhancer</button>
+    <button data-filter="settings">Settings</button>
+    <button data-filter="quick">Quick CSS</button>
+  </div>
 
-    <div class="grid" id="grid">
-      <article class="card" data-category="cleanup" data-search="declutter cleanup clean discord">
-        <div class="card-head"><span class="index">01</span><span class="tag cleanup">cleanup</span></div>
-        <h3>Declutter</h3><p>Reduce visual clutter and unnecessary interface elements.</p>
-        <code class="import">@import url(//tw1st3dr0d3nt.github.io/css-snippets/Declutter/import.css);</code>
-        <div class="card-foot"><button class="copy" data-copy="@import url(//tw1st3dr0d3nt.github.io/css-snippets/Declutter/import.css);">copy import</button><a href="https://github.com/Tw1st3dR0d3nt/css-snippets/tree/master/Declutter" target="_blank" rel="noopener">source ↗</a></div>
-      </article>
-      <article class="card" data-category="enhancement" data-search="enhancer enhancement ui discord interface">
-        <div class="card-head"><span class="index">02</span><span class="tag enhancement">enhancement</span></div>
-        <h3>Enhancer</h3><p>UI refinements for a cleaner and more polished Discord experience.</p>
-        <code class="import">@import url(//tw1st3dr0d3nt.github.io/css-snippets/Enhancer/import.css);</code>
-        <div class="card-foot"><button class="copy" data-copy="@import url(//tw1st3dr0d3nt.github.io/css-snippets/Enhancer/import.css);">copy import</button><a href="https://github.com/Tw1st3dR0d3nt/css-snippets/tree/master/Enhancer" target="_blank" rel="noopener">source ↗</a></div>
-      </article>
-      <article class="card" data-category="settings" data-search="settings icons settingsicons">
-        <div class="card-head"><span class="index">03</span><span class="tag settings">settings</span></div>
-        <h3>Settings Icons</h3><p>CSS for improving settings icon presentation throughout Discord.</p>
-        <code class="import">@import url(//tw1st3dr0d3nt.github.io/css-snippets/SettingsIcons/main.min.css);</code>
-        <div class="card-foot"><button class="copy" data-copy="@import url(//tw1st3dr0d3nt.github.io/css-snippets/SettingsIcons/main.min.css);">copy import</button><a href="https://github.com/Tw1st3dR0d3nt/css-snippets/tree/master/SettingsIcons" target="_blank" rel="noopener">source ↗</a></div>
-      </article>
-      <article class="card" data-category="quick" data-search="quick css quickcss utility tweaks">
-        <div class="card-head"><span class="index">04</span><span class="tag quick">quick css</span></div>
-        <h3>Quick CSS</h3><p>Small, focused tweaks for quick Discord customization.</p>
-        <code class="import">@import url(//tw1st3dr0d3nt.github.io/css-snippets/quickCss/import.css);</code>
-        <div class="card-foot"><button class="copy" data-copy="@import url(//tw1st3dr0d3nt.github.io/css-snippets/quickCss/import.css);">copy import</button><a href="https://github.com/Tw1st3dR0d3nt/css-snippets/tree/master/quickCss" target="_blank" rel="noopener">source ↗</a></div>
-      </article>
-    </div>
-    <div class="empty" id="empty" hidden>No matching snippets.</div>
-  </section>
+  <div class="snippet-table" id="list">
+    <article class="item" data-category="cleanup" data-search="declutter cleanup discord interface">
+      <div class="item-title"><span class="dot blue"></span><div><h3>Declutter</h3><p>Reduce visual clutter and unnecessary interface elements.</p></div></div>
+      <div class="item-path">Declutter/import.css</div>
+      <div class="import-row"><code>@import url(//tw1st3dr0d3nt.github.io/css-snippets/Declutter/import.css);</code><button class="copy" data-copy="@import url(//tw1st3dr0d3nt.github.io/css-snippets/Declutter/import.css);">COPY</button></div>
+      <a class="source" href="https://github.com/Tw1st3dR0d3nt/css-snippets/tree/master/Declutter" target="_blank" rel="noopener">source ↗</a>
+    </article>
 
-  <section class="install wrap" id="install">
-    <div class="section-head"><div><span class="section-kicker">02 / INSTALL</span><h2>Three steps. Done.</h2></div></div>
-    <div class="steps">
-      <div><b>01</b><h3>Pick a snippet</h3><p>Choose a customization from the library.</p></div>
-      <div><b>02</b><h3>Copy the import</h3><p>Use the copy button to grab its import line.</p></div>
-      <div><b>03</b><h3>Add it to your client</h3><p>Paste it into your custom CSS/import configuration.</p></div>
-    </div>
-  </section>
+    <article class="item" data-category="enhancement" data-search="enhancer enhancement discord ui interface">
+      <div class="item-title"><span class="dot purple"></span><div><h3>Enhancer</h3><p>UI refinements for a cleaner Discord experience.</p></div></div>
+      <div class="item-path">Enhancer/import.css</div>
+      <div class="import-row"><code>@import url(//tw1st3dr0d3nt.github.io/css-snippets/Enhancer/import.css);</code><button class="copy" data-copy="@import url(//tw1st3dr0d3nt.github.io/css-snippets/Enhancer/import.css);">COPY</button></div>
+      <a class="source" href="https://github.com/Tw1st3dR0d3nt/css-snippets/tree/master/Enhancer" target="_blank" rel="noopener">source ↗</a>
+    </article>
+
+    <article class="item" data-category="settings" data-search="settings settingsicons icons discord">
+      <div class="item-title"><span class="dot green"></span><div><h3>Settings Icons</h3><p>Improve the presentation of settings icons throughout Discord.</p></div></div>
+      <div class="item-path">SettingsIcons/main.min.css</div>
+      <div class="import-row"><code>@import url(//tw1st3dr0d3nt.github.io/css-snippets/SettingsIcons/main.min.css);</code><button class="copy" data-copy="@import url(//tw1st3dr0d3nt.github.io/css-snippets/SettingsIcons/main.min.css);">COPY</button></div>
+      <a class="source" href="https://github.com/Tw1st3dR0d3nt/css-snippets/tree/master/SettingsIcons" target="_blank" rel="noopener">source ↗</a>
+    </article>
+
+    <article class="item" data-category="quick" data-search="quick css quickcss tweaks utility">
+      <div class="item-title"><span class="dot orange"></span><div><h3>Quick CSS</h3><p>Small, focused tweaks for quick customization.</p></div></div>
+      <div class="item-path">quickCss/import.css</div>
+      <div class="import-row"><code>@import url(//tw1st3dr0d3nt.github.io/css-snippets/quickCss/import.css);</code><button class="copy" data-copy="@import url(//tw1st3dr0d3nt.github.io/css-snippets/quickCss/import.css);">COPY</button></div>
+      <a class="source" href="https://github.com/Tw1st3dR0d3nt/css-snippets/tree/master/quickCss" target="_blank" rel="noopener">source ↗</a>
+    </article>
+  </div>
+  <div id="empty" class="empty" hidden>No snippets found.</div>
+</section>
+
+<section class="guide" id="install">
+  <div class="guide-heading"><span class="number">02</span><h2>Quick start</h2></div>
+  <div class="guide-steps">
+    <div><span>01</span><strong>Choose</strong><p>Pick a snippet from the library above.</p></div>
+    <div><span>02</span><strong>Copy</strong><p>Copy its <code>@import</code> line.</p></div>
+    <div><span>03</span><strong>Paste</strong><p>Add it to your custom CSS setup.</p></div>
+  </div>
+</section>
 </main>
 
-<footer><div class="wrap"><span>css-snippets</span><span>by Tw1st3dR0d3nt · open source repository</span></div></footer>
-<div class="toast" id="toast">import copied</div>
+<footer><span>CSS SNIPPETS</span><span>Tw1st3dR0d3nt</span></footer>
+<div class="toast" id="toast">Copied</div>
 <script src="script.js"></script>
 </body>
 </html>
