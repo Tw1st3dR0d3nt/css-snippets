@@ -100,7 +100,7 @@
 }
 
 /* Animated Pings */
-.lowerBadge_cc5dd2 {
+.numberBadge__463b7 {
   animation: animatedPing 1.3s infinite ease-in-out;
 }
 @keyframes animatedPing {
@@ -115,7 +115,7 @@
     }
 }
 /* Recolored New message badge */
-.lowerBadge_cc5dd2 {
+.numberBadge__463b7 {
   background-color: var(--background-accent)!important;
 }
 
