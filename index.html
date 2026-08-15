@@ -13,7 +13,7 @@
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="#top"><span class="mark">&lt;/&gt;</span><span>CSS Snippets</span></a>
-    <nav><a href="#snippets">Snippets</a><a href="#install">Install</a><a href="#about">About</a><a href="https://github.com/Tw1st3dR0d3nt/css-snippets" target="_blank" rel="noopener">GitHub ↗</a></nav>
+    <nav><a href="#snippets">Snippets</a><a href="#" class="install-trigger" aria-haspopup="dialog" aria-controls="installModal">Install</a><a href="#about">About</a><a href="https://github.com/Tw1st3dR0d3nt/css-snippets" target="_blank" rel="noopener">GitHub ↗</a></nav>
   </div>
 </header>
 
@@ -78,63 +78,52 @@
 </section>
 
 
-<section class="install" id="install">
-<div class="container">
-  <div class="section-head">
-    <div><span class="eyebrow">INSTALL</span><h2>Get started in a few steps.</h2></div>
-    <p>Every snippet is distributed as an external CSS import. Copy the import from the library, then add it to your CSS client.</p>
-  </div>
-
-  <div class="install-grid">
-    <article class="install-card">
-      <div class="install-number">01</div>
-      <h3>BetterDiscord</h3>
-      <ol>
-        <li>Open <strong>BetterDiscord Settings</strong>.</li>
-        <li>Open <strong>Custom CSS</strong>.</li>
-        <li>Paste the snippet's <code>@import</code> line.</li>
-        <li>Save or apply your changes.</li>
-      </ol>
-    </article>
-
-    <article class="install-card">
-      <div class="install-number">02</div>
-      <h3>Vencord</h3>
-      <ol>
-        <li>Open <strong>Vencord Settings</strong>.</li>
-        <li>Open your custom CSS configuration.</li>
-        <li>Paste the snippet's <code>@import</code> line.</li>
-        <li>Save or apply your changes.</li>
-      </ol>
-    </article>
-  </div>
-
-  <div class="install-flow">
-    <div class="flow-head"><span class="eyebrow">HOW IT WORKS</span><p>Use the website as the source for the imports rather than downloading the individual CSS files.</p></div>
-    <div class="steps">
-      <div class="step"><span>01</span><h4>Choose a snippet</h4><p>Browse the collection and find the customization you want.</p></div>
-      <div class="step"><span>02</span><h4>Copy the import</h4><p>Use the Copy button on the snippet card.</p></div>
-      <div class="step"><span>03</span><h4>Paste it into your client</h4><p>Add the import to your custom CSS configuration.</p></div>
-      <div class="step"><span>04</span><h4>Apply your changes</h4><p>Reload or apply the CSS and you're done.</p></div>
-    </div>
-  </div>
-
-  <div class="install-note">
-    <strong>Tip</strong>
-    <p>The imports point to the maintained files hosted through GitHub Pages. You don't need to download or manually maintain the CSS files yourself.</p>
-  </div>
-</div>
-</section>
-
 <section class="about" id="about">
 <div class="container"><div class="about-card">
   <div><span class="eyebrow">ABOUT</span><h2>Small snippets.<br>Big changes.</h2></div>
   <div><p>Practical CSS customization for Discord and CSS-capable clients. Browse the collection, copy an import, and make Discord feel more like yours.</p><a class="text-link" href="https://github.com/Tw1st3dR0d3nt/css-snippets" target="_blank" rel="noopener">Explore the source on GitHub ↗</a></div>
 </div></div>
 </section>
+<div class="install-modal" id="installModal" aria-hidden="true">
+  <div class="install-backdrop" data-install-close></div>
+  <section class="install-dialog" role="dialog" aria-modal="true" aria-labelledby="installTitle">
+    <button class="modal-close" type="button" data-install-close aria-label="Close installation guide">×</button>
+    <div class="modal-header">
+      <span class="eyebrow">INSTALL</span>
+      <h2 id="installTitle">Install a snippet</h2>
+      <p class="modal-lead"><strong>Choose your snippet</strong></p>
+      <p>Browse the library and click <strong>Copy</strong> on the snippet you want to install.</p>
+    </div>
+    <div class="import-order">
+      <span class="import-order-label">IMPORT ORDER</span>
+      <p>Keep the snippet's <code>@import</code> URL <strong>at the very top of your CSS, before any other CSS rules.</strong></p>
+    </div>
+    <div class="install-methods">
+      <article class="install-method">
+        <div class="method-heading"><span class="method-icon">B</span><h3>BetterDiscord</h3></div>
+        <ol>
+          <li>Open <strong>BetterDiscord Settings → Custom CSS</strong>.</li>
+          <li>Choose a snippet and click <strong>Copy</strong>.</li>
+          <li>Paste the copied import into your CSS.</li>
+          <li>Save/apply your changes.</li>
+        </ol>
+      </article>
+      <article class="install-method">
+        <div class="method-heading"><span class="method-icon">V</span><h3>Vencord</h3></div>
+        <ol>
+          <li>Open <strong>Vencord Settings → Vencord</strong>.</li>
+          <li>Under <strong>Quick Actions</strong>, click <strong>Edit QuickCSS</strong>.</li>
+          <li>Choose a snippet and click <strong>Copy</strong>.</li>
+          <li>Paste the copied import into QuickCSS.</li>
+          <li>Save/apply your changes.</li>
+        </ol>
+      </article>
+    </div>
+  </section>
+</div>
 </main>
 
-<footer class="footer"><div class="container footer-main"><div><div class="brand"><span class="mark">&lt;/&gt;</span><span>CSS Snippets</span></div><p>Discord customization by Tw1st3dR0d3nt.</p></div><div class="footer-links"><a href="#snippets">Snippets</a><a href="#install">Install</a><a href="https://github.com/Tw1st3dR0d3nt/css-snippets" target="_blank" rel="noopener">GitHub ↗</a></div></div><div class="container copyright">© 2026 Tw1st3dR0d3nt.</div></footer>
+<footer class="footer"><div class="container footer-main"><div><div class="brand"><span class="mark">&lt;/&gt;</span><span>CSS Snippets</span></div><p>Discord customization by Tw1st3dR0d3nt.</p></div><div class="footer-links"><a href="#snippets">Snippets</a><a href="#" class="install-trigger" aria-haspopup="dialog" aria-controls="installModal">Install</a><a href="https://github.com/Tw1st3dR0d3nt/css-snippets" target="_blank" rel="noopener">GitHub ↗</a></div></div><div class="container copyright">© 2026 Tw1st3dR0d3nt.</div></footer>
 <script src="script.js"></script>
 </body>
 </html>

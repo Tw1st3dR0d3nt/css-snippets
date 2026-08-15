@@ -34,3 +34,24 @@
 .install-note p{margin:0;color:var(--muted);font-size:13px}
 @media(max-width:800px){.install-grid{grid-template-columns:1fr}.flow-head{display:block}.flow-head p{margin-top:12px}.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.install{padding-bottom:75px}.install-card,.install-flow{padding:20px}.steps{grid-template-columns:1fr}.install-note{display:block}.install-note p{margin-top:8px}}
+
+/* Compact installation guide */
+.install-modal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:24px}
+.install-modal.open{display:flex}
+.install-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.68);backdrop-filter:blur(7px)}
+.install-dialog{position:relative;z-index:1;width:min(860px,100%);max-height:min(720px,calc(100vh - 48px));overflow:auto;padding:32px;border:1px solid var(--border2);border-radius:22px;background:linear-gradient(145deg,#111815,#0b0f0d);box-shadow:0 30px 100px rgba(0,0,0,.55)}
+.modal-close{position:absolute;top:15px;right:15px;width:38px;height:38px;border:1px solid var(--border);border-radius:10px;background:var(--surface3);color:var(--muted);font-size:24px;line-height:1;cursor:pointer}
+.modal-close:hover{border-color:var(--border2);background:var(--soft);color:var(--text)}
+.modal-header{padding-right:50px}.modal-header .eyebrow{margin-bottom:11px}.modal-header h2{margin:0;font-size:clamp(2rem,4vw,2.7rem);line-height:1.05;letter-spacing:-.05em}
+.modal-header p{margin:8px 0 0;color:var(--muted);font-size:14px}.modal-header .modal-lead{margin-top:14px;color:var(--text)}
+.import-order{margin-top:22px;padding:15px 17px;border:1px solid rgba(109,245,164,.22);border-radius:13px;background:rgba(109,245,164,.07)}
+.import-order-label{display:block;margin-bottom:5px;color:var(--accent);font-size:10px;font-weight:800;letter-spacing:.14em}
+.import-order p{margin:0;color:var(--muted);font-size:13px}.import-order code{padding:2px 5px;border-radius:5px;background:rgba(0,0,0,.28);color:var(--accent);font:12px ui-monospace,SFMono-Regular,Menlo,monospace}
+.install-methods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}
+.install-method{padding:21px;border:1px solid var(--border);border-radius:16px;background:rgba(255,255,255,.018)}
+.method-heading{display:flex;align-items:center;gap:12px;margin-bottom:15px}.method-icon{display:grid;place-items:center;width:36px;height:36px;border:1px solid var(--border2);border-radius:9px;background:var(--soft);color:var(--accent);font-weight:800}
+.install-method h3{margin:0;font-size:1.2rem;letter-spacing:-.025em}.install-method ol{margin:0;padding-left:21px;color:var(--muted);font-size:13px}
+.install-method li{padding:5px 0 5px 4px}.install-method li::marker{color:var(--accent);font-weight:800}.install-method strong{color:var(--text)}
+body.install-modal-open{overflow:hidden}
+@media(max-width:800px){.install-modal{padding:14px}.install-dialog{max-height:calc(100vh - 28px);padding:26px 20px}.install-methods{grid-template-columns:1fr}}
+@media(max-width:520px){.install-modal{padding:8px}.install-dialog{border-radius:17px;padding:23px 16px 18px}.modal-header{padding-right:42px}.modal-header h2{font-size:2rem}.import-order{padding:14px}.install-method{padding:18px}}
