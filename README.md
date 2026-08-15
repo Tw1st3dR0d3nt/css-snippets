@@ -31,7 +31,6 @@ Use the website to browse the available snippets and copy their installation cod
 
 Designed for CSS-capable Discord clients and modifications such as:
 
-* Discord
 * BetterDiscord
 * Vencord
 
