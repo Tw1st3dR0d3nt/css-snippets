@@ -38,34 +38,34 @@
 { font-family: "Twemoji Mozilla", "dashless", var(--font-primary); }
 
 /* Channel Names Capitalized */
-.name__2ea32 {
+.name_TNyK-N {
     text-transform: capitalize;
 }
 
 /* More space-efficient settings layout */
-.sidebarRegion__23e6b,
-.sidebarRegionScroller__23e6b  {flex: 0 0 auto;}
+.sidebarRegion_jnk11m,
+.sidebarRegionScroller_jnk11m  {flex: 0 0 auto;}
 
 /* Connection Issue Let Me Be */
-.container_a2f514 {
+.container_oDjP9R {
   background: transparent;
   pointer-events: none;
 }
-.container_a2f514 .anchor_edefb8 { pointer-events: auto; }
-.container_a2f514 .content_a2f514 .text_a2f514 {
+.container_oDjP9R .anchor_R6ReNl { pointer-events: auto; }
+.container_oDjP9R .content_oDjP9R .text_oDjP9R {
   display:none;
 }
-.container_a2f514 .ready_a2f514 {
+.container_oDjP9R .ready_oDjP9R {
   position: absolute;
   bottom: 44px;
   right: 244px;
   z-index: 1;
 }
-.container_a2f514 img, .container_a2f514 video {
+.container_oDjP9R img, .container_oDjP9R video {
   width: 32px;
   height: 32px;
 }
-.container_a2f514 .problems_a2f514 {
+.container_oDjP9R .problems_oDjP9R {
   padding: 8px 16px;
   bottom: 18px;
   left: unset;
@@ -79,18 +79,18 @@
 }
 
 /* Blur Spoilers */
-.spoilerMarkdownContent__299eb {
+.spoilerMarkdownContent_0_7_Rr {
     background-color: rgba(255, 255, 255, .01);
 }
-.obscuredTextContentInner__299eb {
+.obscuredTextContentInner_0_7_Rr {
   color: var(--text-normal)    
 }
-.obscuredTextContentInner__299eb code, .obscuredTextContentInner__299eb span {
+.obscuredTextContentInner_0_7_Rr code, .obscuredTextContentInner_0_7_Rr span {
   opacity: unset;
   -webkit-transition: none;
   transition: none;
 }
-.spoilerContent__299eb.hidden__299eb .obscuredTextContentInner__299eb span {
+.spoilerContent_0_7_Rr.hidden_0_7_Rr .obscuredTextContentInner_0_7_Rr span {
   filter: blur(4px);
 }
 
@@ -100,7 +100,7 @@
 }
 
 /* Animated Pings */
-.numberBadge__463b7 {
+.numberBadge_lMvXrQ {
   animation: animatedPing 1.3s infinite ease-in-out;
 }
 @keyframes animatedPing {
@@ -115,7 +115,7 @@
     }
 }
 /* Recolored New message badge */
-.numberBadge__463b7 {
+.numberBadge_lMvXrQ {
   background-color: var(--background-accent)!important;
 }
 
@@ -155,66 +155,66 @@ li[class*="messageListItem"]:hover {
 }
 
 /* SImple channel/settings/dms/member list hover animations */
-.wrapper__2ea32 .link__2ea32 /* channels */,
-.container__91a9d /* members */,
-.channel__972a0 /* dms */,
-.side_aa8da2 .item_aa8da2 /* settings */ {
+.wrapper_TNyK-N .link_TNyK-N /* channels */,
+.container_J1Adu_ /* members */,
+.channel_zln_tS /* dms */,
+.side_6zZYhF .item_6zZYhF /* settings */ {
   transition: margin-left 0.2s ease;
 }
-.wrapper__2ea32:hover .link__2ea32,
-.side_aa8da2 .item_aa8da2:hover {
+.wrapper_TNyK-N:hover .link_TNyK-N,
+.side_6zZYhF .item_6zZYhF:hover {
   margin-left: 10px;
 }
-.container__91a9d:hover,
-.channel__972a0:hover {
+.container_J1Adu_:hover,
+.channel_zln_tS:hover {
   margin-left: 18px;
 }
 
 /* Better Bot Forms */
-form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
+form>div.focusLock__KoJTP>div.rootWithShadow__KoJTP {
     width: var(--modal-width-medium);
 
-    .header__49fc1 {
+    .header__KoJTP {
         padding: var(--modal-vertical-padding) var(--modal-horizontal-padding);
         margin-bottom: var(--modal-vertical-padding);
         border-bottom: var(--border-normal) solid 1px;
 
-        .colorHeaderPrimary_d1aa77 {
+        .colorHeaderPrimary_c9946a {
             text-align: center;
             font-weight: var(--font-weight-semibold);
             flex-grow: 1;
         }
 
-        .closeButton_e6af31 {
+        .closeButton_e858dd {
             top: unset;
             right: var(--modal-horizontal-padding);
             margin-bottom: auto;
             margin-top: auto;
 
-            .contents__201d5 {
+            .contents_9OQtot {
                 height: 24px;
             }
         }
     }
 
-    .submissionWarning_e858dd {
+    .submissionWarning_asMCHe {
         display: none;
     }
 
-    .formItem__1b11b .eyebrow_b717a1 {
+    .formItem_OR8pp7 .eyebrow_b717a1 {
         margin-bottom: 4px;
 
-        .errorMessage_b717a1 {
+        .errorMessage_csPsk2 {
             color: var(--text-danger);
         }
     }
 
-    .input__0ed4f.error__0ed4f:focus {
+    .input_b-mzk1.error_b-mzk1:focus {
         color: var(--text-normal);
         transition-property: border-color, color;
     }
 
-    .footer__49fc1 {
+    .footer__KoJTP {
         justify-content: space-between;
     }
 }
@@ -235,16 +235,16 @@ form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
 
 /* --Improved User Area-- */
 /* Make both the username and status message visible at all times. */
-.container__37e49 .hovered__0263c, .hoverRoll__0263c.forceHover__0263c:not(.disabled__0263c) .default__0263c{
+.container_g6VwXp .hovered_Dq3ch1, .hoverRoll_Dq3ch1.forceHover_Dq3ch1:not(.disabled_Dq3ch1) .default_Dq3ch1{
   opacity: 1!important;
   transform: none;
 }
 /* Adds an @ to the username. Discord, for the love of god, just add this yourself already. */
-.container__37e49 .hovered__0263c::before{
+.container_g6VwXp .hovered_Dq3ch1::before{
   content: "@";
 }
 /* Move the custom Status message down so that it doesnt overlap with the Username */
-.container_d79086{
+.container_73Jh6f{
   margin-top: 15px;
   opacity: 1!important;
   transform: none!important;
@@ -252,13 +252,13 @@ form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
 /* Credit to @thecommieaxolotl for this code. */
 /* --Hides User Buttons until Hover-- */
 /* Hide mute and deafen buttons */
-.panels__5e434 > .container__37e49 .buttons__37e49 > :not(:nth-last-child(1)) {
+.panels_pog62O > .container_g6VwXp .buttons_g6VwXp > :not(:nth-last-child(1)) {
   opacity: 0% !important;
   width: 0px;
   transition: all 0.3s ease-in-out;
 }
 /* Reveal mute and Deafen buttons when settings button is hovered */
-.panels__5e434 > .container__37e49 .buttons__37e49:hover > :not(:nth-last-child(5)) {
+.panels_pog62O > .container_g6VwXp .buttons_g6VwXp:hover > :not(:nth-last-child(5)) {
   opacity: 100% !important;
   width: 32px;
 }
@@ -271,6 +271,6 @@ form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
   border-radius: 0!important;
 }
 /* Move the avatar back to the right a bit to look clean. */
-.avatarWrapper__37e49 .avatar__37e49{
+.avatarWrapper__37e49 .avatar_g6VwXp{
   margin-left: 10px;
 }

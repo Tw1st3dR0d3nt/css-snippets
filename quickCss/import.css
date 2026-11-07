@@ -3,10 +3,11 @@
 @import url(//tw1st3dr0d3nt.github.io/css-snippets/Enhancer/import.css);
 
 /* Other Imports */
+/* @import url(https://davart154.github.io/Themes/Snippets/Mana/ManaSource.css); */
 @import url(//davart154.github.io/Themes/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css);
 @import url(//davart154.github.io/Themes/Snippets/Plugin%20Icon%20Consistency/IconConsistencySource.css);
 @import url(//raw.githubusercontent.com/CeaAPI/vencord-snippets/main/CompactSidebarButtons/CompactSidebarButtons.css);
 
 /* Hides Billing section entirely */
-[class="section__409aa"]:has([data-settings-sidebar-item="nitro_panel"])
+[class="section_cR4ic2"]:has([data-settings-sidebar-item="nitro_panel"])
 {display: none;}

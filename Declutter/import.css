@@ -9,13 +9,13 @@
                           ##################                        */
 
 /* Hides "Copy Channel ID" in user context menus */
-.menu_c1e9c4.flexible_c1e9c4 .item_c1e9c4.labelContainer_c1e9c4.colorDefault_c1e9c4[id^="user-context-devmode-copy-id"]:nth-child(2),
+.menu_M3qk4j.flexible_M3qk4j .item_M3qk4j.labelContainer_M3qk4j.colorDefault_M3qk4j[id^="user-context-devmode-copy-id"]:nth-child(2),
 
 /* Hides quick react deadspace */
-.wrapper_f563df,
+.wrapper_Qi4I4L,
 
 /* Hides separators in context menus entirely */
-.separator_c1e9c4,
+.separator_M3qk4j,
 
 /* Skins channel context menu */
 /* #channel-context-clone-channel, */
@@ -173,12 +173,12 @@
                           ##################                        */
 
 /* Remove Close button in DMs */
-.closeIcon__972a0{
+.closeIcon_zln_tS{
     display: none;
 }
 
 /* Hides "Create Invite" button next to guild name */
-div[class*="inviteButton_f37cb1"] {display: none !important;}
+div[class*="inviteButton_XH4OpX"] {display: none !important;}
 
 /* Hides "Help" button in home */
 div[aria-label="Help"], [aria-label="ヘルプ"] {display: none !important;}
@@ -197,16 +197,16 @@ button[aria-label="Open sticker picker"], [aria-label="スタンプピッカー�
 {display: none;}
 
 /* Video Call Toolbar Button */
-.toolbar__9293f [aria-label="Start Video Call"], [aria-label="ビデオ通話を開始"]
+.toolbar_ybUK7Z [aria-label="Start Video Call"], [aria-label="ビデオ通話を開始"]
 {display: none !important;}
 
 /* Remove Onboarding member todos bar channel list */
-[class="progressBarContainer_baf530"], [class="divider_baf530"] {
+[class="progressBarContainer_5nm40Y"], [class="divider_5nm40Y"] {
   display: none;
 }
 
 /* Hide duplicate guild name in center of titlebar */
-[class="title_c38106"] {display: none;}
+[class="title_3zSH5d"] {display: none;}
 
 /* Hide DevTools button in titlebar */
 [aria-label="DevTools"] {display: none !important;}
@@ -244,20 +244,20 @@ button[aria-label="Open sticker picker"], [aria-label="スタンプピッカー�
 }
 
 /* Clean up duplicate redundant buttons in chat input area */
-.stickerButton__74017, [class="button__74017 button__24af7"] {
+.stickerButton_2x8-Qn, [class="button_2x8-Qn button_hfM7yP"] {
     display: none !important;
 }
 
 /* Hides "Open App Launcher" button in chat input area */
-[class="buttonContainer_e6e74f app-launcher-entrypoint"] {display: none !important;}
+[class="buttonContainer_s8hOwn app-launcher-entrypoint"] {display: none !important;}
 
 /* Hide invite suggestion popup when you join voice calls */
-div[class="animation_f2170c"]:has(.content_f2170c) {display: none !important;}
+div[class="animation_MRjIbW"]:has(.content_MRjIbW) {display: none !important;}
 
 /* Quest tiles */
 div:has(> article[id^="quest-tile-"]) {
     /* Hide already claimable/completed quests */
-    &:has(button.primary_a22cb0:not([aria-busy])) {
+    &:has(button.primary_F7qvhY:not([aria-busy])) {
         display: none;
     }
     /* Hide non-orb quests */
@@ -266,7 +266,7 @@ div:has(> article[id^="quest-tile-"]) {
     }
 }
 /* Hide sponsor banner */
-.heroWrapper__955a3 {
+.heroWrapper_ZTJWQo {
     display: none;
 }
 
@@ -294,11 +294,11 @@ div[class*="selectionGroup"]:has(div[class*="tryItOutButtons"] > button[class*="
 [href="/store"] {display: none}
 
 /* Hides shop upsell in user settings profiles tab */
-[class^=container__8279f]:has([class^=artContainer_]) {display: none;}
+[class^=container_-hWC0t]:has([class^=artContainer_]) {display: none;}
 [class^="profileBadges"][class^="profileBadges"] {flex: none;}
 
 /* Hides "Boost Server" button in server settings emoji tab */
-.banner_ec75b3 {display: none;}
+.banner_FNohsR {display: none;}
 
 /* Hides boost progress bar in servers */
 ul[aria-label="Channels"] > div + div + div[class^="container_"] {display: none;}
