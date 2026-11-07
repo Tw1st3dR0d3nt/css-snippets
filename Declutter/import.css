@@ -171,11 +171,13 @@
 /*                        ##################
    ====================== # Tabs & Buttons # ====================== 
                           ##################                        */
-
+ 
 /* Remove Close button in DMs */
 .closeIcon_zln_tS{
     display: none;
 }
+/* Hides "Invite to Group DM" button in DMs */
+[class="inviteToGroupButton_86es0b"] {display: none !important;}
 
 /* Hides "Create Invite" button next to guild name */
 div[class*="inviteButton_XH4OpX"] {display: none !important;}
