@@ -31,6 +31,9 @@
 #channel-context-vc-view-channel-raw,
 [id^="channel-context-transfer-xbox"],
 
+/* Chat input context menu */
+#channel-attach-SLASH_COMMAND,
+
 /* Skins group dm context menu */
 #gdm-context-instant-invites,
 
