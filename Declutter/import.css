@@ -245,13 +245,13 @@ button[aria-label="Open sticker picker"], [aria-label="スタンプピッカー�
     }
 }
 
-/* Clean up duplicate redundant buttons in chat input area */
+/* Clean up redundant buttons in chat input area */
 .stickerButton_2x8-Qn, [class="button_2x8-Qn button_hfM7yP"] {
     display: none !important;
 }
 
 /* Hides "Open App Launcher" button in chat input area */
-[class="buttonContainer_s8hOwn app-launcher-entrypoint"] {display: none !important;}
+/* [class="buttonContainer_s8hOwn app-launcher-entrypoint"] {display: none !important;} */
 
 /* Hide invite suggestion popup when you join voice calls */
 div[class="animation_MRjIbW"]:has(.content_MRjIbW) {display: none !important;}
@@ -282,8 +282,7 @@ div:has(> article[id^="quest-tile-"]) {
 [class*="premiumFeatureBorder"],
 div[class*="selectionGroup"]:has(div[class*="tryItOutButtons"] > button[class*="shinyButton_"]),
 [class*="upsell"],
-[class*="guildProfileUpsell"],
-.premiumUpsell__2447f
+[class*="guildProfileUpsell"]
 {display: none;}
 
 /* newly added emojis in emoji picker */
@@ -295,9 +294,8 @@ div[class*="selectionGroup"]:has(div[class*="tryItOutButtons"] > button[class*="
 /* Hide Nitro button in DMs list */
 [href="/store"] {display: none}
 
-/* Hides shop upsell in user settings profiles tab */
-[class^=container_-hWC0t]:has([class^=artContainer_]) {display: none;}
-[class^="profileBadges"][class^="profileBadges"] {flex: none;}
+/* Hide Nitro TryItOut upsell in profile customization */
+[class="premiumTryItOutSection_cuaHiV premiumGradientBackground_kbgxEC"] {display: none}
 
 /* Hides "Boost Server" button in server settings emoji tab */
 .banner_FNohsR {display: none;}
